@@ -1,1 +1,1 @@
-# HRDelicates
+# HRDelicates reservation app
