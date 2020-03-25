@@ -20,7 +20,7 @@ namespace HRDelicates
 				Console.WriteLine("Welkom bij de HRDelicates Reservation App!");
 				Console.WriteLine("------------------------------------------\n");
 				Console.WriteLine("Typ 'r' om te reserveren");
-				Console.WriteLine("Typ 'm' om de menu te zien");
+				Console.WriteLine("Typ 'm' om het menu te zien");
 				Console.WriteLine("Typ 'c' om de contactgegevens te zien");
 				Console.WriteLine("Typ 'q' om de applicatie te sluiten");
 				Console.WriteLine("Druk op Enter als u een letter heeft ingetypt\n");
