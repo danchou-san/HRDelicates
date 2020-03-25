@@ -1,31 +1,37 @@
 [
     {
-        "id" :  "1",
-        "name": "john.doe@sendgrid.com",
+        "id" : "1",
+        "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "name": "john.doe@sendgrid.com",
+        "id": "1",
+        "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "name": "john.doe@sendgrid.com",
+        "id": "1",
+        "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "name": "john.doe@sendgrid.com",
+        "id": "1",
+        "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "name": "john.doe@sendgrid.com",
+        "id": "1",
+        "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "name": "john.doe@sendgrid.com",
+        "id": "1",
+        "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "name": "john.doe@sendgrid.com",
+        "id": "1",
+        "name": "Spaghet",
         "price": "1,50"
     }
 ]
