@@ -11,5 +11,6 @@ C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.pdb
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.genruntimeconfig.cache
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csproj.CoreCompileInputs.cache
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csproj.CopyComplete
+C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\bin\Debug\netcoreapp3.1\Figgle.dll
+C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csproj.CoreCompileInputs.cache
