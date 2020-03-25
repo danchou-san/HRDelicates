@@ -1,4 +1,6 @@
 ﻿using System;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace HRDelicates
 {
@@ -6,6 +8,15 @@ namespace HRDelicates
 	{
 		static void Main(string[] args)
 		{
+			string dish_file = File.ReadAllText(@"dishes.json");
+
+			dynamic dishes = JsonConvert.DeserializeObject(dish_file);
+			foreach (var n in dishes)
+			{
+				Console.WriteLine(n.name);
+
+			}
+
 			// Startscreen
 			Console.WriteLine("Welkom bij de HRDelicates Reservation App!");
 			Console.WriteLine("------------------------------------------\n");

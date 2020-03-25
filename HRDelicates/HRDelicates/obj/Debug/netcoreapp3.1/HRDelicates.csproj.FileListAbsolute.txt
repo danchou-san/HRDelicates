@@ -5,9 +5,11 @@ C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\bin\Debug\netcoreapp
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\bin\Debug\netcoreapp3.1\HRDelicates.dll
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\bin\Debug\netcoreapp3.1\HRDelicates.pdb
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csprojAssemblyReference.cache
-C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csproj.CoreCompileInputs.cache
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.AssemblyInfoInputs.cache
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.AssemblyInfo.cs
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.dll
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.pdb
 C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.genruntimeconfig.cache
+C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csproj.CoreCompileInputs.cache
+C:\Users\School\Desktop\HRDelicates\HRDelicates\HRDelicates\obj\Debug\netcoreapp3.1\HRDelicates.csproj.CopyComplete

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DVyv7ykprOhofsmo1YV85KFk0EgcF8jESTMiISG3ALYamDiDhRiOnKU4DdyBiI6kQoUwSKtCPhU0pTtVHnXsUg==",
+  "dgSpecHash": "f3fDSda7iwR++O0mJeQiyenKERODsLinDtFirb/YiaFYtklvOnU0pVreOB1ut9dCuAe5zIWRYLg4U3SBFitP9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\School\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\School\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
