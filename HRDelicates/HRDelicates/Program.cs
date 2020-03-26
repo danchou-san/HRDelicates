@@ -25,13 +25,18 @@ namespace HRDelicates
 				Console.WriteLine("Typ 'q' om de applicatie te sluiten");
 				Console.WriteLine("Druk op Enter als u een letter heeft ingetypt\n");
 				Console.Write("Typ in: ");
-			
+				
+				// Code voor kiezen van een letter
 				switch (Console.ReadLine())
 				{
 					case "r":
+						// Reserveren
+						
 						Console.WriteLine("U heeft gekozen voor r");
 						break;
 					case "m":
+						// Menu
+
 						Console.Clear();
 						string dish_file = File.ReadAllText(@"dishes.json");
 						dynamic dishes = JsonConvert.DeserializeObject(dish_file);
@@ -60,12 +65,18 @@ namespace HRDelicates
 
 						break;
 					case "c":
+						// Contactgegevens
+
 						Console.WriteLine("U heeft gekozen voor c");
 						break;
 					case "q":
+						// Quit
+
 						Environment.Exit(0);
 						break;
 					default:
+						// Wanneer er een verkeerde letter is ingetypt
+
 						Console.WriteLine("Er is iets misgegaan. Probeer het opnieuw");
 						retry = Console.ReadLine();
 						break;
