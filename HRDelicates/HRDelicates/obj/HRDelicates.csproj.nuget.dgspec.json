@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\School\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj": {}
+    "C:\\Users\\arian\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj": {}
   },
   "projects": {
-    "C:\\Users\\School\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj": {
+    "C:\\Users\\arian\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\School\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj",
+        "projectUniqueName": "C:\\Users\\arian\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj",
         "projectName": "HRDelicates",
-        "projectPath": "C:\\Users\\School\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj",
-        "packagesPath": "C:\\Users\\School\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\School\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\obj\\",
+        "projectPath": "C:\\Users\\arian\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\HRDelicates.csproj",
+        "packagesPath": "C:\\Users\\arian\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arian\\Desktop\\HRDelicates\\HRDelicates\\HRDelicates\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\School\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\arian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -36,7 +36,8 @@ namespace HRDelicates
 						string dish_file = File.ReadAllText(@"dishes.json");
 						dynamic dishes = JsonConvert.DeserializeObject(dish_file);
 
-						Console.WriteLine("\nGerechten");
+						Console.WriteLine(FiggleFonts.Standard.Render("Menu"));
+						Console.WriteLine("Gerechten");
 						Console.WriteLine("------------------------------------------");
 
 						foreach (var n in dishes)
