@@ -1,0 +1,94 @@
+[
+    {
+        "soort" : "HuisWijn",
+        "name": "Huiswijn",
+        "price": "€3.95 per glas, €13.25 per 1/2 liter, €19.75 per fles van 75cl"
+    },
+    {
+        "soort": "Witte Wijn",
+        "name": "Baccolo Bianco Sauvignon Blanc",
+        "price": "€24,- per fles, €5,- per glas"
+    },
+    {
+        "soort": "Witte Wijn",
+        "name": "San Antolin Verdejo Rueda D.O.",
+        "price": "€26,- per fles,  €5,25 per glas"
+    },
+    {
+        "soort": "Witte Wijn",
+        "name": "Light Horse Chardonnay",
+        "price": "€28,50 per fles, €5,75 per glas"
+    },
+    {
+        "soort": "Rode wijn",
+        "name": "Baccolo Rosso Merlot ",
+        "price": "€24,- per fles €5,- per glas"
+    },
+    {
+        "soort": "Rode wijn",
+        "name": "Los Cardos Malbec",
+        "price": "€26,- per fles, €5,25 per glas"
+    },
+    {
+        "soort": "Rode wijn",
+        "name": "Whiplash Zinfandel",
+        "price": "€28,50 per fles, €5,75 per glas"
+        
+    }
+    {
+        "soort": "Wijn",
+        "name": "Port",
+        "price": "€3,25 per glas"
+        
+    }
+    {
+        "soort": "Wijn",
+        "name": "Dessertwijn",
+        "price": "€4,25 per glas"        
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Cola",
+        "price": "€2,50"        
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Cola Light",
+        "price": "€2,50"        
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Fanta",
+        "price": "€2,50"       
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Sprite",
+        "price": "€2,50"       
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Lipton Ice Tea",
+        "price": "€2,50"      
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Tonic",
+        "price": "€2,50"       
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Chocolademelk",
+        "price": "€2,10"       
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Fristi",
+        "price": "€2,10"       
+    }
+    {
+        "soort": "Frisdrank",
+        "name": "Limonade",
+        "price": "€2,10"       
+    }
+]
