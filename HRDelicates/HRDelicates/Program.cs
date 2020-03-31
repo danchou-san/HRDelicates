@@ -76,7 +76,7 @@ namespace HRDelicates
 		public static void Menu()
 		{
 			Console.Clear();
-			string dish_file = File.ReadAllText(@"Gerechten.json");
+			string dish_file = File.ReadAllText(@"dishes.json");
 			dynamic dishes = JsonConvert.DeserializeObject(dish_file);
 
 			Console.WriteLine(FiggleFonts.Standard.Render("Menu"));
