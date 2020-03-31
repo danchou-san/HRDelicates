@@ -68,6 +68,20 @@ namespace HRDelicates
 						// Contactgegevens
 
 						Console.WriteLine("U heeft gekozen voor c");
+						Console.Clear();
+						Console.WriteLine("Contactgegevens");
+						Console.WriteLine("Email : HRDELICATES@hr.nl");
+						Console.WriteLine("Telefoon : 0104287287");
+						Console.WriteLine("Whatsapp : 0616666602");
+						Console.WriteLine(string.Empty);
+						Console.WriteLine(string.Empty);
+						Console.WriteLine("Openingstijden");
+						Console.Write("Ma-Zo: 17.00 - 23.00");
+						Console.WriteLine(string.Empty);
+						Console.WriteLine(string.Empty);
+						Console.WriteLine("Wijnhaven 107,");
+						Console.WriteLine("3011 WN Rotterdam.");
+						Console.ReadKey();
 						break;
 					case "q":
 						// Quit

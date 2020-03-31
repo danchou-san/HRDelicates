@@ -1,0 +1,87 @@
+[
+    {
+        "soort" : "Voorgerecht",
+        "name": "Brood met kruidenboter en tapenade",
+        "price": "5,00"
+    },
+    {
+        "soort": "Voorgerecht",
+        "name": "Steak tartaar",
+        "price": "9,00"
+    },
+    {
+        "soort": "Voorgerecht",
+        "name": "Geitenkaas salade",
+        "price": "6,50"
+    },
+    {
+        "soort": "Voorgerecht",
+        "name": "Kippensoep",
+        "price": "5,50"
+    },
+    {
+        "soort": "Voorgerecht",
+        "name": "Spaghet",
+        "price": "1,50"
+    },
+    {
+        "soort": "Hoofdgerechten",
+        "name": "Spare ribs met patat",
+        "price": "16,00"
+    },
+    {
+        "id": "Hoofdgerechten",
+        "name": "Kipsaté met patat",
+        "price": "13,50"
+    }
+    {
+        "id": "Hoofdgerechten",
+        "name": "Cheeseburger met patat",
+        "price": "12,50"
+    }
+    {
+        "id": "Hoofdgerechten",
+        "name": "Vlaamse stoof met patat",
+        "price": "15,50"
+    }
+    {
+        "id": "Hoofdgerechten",
+        "name": "Lasagna",
+        "price": "12,00"
+    }
+    {
+        "id": "Hoofdgerechten",
+        "name": "Spaghetti met gehaktballen",
+        "price": "11,75        "
+    }
+    {
+        "id": "Hoofdgerechten",
+        "name": "Bami goreng met sate",
+        "price": "10,00"
+    }
+    {
+        "id": "Nagerechten",
+        "name": "Dame blanche",
+        "price": "4,50"
+    }
+    {
+        "id": "Nagerechten",
+        "name": "Spaghet",
+        "price": "1,50"
+    }
+    {
+        "id": "Nagerechten",
+        "name": "Roomijs met advocaat",
+        "price": "4,50"
+    }
+    {
+        "id": "Nagerechten",
+        "name": "Chocolademousse",
+        "price": "6,50"
+    }
+    {
+        "id": "Nagerechten",
+        "name": "Kaasplankje",
+        "price": "12,50"
+    }
+]
