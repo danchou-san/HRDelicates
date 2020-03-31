@@ -33,52 +33,52 @@
         "id": "Hoofdgerechten",
         "name": "Kipsaté met patat",
         "price": "13,50"
-    }
+    },
     {
         "id": "Hoofdgerechten",
         "name": "Cheeseburger met patat",
         "price": "12,50"
-    }
+    },
     {
         "id": "Hoofdgerechten",
         "name": "Vlaamse stoof met patat",
         "price": "15,50"
-    }
+    },
     {
         "id": "Hoofdgerechten",
         "name": "Lasagna",
         "price": "12,00"
-    }
+    },
     {
         "id": "Hoofdgerechten",
         "name": "Spaghetti met gehaktballen",
         "price": "11,75        "
-    }
+    },
     {
         "id": "Hoofdgerechten",
         "name": "Bami goreng met sate",
         "price": "10,00"
-    }
+    },
     {
         "id": "Nagerechten",
         "name": "Dame blanche",
         "price": "4,50"
-    }
+    },
     {
         "id": "Nagerechten",
         "name": "Spaghet",
         "price": "1,50"
-    }
+    },
     {
         "id": "Nagerechten",
         "name": "Roomijs met advocaat",
         "price": "4,50"
-    }
+    },
     {
         "id": "Nagerechten",
         "name": "Chocolademousse",
         "price": "6,50"
-    }
+    },
     {
         "id": "Nagerechten",
         "name": "Kaasplankje",
