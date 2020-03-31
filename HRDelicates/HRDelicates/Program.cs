@@ -31,38 +31,13 @@ namespace HRDelicates
 				{
 					case "r":
 						// Reserveren
-						
+						Reserve();
 						Console.WriteLine("U heeft gekozen voor r");
 						break;
 					case "m":
 						// Menu
-
-						Console.Clear();
-						string dish_file = File.ReadAllText(@"dishes.json");
-						dynamic dishes = JsonConvert.DeserializeObject(dish_file);
-
-						Console.WriteLine(FiggleFonts.Standard.Render("Menu"));
-						Console.WriteLine("Gerechten");
-						Console.WriteLine("------------------------------------------");
-
-						foreach (var n in dishes)
-						{
-							Console.Write(n.name + " | ");
-							Console.Write("\u20AC" + n.price + "\n");
-						}
-
-						Console.WriteLine("\nDranken");
-						Console.WriteLine("------------------------------------------");
-
-						foreach (var n in dishes)
-						{
-							Console.Write(n.name + " | ");
-							Console.Write("\u20AC" + n.price + "\n");
-						}
-
-						Console.Write("\nDruk enter om terug naar het hoofdmenu te gaan");
+						Menu();
 						retry = Console.ReadLine();
-
 						break;
 					case "c":
 						// Contactgegevens
@@ -96,6 +71,41 @@ namespace HRDelicates
 						break;
 				}
 			} while (retry != "No");
+		}
+
+		public static void Menu()
+		{
+			Console.Clear();
+			string dish_file = File.ReadAllText(@"Gerechten.json");
+			dynamic dishes = JsonConvert.DeserializeObject(dish_file);
+
+			Console.WriteLine(FiggleFonts.Standard.Render("Menu"));
+			Console.WriteLine("Gerechten");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in dishes)
+			{
+				Console.Write(n.name + " | ");
+				Console.Write("\u20AC" + n.price + "\n");
+			}
+
+			Console.WriteLine("\nDranken");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in dishes)
+			{
+				Console.Write(n.name + " | ");
+				Console.Write("\u20AC" + n.price + "\n");
+			}
+
+			Console.Write("\nDruk enter om terug naar het hoofdmenu te gaan");
+		}
+
+		public static void Reserve()
+		{
+			Console.Clear();
+
+			Console.WriteLine(FiggleFonts.Standard.Render("Reserveren"));
 		}
 	}
 }
