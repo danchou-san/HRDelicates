@@ -30,57 +30,57 @@
         "price": "16,00"
     },
     {
-        "id": "Hoofdgerechten",
+        "soort": "Hoofdgerechten",
         "name": "Kipsaté met patat",
         "price": "13,50"
     },
     {
-        "id": "Hoofdgerechten",
+        "soort": "Hoofdgerechten",
         "name": "Cheeseburger met patat",
         "price": "12,50"
     },
     {
-        "id": "Hoofdgerechten",
+        "soort": "Hoofdgerechten",
         "name": "Vlaamse stoof met patat",
         "price": "15,50"
     },
     {
-        "id": "Hoofdgerechten",
+        "soort": "Hoofdgerechten",
         "name": "Lasagna",
         "price": "12,00"
     },
     {
-        "id": "Hoofdgerechten",
+        "soort": "Hoofdgerechten",
         "name": "Spaghetti met gehaktballen",
         "price": "11,75        "
     },
     {
-        "id": "Hoofdgerechten",
+        "soort": "Hoofdgerechten",
         "name": "Bami goreng met sate",
         "price": "10,00"
     },
     {
-        "id": "Nagerechten",
+        "soort": "Nagerechten",
         "name": "Dame blanche",
         "price": "4,50"
     },
     {
-        "id": "Nagerechten",
+        "soort": "Nagerechten",
         "name": "Spaghet",
         "price": "1,50"
     },
     {
-        "id": "Nagerechten",
+        "soort": "Nagerechten",
         "name": "Roomijs met advocaat",
         "price": "4,50"
     },
     {
-        "id": "Nagerechten",
+        "soort": "Nagerechten",
         "name": "Chocolademousse",
         "price": "6,50"
     },
     {
-        "id": "Nagerechten",
+        "soort": "Nagerechten",
         "name": "Kaasplankje",
         "price": "12,50"
     }

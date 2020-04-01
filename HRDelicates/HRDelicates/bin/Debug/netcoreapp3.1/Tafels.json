@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "space": "2",
+    "status": "Unavailable",
+    "person_id": 1
+  },
+  {
+    "id": 2,
+    "space": "2",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 3,
+    "space": "2",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 4,
+    "space": "2",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 5,
+    "space": "2",
+    "status": "Unavailable",
+    "person_id": null
+  },
+  {
+    "id": 6,
+    "space": "2",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 7,
+    "space": "4",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 8,
+    "space": "4",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 9,
+    "space": "4",
+    "status": "Unavailable",
+    "person_id": null
+  },
+  {
+    "id": 10,
+    "space": "4",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 11,
+    "space": "4",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 12,
+    "space": "6",
+    "status": "Available",
+    "person_id": null
+  },
+  {
+    "id": 13,
+    "space": "6",
+    "status": "Available",
+    "person_id": null
+  }
+]
