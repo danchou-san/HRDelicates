@@ -63,26 +63,117 @@ namespace HRDelicates
 		public static void Menu()
 		{
 			Console.Clear();
-			string dish_file = File.ReadAllText(@"dishes.json");
+			string dish_file = File.ReadAllText(@"Dishes.json");
 			dynamic dishes = JsonConvert.DeserializeObject(dish_file);
+			string drinks_file = File.ReadAllText(@"Drinks.json");
+			dynamic drinks = JsonConvert.DeserializeObject(drinks_file);
 
 			Console.WriteLine(FiggleFonts.Standard.Render("Menu"));
-			Console.WriteLine("Gerechten");
-			Console.WriteLine("------------------------------------------");
 
+			Console.WriteLine("Voorgerechten");
+			Console.WriteLine("------------------------------------------");
 			foreach (var n in dishes)
 			{
-				Console.Write(n.name + " | ");
-				Console.Write("\u20AC" + n.price + "\n");
+				if (n.soort == "Voorgerecht")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
 			}
 
-			Console.WriteLine("\nDranken");
+			Console.WriteLine("\nHoofdgerechten");
 			Console.WriteLine("------------------------------------------");
-
 			foreach (var n in dishes)
 			{
-				Console.Write(n.name + " | ");
-				Console.Write("\u20AC" + n.price + "\n");
+				if (n.soort == "Hoofdgerechten")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
+			}
+
+			Console.WriteLine("\nNagerechten");
+			Console.WriteLine("------------------------------------------");
+			foreach (var n in dishes)
+			{
+				if (n.soort == "Nagerechten")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
+			}
+
+			Console.WriteLine(string.Empty);
+			Console.WriteLine(string.Empty);
+			Console.WriteLine(string.Empty);
+			Console.WriteLine(string.Empty);
+
+			Console.WriteLine("Frisdrank");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in drinks)
+			{
+				if (n.soort == "Frisdrank")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
+			}
+
+			Console.WriteLine("\nHuis Wijn");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in drinks)
+			{
+				if (n.soort == "Huis Wijn")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
+			}
+
+			Console.WriteLine("\nWitte Wijn");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in drinks)
+			{
+				if (n.soort == "Witte Wijn")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
+			}
+
+			Console.WriteLine("\nRode Wijn");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in drinks)
+			{
+				if (n.soort == "Rode Wijn")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
+			}
+
+			Console.WriteLine("\nWijn");
+			Console.WriteLine("------------------------------------------");
+
+			foreach (var n in drinks)
+			{
+				if (n.soort == "Wijn")
+				{
+					Console.Write(n.name + " | ");
+					Console.Write("\u20AC" + n.price + "\n");
+					Console.WriteLine(string.Empty);
+				}
 			}
 
 			Console.Write("\nDruk enter om terug naar het hoofdmenu te gaan");
