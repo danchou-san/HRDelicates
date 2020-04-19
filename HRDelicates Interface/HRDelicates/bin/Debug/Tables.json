@@ -1,0 +1,80 @@
+[
+  {
+    "Nummer": 1,
+    "Capaciteit": "2",
+    "Status": "Unavailable",
+    "Persoon": 1
+  },
+  {
+    "Nummer": 2,
+    "Capaciteit": "2",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 3,
+    "Capaciteit": "2",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 4,
+    "Capaciteit": "2",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 5,
+    "Capaciteit": "2",
+    "Status": "Unavailable",
+    "Persoon": null
+  },
+  {
+    "Nummer": 6,
+    "Capaciteit": "2",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 7,
+    "Capaciteit": "4",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 8,
+    "Capaciteit": "4",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 9,
+    "Capaciteit": "4",
+    "Status": "Unavailable",
+    "Persoon": null
+  },
+  {
+    "Nummer": 10,
+    "Capaciteit": "4",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 11,
+    "Capaciteit": "4",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 12,
+    "Capaciteit": "6",
+    "Status": "Available",
+    "Persoon": null
+  },
+  {
+    "Nummer": 13,
+    "Capaciteit": "6",
+    "Status": "Available",
+    "Persoon": null
+  }
+]
