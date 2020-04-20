@@ -96,6 +96,7 @@ namespace HRDelicates
             startscreen1.BringToFront();
             screen_active = "home";
             home_text.Visible = true;
+            reserve_text.Visible = false;
             menu_text.Visible = false;
             contact_text.Visible = false;
 
@@ -126,9 +127,10 @@ namespace HRDelicates
         {
             menuscreen1.BringToFront();
             screen_active = "menu";
+            home_text.Visible = false;
+            reserve_text.Visible = false;
             menu_text.Visible = true;
             contact_text.Visible = false;
-            home_text.Visible = false;
 
             choose_menu.Visible = true;
             choose_contact.Visible = false;
@@ -142,6 +144,7 @@ namespace HRDelicates
             contactscreen1.BringToFront();
             screen_active = "contact";
             home_text.Visible = false;
+            reserve_text.Visible = false;
             menu_text.Visible = false;
             contact_text.Visible = true;
 

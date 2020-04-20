@@ -52,13 +52,13 @@
             this.home_text = new System.Windows.Forms.Label();
             this.contact_text = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.reserve_text = new System.Windows.Forms.Label();
             this.menu_text = new System.Windows.Forms.Label();
             this.startscreen2 = new HRDelicates.Startscreen();
             this.contactscreen1 = new HRDelicates.Contactscreen();
             this.startscreen1 = new HRDelicates.Startscreen();
             this.menuscreen1 = new HRDelicates.Menuscreen();
             this.reservationscreen1 = new HRDelicates.Reservationscreen();
-            this.reserve_text = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.choose_close.SuspendLayout();
             this.choose_contact.SuspendLayout();
@@ -365,6 +365,18 @@
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // reserve_text
+            // 
+            this.reserve_text.AutoSize = true;
+            this.reserve_text.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.reserve_text.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.reserve_text.Location = new System.Drawing.Point(120, 84);
+            this.reserve_text.Name = "reserve_text";
+            this.reserve_text.Size = new System.Drawing.Size(96, 21);
+            this.reserve_text.TabIndex = 9;
+            this.reserve_text.Text = "Reserveren";
+            this.reserve_text.Visible = false;
+            // 
             // menu_text
             // 
             this.menu_text.AutoSize = true;
@@ -412,17 +424,7 @@
             this.reservationscreen1.Name = "reservationscreen1";
             this.reservationscreen1.Size = new System.Drawing.Size(890, 467);
             this.reservationscreen1.TabIndex = 11;
-            // 
-            // reserve_text
-            // 
-            this.reserve_text.AutoSize = true;
-            this.reserve_text.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.reserve_text.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.reserve_text.Location = new System.Drawing.Point(120, 84);
-            this.reserve_text.Name = "reserve_text";
-            this.reserve_text.Size = new System.Drawing.Size(96, 21);
-            this.reserve_text.TabIndex = 9;
-            this.reserve_text.Text = "Reserveren";
+            this.reservationscreen1.Tables = null;
             // 
             // Form1
             // 

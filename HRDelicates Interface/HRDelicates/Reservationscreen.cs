@@ -62,12 +62,12 @@ namespace HRDelicates
 
         private void table_next_Click(object sender, EventArgs e)
         {
+            confirmation_title.Visible = true;
             verification_panel.Visible = true;
             name_value.Text = naam_box.Text + " " + achternaam_box.Text;
             table_value.Text = table_combo.Text;
-            date_value.Text = datum_box.Value.ToString("dd-mm-yyyy");
+            date_value.Text = datum_box.Value.ToString("dd-MM-yyyy");
             time_value.Text = time_box.Text;
-
         }
 
         private void table_back_Click(object sender, EventArgs e)
@@ -99,12 +99,20 @@ namespace HRDelicates
 
             string json = File.ReadAllText(path);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
-            jsonObj[Int32.Parse(table_value.Text)]["Persoon"] = name_value.Text;
-            jsonObj[Int32.Parse(table_value.Text)]["D_reservering"] = date_value.Text;
-            jsonObj[Int32.Parse(table_value.Text)]["Time"] = time_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Persoon"] = name_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["D_reservering"] = date_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Time"] = time_value.Text;
 
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
             File.WriteAllText(path, output);
+
+            finish_panel.Visible = true;
+            finish_text.Visible = true;
+        }
+
+        private void back_begin_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

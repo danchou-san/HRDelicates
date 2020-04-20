@@ -75,19 +75,19 @@
     "Nummer": 9,
     "Capaciteit": 4,
     "Status": "Unavailable",
-    "Persoon": "",
+    "Persoon": "Ariano Bob",
     "A_P_P": null,
-    "D_reservering": null,
-    "Time": null
+    "D_reservering": "30-00-2020",
+    "Time": "19:00"
   },
   {
     "Nummer": 10,
     "Capaciteit": 4,
     "Status": "Available",
-    "Persoon": "",
+    "Persoon": "Bob Jan",
     "A_P_P": null,
-    "D_reservering": null,
-    "Time": null
+    "D_reservering": "06-05-2020",
+    "Time": "19:00"
   },
   {
     "Nummer": 11,
@@ -102,18 +102,18 @@
     "Nummer": 12,
     "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": "",
+    "Persoon": "Ariano Wongsosetro",
     "A_P_P": null,
-    "D_reservering": null,
-    "Time": null
+    "D_reservering": "20-04-2020",
+    "Time": "21:00"
   },
   {
     "Nummer": 13,
     "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": "",
+    "Persoon": "Ariano Bob",
     "A_P_P": null,
-    "D_reservering": null,
-    "Time": null
+    "D_reservering": "24-04-2020",
+    "Time": "22:00"
   }
 ]
