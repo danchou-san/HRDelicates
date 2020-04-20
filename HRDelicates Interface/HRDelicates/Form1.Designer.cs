@@ -58,6 +58,7 @@
             this.startscreen1 = new HRDelicates.Startscreen();
             this.menuscreen1 = new HRDelicates.Menuscreen();
             this.reservationscreen1 = new HRDelicates.Reservationscreen();
+            this.reserve_text = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.choose_close.SuspendLayout();
             this.choose_contact.SuspendLayout();
@@ -261,7 +262,7 @@
             this.reserve_nav.TabIndex = 6;
             this.reserve_nav.Text = "Reserveren";
             this.reserve_nav.UseVisualStyleBackColor = true;
-            this.reserve_nav.Click += new System.EventHandler(this.button2_Click);
+            this.reserve_nav.Click += new System.EventHandler(this.reserve_nav_Click);
             // 
             // home_nav
             // 
@@ -351,6 +352,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.reserve_text);
             this.panel2.Controls.Add(this.home_text);
             this.panel2.Controls.Add(this.contact_text);
             this.panel2.Controls.Add(this.label1);
@@ -410,6 +412,17 @@
             this.reservationscreen1.Name = "reservationscreen1";
             this.reservationscreen1.Size = new System.Drawing.Size(890, 467);
             this.reservationscreen1.TabIndex = 11;
+            // 
+            // reserve_text
+            // 
+            this.reserve_text.AutoSize = true;
+            this.reserve_text.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.reserve_text.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.reserve_text.Location = new System.Drawing.Point(120, 84);
+            this.reserve_text.Name = "reserve_text";
+            this.reserve_text.Size = new System.Drawing.Size(96, 21);
+            this.reserve_text.TabIndex = 9;
+            this.reserve_text.Text = "Reserveren";
             // 
             // Form1
             // 
@@ -474,6 +487,7 @@
         private Menuscreen menuscreen1;
         private System.Windows.Forms.Label menu_text;
         private Reservationscreen reservationscreen1;
+        private System.Windows.Forms.Label reserve_text;
     }
 }
 

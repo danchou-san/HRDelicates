@@ -106,6 +106,22 @@ namespace HRDelicates
             choose_close.Visible = false;
         }
 
+        private void reserve_nav_Click(object sender, EventArgs e)
+        {
+            reservationscreen1.BringToFront();
+            screen_active = "reserve";
+            home_text.Visible = false;
+            reserve_text.Visible = true;
+            menu_text.Visible = false;
+            contact_text.Visible = false;
+
+            choose_home.Visible = false;
+            choose_reserve.Visible = true;
+            choose_menu.Visible = false;
+            choose_contact.Visible = false;
+            choose_close.Visible = false;
+        }
+
         private void menu_nav_Click(object sender, EventArgs e)
         {
             menuscreen1.BringToFront();
