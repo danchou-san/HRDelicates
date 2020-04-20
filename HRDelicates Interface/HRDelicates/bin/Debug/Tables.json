@@ -1,80 +1,119 @@
 [
   {
     "Nummer": 1,
-    "Capaciteit": "2",
+    "Capaciteit": 2,
     "Status": "Unavailable",
-    "Persoon": 1
+    "Persoon": "Ariano Wongsosetro",
+    "A_P_P": null,
+    "D_reservering": "20-18-2020",
+    "Time": "18:00"
   },
   {
     "Nummer": 2,
-    "Capaciteit": "2",
+    "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 3,
-    "Capaciteit": "2",
+    "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 4,
-    "Capaciteit": "2",
+    "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 5,
-    "Capaciteit": "2",
+    "Capaciteit": 2,
     "Status": "Unavailable",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 6,
-    "Capaciteit": "2",
+    "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 7,
-    "Capaciteit": "4",
+    "Capaciteit": 4,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 8,
-    "Capaciteit": "4",
+    "Capaciteit": 4,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 9,
-    "Capaciteit": "4",
+    "Capaciteit": 4,
     "Status": "Unavailable",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 10,
-    "Capaciteit": "4",
+    "Capaciteit": 4,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 11,
-    "Capaciteit": "4",
+    "Capaciteit": 4,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "Jan Bob",
+    "A_P_P": null,
+    "D_reservering": "20-22-2020",
+    "Time": "18:00"
   },
   {
     "Nummer": 12,
-    "Capaciteit": "6",
+    "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   },
   {
     "Nummer": 13,
-    "Capaciteit": "6",
+    "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": null
+    "Persoon": "",
+    "A_P_P": null,
+    "D_reservering": null,
+    "Time": null
   }
 ]

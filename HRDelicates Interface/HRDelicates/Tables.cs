@@ -9,5 +9,8 @@ namespace HRDelicates
         public string Capaciteit { get; set; }
         public string Status { get; set; }
         public string Persoon { get; set; }
+        public string A_P_P { get; set; }
+        public string D_reservering { get; set; }
+        public string Time { get; set; }
     }
 }
