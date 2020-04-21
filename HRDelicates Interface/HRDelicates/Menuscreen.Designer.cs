@@ -64,7 +64,7 @@
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -107,7 +107,7 @@
             this.naamDataGridViewTextBoxColumn.Name = "naamDataGridViewTextBoxColumn";
             this.naamDataGridViewTextBoxColumn.ReadOnly = true;
             this.naamDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.naamDataGridViewTextBoxColumn.Width = 64;
+            this.naamDataGridViewTextBoxColumn.Width = 88;
             // 
             // soortDataGridViewTextBoxColumn
             // 
@@ -117,7 +117,7 @@
             this.soortDataGridViewTextBoxColumn.Name = "soortDataGridViewTextBoxColumn";
             this.soortDataGridViewTextBoxColumn.ReadOnly = true;
             this.soortDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.soortDataGridViewTextBoxColumn.Width = 61;
+            this.soortDataGridViewTextBoxColumn.Width = 79;
             // 
             // prijsDataGridViewTextBoxColumn
             // 
@@ -127,7 +127,7 @@
             this.prijsDataGridViewTextBoxColumn.Name = "prijsDataGridViewTextBoxColumn";
             this.prijsDataGridViewTextBoxColumn.ReadOnly = true;
             this.prijsDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.prijsDataGridViewTextBoxColumn.Width = 55;
+            this.prijsDataGridViewTextBoxColumn.Width = 65;
             // 
             // dishesBindingSource
             // 
