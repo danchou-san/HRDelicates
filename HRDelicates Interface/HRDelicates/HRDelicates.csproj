@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adminscreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Adminscreen.Designer.cs">
+      <DependentUpon>Adminscreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contactscreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +89,9 @@
       <DependentUpon>Startscreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Tables.cs" />
+    <EmbeddedResource Include="Adminscreen.resx">
+      <DependentUpon>Adminscreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contactscreen.resx">
       <DependentUpon>Contactscreen.cs</DependentUpon>
     </EmbeddedResource>

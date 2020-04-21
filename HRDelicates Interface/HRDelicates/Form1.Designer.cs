@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.admin_button = new System.Windows.Forms.Button();
             this.choose_close = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.choose_contact = new System.Windows.Forms.Panel();
@@ -59,6 +60,8 @@
             this.startscreen1 = new HRDelicates.Startscreen();
             this.menuscreen1 = new HRDelicates.Menuscreen();
             this.reservationscreen1 = new HRDelicates.Reservationscreen();
+            this.adminscreen1 = new HRDelicates.Adminscreen();
+            this.admin_text = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.choose_close.SuspendLayout();
             this.choose_contact.SuspendLayout();
@@ -73,6 +76,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.admin_button);
             this.panel1.Controls.Add(this.choose_close);
             this.panel1.Controls.Add(this.choose_contact);
             this.panel1.Controls.Add(this.choose_menu);
@@ -89,6 +93,20 @@
             this.panel1.Size = new System.Drawing.Size(170, 600);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // admin_button
+            // 
+            this.admin_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.admin_button.FlatAppearance.BorderSize = 0;
+            this.admin_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.admin_button.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.admin_button.ForeColor = System.Drawing.Color.White;
+            this.admin_button.Location = new System.Drawing.Point(0, 0);
+            this.admin_button.Name = "admin_button";
+            this.admin_button.Size = new System.Drawing.Size(13, 15);
+            this.admin_button.TabIndex = 12;
+            this.admin_button.UseVisualStyleBackColor = true;
+            this.admin_button.Click += new System.EventHandler(this.admin_Click);
             // 
             // choose_close
             // 
@@ -352,6 +370,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.admin_text);
             this.panel2.Controls.Add(this.reserve_text);
             this.panel2.Controls.Add(this.home_text);
             this.panel2.Controls.Add(this.contact_text);
@@ -426,11 +445,31 @@
             this.reservationscreen1.TabIndex = 11;
             this.reservationscreen1.Tables = null;
             // 
+            // adminscreen1
+            // 
+            this.adminscreen1.Location = new System.Drawing.Point(170, 133);
+            this.adminscreen1.Name = "adminscreen1";
+            this.adminscreen1.Size = new System.Drawing.Size(890, 467);
+            this.adminscreen1.TabIndex = 12;
+            // 
+            // admin_text
+            // 
+            this.admin_text.AutoSize = true;
+            this.admin_text.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.admin_text.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.admin_text.Location = new System.Drawing.Point(121, 84);
+            this.admin_text.Name = "admin_text";
+            this.admin_text.Size = new System.Drawing.Size(62, 21);
+            this.admin_text.TabIndex = 10;
+            this.admin_text.Text = "Admin";
+            this.admin_text.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 600);
+            this.Controls.Add(this.adminscreen1);
             this.Controls.Add(this.reservationscreen1);
             this.Controls.Add(this.menuscreen1);
             this.Controls.Add(this.startscreen2);
@@ -490,6 +529,9 @@
         private System.Windows.Forms.Label menu_text;
         private Reservationscreen reservationscreen1;
         private System.Windows.Forms.Label reserve_text;
+        private System.Windows.Forms.Button admin_button;
+        private Adminscreen adminscreen1;
+        private System.Windows.Forms.Label admin_text;
     }
 }
 
