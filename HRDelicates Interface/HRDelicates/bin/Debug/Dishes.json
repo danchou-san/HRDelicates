@@ -1,7 +1,7 @@
 [
   {
     "Soort": "Voorgerecht",
-    "Naam": "Brood met kruSoortenboter en tapenade",
+    "Naam": "Brood met kruidenboter en tapenade",
     "Prijs": "5,00"
   },
   {
@@ -21,18 +21,13 @@
   },
   {
     "Soort": "Voorgerecht",
-    "Naam": "Spaghet",
+    "Naam": "Spaghetti",
     "Prijs": "1,50"
   },
   {
     "Soort": "Hoofdgerechten",
     "Naam": "Spare ribs met patat",
     "Prijs": "16,00"
-  },
-  {
-    "Soort": "Hoofdgerechten",
-    "Naam": "Kipsaté met patat",
-    "Prijs": "13,50"
   },
   {
     "Soort": "Hoofdgerechten",
@@ -52,7 +47,7 @@
   {
     "Soort": "Hoofdgerechten",
     "Naam": "Spaghetti met gehaktballen",
-    "Prijs": "11,75        "
+    "Prijs": "11,75"
   },
   {
     "Soort": "Hoofdgerechten",
@@ -63,11 +58,6 @@
     "Soort": "Nagerechten",
     "Naam": "Dame blanche",
     "Prijs": "4,50"
-  },
-  {
-    "Soort": "Nagerechten",
-    "Naam": "Spaghet",
-    "Prijs": "1,50"
   },
   {
     "Soort": "Nagerechten",

@@ -96,6 +96,7 @@ namespace HRDelicates
             startscreen1.BringToFront();
             screen_active = "home";
             home_text.Visible = true;
+            reserve_text.Visible = false;
             menu_text.Visible = false;
             contact_text.Visible = false;
 
@@ -106,13 +107,30 @@ namespace HRDelicates
             choose_close.Visible = false;
         }
 
+        private void reserve_nav_Click(object sender, EventArgs e)
+        {
+            reservationscreen1.BringToFront();
+            screen_active = "reserve";
+            home_text.Visible = false;
+            reserve_text.Visible = true;
+            menu_text.Visible = false;
+            contact_text.Visible = false;
+
+            choose_home.Visible = false;
+            choose_reserve.Visible = true;
+            choose_menu.Visible = false;
+            choose_contact.Visible = false;
+            choose_close.Visible = false;
+        }
+
         private void menu_nav_Click(object sender, EventArgs e)
         {
             menuscreen1.BringToFront();
             screen_active = "menu";
+            home_text.Visible = false;
+            reserve_text.Visible = false;
             menu_text.Visible = true;
             contact_text.Visible = false;
-            home_text.Visible = false;
 
             choose_menu.Visible = true;
             choose_contact.Visible = false;
@@ -126,6 +144,7 @@ namespace HRDelicates
             contactscreen1.BringToFront();
             screen_active = "contact";
             home_text.Visible = false;
+            reserve_text.Visible = false;
             menu_text.Visible = false;
             contact_text.Visible = true;
 
