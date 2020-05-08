@@ -30,6 +30,13 @@ namespace HRDelicates
 
         private void verder_button_Click(object sender, EventArgs e)
         {
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                table_header_text.Visible = true;
+                table_panel.Visible = true;
+                dataGridView1.Visible = true;
+            }
+
             //personen_box.Value = value;
             var serializedStr = File.ReadAllText(path);
             var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
@@ -180,9 +187,6 @@ namespace HRDelicates
             {
                 e.Cancel = false;
                 errorProvider1.SetError(naam_box, null);
-                table_header_text.Visible = true;
-                table_panel.Visible = true;
-                dataGridView1.Visible = true;
             }
 
         }
@@ -199,9 +203,6 @@ namespace HRDelicates
             {
                 e.Cancel = false;
                 errorProvider1.SetError(achternaam_box, null);
-                table_header_text.Visible = true;
-                table_panel.Visible = true;
-                dataGridView1.Visible = true;
             }
         }
     }
