@@ -4,6 +4,7 @@
     "Capaciteit": 2,
     "Status": "Unavailable",
     "Persoon": "Ariano Wongsosetro",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": "20-18-2020",
     "Time": "18:00"
@@ -13,6 +14,7 @@
     "Capaciteit": 2,
     "Status": "Available",
     "Persoon": "",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": null,
     "Time": null
@@ -21,16 +23,18 @@
     "Nummer": 3,
     "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": "",
+    "Persoon": "Kevin Ling",
+    "Telefoon": null,
     "A_P_P": null,
-    "D_reservering": null,
-    "Time": null
+    "D_reservering": "0616788802",
+    "Time": "17:00"
   },
   {
     "Nummer": 4,
     "Capaciteit": 2,
     "Status": "Available",
     "Persoon": "",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": null,
     "Time": null
@@ -40,6 +44,7 @@
     "Capaciteit": 2,
     "Status": "Unavailable",
     "Persoon": "",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": null,
     "Time": null
@@ -49,6 +54,7 @@
     "Capaciteit": 2,
     "Status": "Available",
     "Persoon": "",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": null,
     "Time": null
@@ -58,6 +64,7 @@
     "Capaciteit": 4,
     "Status": "Available",
     "Persoon": "",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": null,
     "Time": null
@@ -67,6 +74,7 @@
     "Capaciteit": 4,
     "Status": "Available",
     "Persoon": "",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": null,
     "Time": null
@@ -76,6 +84,7 @@
     "Capaciteit": 4,
     "Status": "Unavailable",
     "Persoon": "Ariano Bob",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": "30-00-2020",
     "Time": "19:00"
@@ -85,6 +94,7 @@
     "Capaciteit": 4,
     "Status": "Available",
     "Persoon": "Ariano Wongsosetro",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": "21-04-2020",
     "Time": "22:00"
@@ -94,6 +104,7 @@
     "Capaciteit": 4,
     "Status": "Available",
     "Persoon": "Jan Bob",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": "20-22-2020",
     "Time": "18:00"
@@ -103,6 +114,7 @@
     "Capaciteit": 6,
     "Status": "Available",
     "Persoon": "Ariano Wongsosetro",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": "20-04-2020",
     "Time": "21:00"
@@ -112,6 +124,7 @@
     "Capaciteit": 6,
     "Status": "Available",
     "Persoon": "Ariano Bob",
+    "Telefoon": null,
     "A_P_P": null,
     "D_reservering": "24-04-2020",
     "Time": "22:00"

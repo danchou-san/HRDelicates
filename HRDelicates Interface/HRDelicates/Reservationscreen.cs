@@ -68,6 +68,7 @@ namespace HRDelicates
             table_value.Text = table_combo.Text;
             date_value.Text = datum_box.Value.ToString("dd-MM-yyyy");
             time_value.Text = time_box.Text;
+            phone_value.Text = telefoon_Box.Text;
         }
 
         private void table_back_Click(object sender, EventArgs e)
@@ -102,6 +103,7 @@ namespace HRDelicates
             jsonObj[Int32.Parse(table_value.Text) - 1]["Persoon"] = name_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["D_reservering"] = date_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Time"] = time_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Telefoon"] = phone_value.Text;
 
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
             File.WriteAllText(path, output);
@@ -141,6 +143,31 @@ namespace HRDelicates
         }
 
         private void verification_screen_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void phone_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time_value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phone_value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_label_Click(object sender, EventArgs e)
         {
 
         }
