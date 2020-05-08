@@ -13,20 +13,20 @@
     "Nummer": 2,
     "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": "",
-    "Telefoon": null,
+    "Persoon": "asda asdas",
+    "Telefoon": "asd",
     "A_P_P": null,
-    "D_reservering": null,
-    "Time": null
+    "D_reservering": "09-05-2020",
+    "Time": "17:00"
   },
   {
     "Nummer": 3,
     "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": "Kevin Ling",
-    "Telefoon": null,
+    "Persoon": "kevin ling",
+    "Telefoon": "0616788802",
     "A_P_P": null,
-    "D_reservering": "0616788802",
+    "D_reservering": "09-05-2020",
     "Time": "17:00"
   },
   {
@@ -123,10 +123,10 @@
     "Nummer": 13,
     "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": "Ariano Bob",
-    "Telefoon": null,
+    "Persoon": "asdasd sadasd",
+    "Telefoon": "",
     "A_P_P": null,
-    "D_reservering": "24-04-2020",
-    "Time": "22:00"
+    "D_reservering": "09-05-2020",
+    "Time": "17:00"
   }
 ]

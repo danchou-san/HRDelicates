@@ -25,7 +25,7 @@ namespace HRDelicates
 
         private void Reservationscreen_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void verder_button_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace HRDelicates
                 }
             }
             dataGridView1.DataSource = dt;
-            
+
         }
 
         private void table_next_Click(object sender, EventArgs e)
@@ -203,6 +203,21 @@ namespace HRDelicates
             {
                 e.Cancel = false;
                 errorProvider1.SetError(achternaam_box, null);
+            }
+        }
+
+        private void telefoon_Box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(telefoon_Box.Text))
+            {
+                e.Cancel = true;
+                telefoon_Box.Focus();
+                errorProvider1.SetError(telefoon_Box, "Vul uw telefoonnummer in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(telefoon_Box, null);
             }
         }
     }
