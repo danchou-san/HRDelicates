@@ -64,6 +64,8 @@
             this.name_label = new System.Windows.Forms.Label();
             this.phone_value = new System.Windows.Forms.TextBox();
             this.confirmation_title = new System.Windows.Forms.Label();
+            this.date_label = new System.Windows.Forms.Label();
+            this.date_value = new System.Windows.Forms.TextBox();
             this.table_next = new System.Windows.Forms.Button();
             this.table_back = new System.Windows.Forms.Button();
             this.table_header_text = new System.Windows.Forms.Label();
@@ -74,8 +76,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.datum_box = new System.Windows.Forms.DateTimePicker();
             this.telefoon_Box = new System.Windows.Forms.TextBox();
-            this.date_label = new System.Windows.Forms.Label();
-            this.date_value = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -86,6 +87,7 @@
             this.table_panel.SuspendLayout();
             this.verification_panel.SuspendLayout();
             this.finish_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
@@ -100,6 +102,7 @@
             this.naam_box.Size = new System.Drawing.Size(411, 32);
             this.naam_box.TabIndex = 0;
             this.naam_box.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.naam_box.Validating += new System.ComponentModel.CancelEventHandler(this.naam_box_Validating);
             // 
             // achternaam_box
             // 
@@ -109,6 +112,7 @@
             this.achternaam_box.Name = "achternaam_box";
             this.achternaam_box.Size = new System.Drawing.Size(492, 32);
             this.achternaam_box.TabIndex = 1;
+            this.achternaam_box.Validating += new System.ComponentModel.CancelEventHandler(this.achternaam_box_Validating);
             // 
             // adres_box
             // 
@@ -328,10 +332,10 @@
             this.table_panel.Controls.Add(this.dataGridView1);
             this.table_panel.Controls.Add(this.time_box);
             this.table_panel.Controls.Add(this.label13);
-            this.table_panel.Location = new System.Drawing.Point(0, 0);
+            this.table_panel.Location = new System.Drawing.Point(4, 3);
             this.table_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.table_panel.Name = "table_panel";
-            this.table_panel.Size = new System.Drawing.Size(1183, 539);
+            this.table_panel.Size = new System.Drawing.Size(1183, 536);
             this.table_panel.TabIndex = 21;
             this.table_panel.Visible = false;
             // 
@@ -354,7 +358,7 @@
             this.verification_panel.Location = new System.Drawing.Point(0, 0);
             this.verification_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.verification_panel.Name = "verification_panel";
-            this.verification_panel.Size = new System.Drawing.Size(1183, 539);
+            this.verification_panel.Size = new System.Drawing.Size(1183, 536);
             this.verification_panel.TabIndex = 26;
             this.verification_panel.Visible = false;
             this.verification_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.verification_screen_Paint);
@@ -363,10 +367,10 @@
             // 
             this.finish_panel.Controls.Add(this.back_begin);
             this.finish_panel.Controls.Add(this.finish_text);
-            this.finish_panel.Location = new System.Drawing.Point(2, 0);
+            this.finish_panel.Location = new System.Drawing.Point(2, 2);
             this.finish_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.finish_panel.Name = "finish_panel";
-            this.finish_panel.Size = new System.Drawing.Size(1181, 539);
+            this.finish_panel.Size = new System.Drawing.Size(1181, 534);
             this.finish_panel.TabIndex = 39;
             this.finish_panel.Visible = false;
             // 
@@ -548,6 +552,33 @@
             this.confirmation_title.Text = "Controleer uw gegevens:";
             this.confirmation_title.Visible = false;
             // 
+            // date_label
+            // 
+            this.date_label.AutoSize = true;
+            this.date_label.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.date_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.date_label.Location = new System.Drawing.Point(257, 180);
+            this.date_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.date_label.Name = "date_label";
+            this.date_label.Size = new System.Drawing.Size(194, 23);
+            this.date_label.TabIndex = 40;
+            this.date_label.Text = "Datum reservering:";
+            this.date_label.Click += new System.EventHandler(this.date_label_Click);
+            // 
+            // date_value
+            // 
+            this.date_value.BackColor = System.Drawing.SystemColors.Control;
+            this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.date_value.Enabled = false;
+            this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_value.Location = new System.Drawing.Point(476, 179);
+            this.date_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.date_value.Name = "date_value";
+            this.date_value.ReadOnly = true;
+            this.date_value.Size = new System.Drawing.Size(600, 25);
+            this.date_value.TabIndex = 41;
+            this.date_value.TextChanged += new System.EventHandler(this.date_value_TextChanged);
+            // 
             // table_next
             // 
             this.table_next.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
@@ -682,32 +713,9 @@
             this.telefoon_Box.Size = new System.Drawing.Size(378, 32);
             this.telefoon_Box.TabIndex = 22;
             // 
-            // date_label
+            // errorProvider1
             // 
-            this.date_label.AutoSize = true;
-            this.date_label.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.date_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.date_label.Location = new System.Drawing.Point(257, 180);
-            this.date_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.date_label.Name = "date_label";
-            this.date_label.Size = new System.Drawing.Size(194, 23);
-            this.date_label.TabIndex = 40;
-            this.date_label.Text = "Datum reservering:";
-            this.date_label.Click += new System.EventHandler(this.date_label_Click);
-            // 
-            // date_value
-            // 
-            this.date_value.BackColor = System.Drawing.SystemColors.Control;
-            this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.date_value.Enabled = false;
-            this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_value.Location = new System.Drawing.Point(476, 179);
-            this.date_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.date_value.Name = "date_value";
-            this.date_value.ReadOnly = true;
-            this.date_value.Size = new System.Drawing.Size(600, 25);
-            this.date_value.TabIndex = 41;
-            this.date_value.TextChanged += new System.EventHandler(this.date_value_TextChanged);
+            this.errorProvider1.ContainerControl = this;
             // 
             // nummerDataGridViewTextBoxColumn
             // 
@@ -774,6 +782,7 @@
             this.verification_panel.PerformLayout();
             this.finish_panel.ResumeLayout(false);
             this.finish_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
@@ -833,5 +842,6 @@
         private System.Windows.Forms.TextBox telefoon_Box;
         private System.Windows.Forms.Label date_label;
         private System.Windows.Forms.TextBox date_value;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

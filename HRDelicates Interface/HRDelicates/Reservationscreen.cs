@@ -49,10 +49,6 @@ namespace HRDelicates
                     dr["Capaciteit"] = n.Capaciteit;
                     dt.Rows.Add(dr);
 
-                    table_header_text.Visible = true;
-                    table_panel.Visible = true;
-                    dataGridView1.Visible = true;
-
                     table_combo.Items.Add(dr["Nummer"]);
                 }
             }
@@ -170,6 +166,43 @@ namespace HRDelicates
         private void date_label_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void naam_box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(naam_box.Text))
+            {
+                e.Cancel = true;
+                naam_box.Focus();
+                errorProvider1.SetError(naam_box, "Vul uw voornaam in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(naam_box, null);
+                table_header_text.Visible = true;
+                table_panel.Visible = true;
+                dataGridView1.Visible = true;
+            }
+
+        }
+
+        private void achternaam_box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(achternaam_box.Text))
+            {
+                e.Cancel = true;
+                achternaam_box.Focus();
+                errorProvider1.SetError(achternaam_box, "Vul uw achternaam in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(achternaam_box, null);
+                table_header_text.Visible = true;
+                table_panel.Visible = true;
+                dataGridView1.Visible = true;
+            }
         }
     }
 }
