@@ -25,11 +25,18 @@ namespace HRDelicates
 
         private void Reservationscreen_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void verder_button_Click(object sender, EventArgs e)
         {
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                table_header_text.Visible = true;
+                table_panel.Visible = true;
+                dataGridView1.Visible = true;
+            }
+
             //personen_box.Value = value;
             var serializedStr = File.ReadAllText(path);
             var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
@@ -49,15 +56,11 @@ namespace HRDelicates
                     dr["Capaciteit"] = n.Capaciteit;
                     dt.Rows.Add(dr);
 
-                    table_header_text.Visible = true;
-                    table_panel.Visible = true;
-                    dataGridView1.Visible = true;
-
                     table_combo.Items.Add(dr["Nummer"]);
                 }
             }
             dataGridView1.DataSource = dt;
-            
+
         }
 
         private void table_next_Click(object sender, EventArgs e)
@@ -68,6 +71,7 @@ namespace HRDelicates
             table_value.Text = table_combo.Text;
             date_value.Text = datum_box.Value.ToString("dd-MM-yyyy");
             time_value.Text = time_box.Text;
+            phone_value.Text = telefoon_Box.Text;
         }
 
         private void table_back_Click(object sender, EventArgs e)
@@ -102,6 +106,7 @@ namespace HRDelicates
             jsonObj[Int32.Parse(table_value.Text) - 1]["Persoon"] = name_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["D_reservering"] = date_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Time"] = time_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Telefoon"] = phone_value.Text;
 
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
             File.WriteAllText(path, output);
@@ -143,6 +148,77 @@ namespace HRDelicates
         private void verification_screen_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void phone_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time_value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phone_value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_value_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void date_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void naam_box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(naam_box.Text))
+            {
+                e.Cancel = true;
+                naam_box.Focus();
+                errorProvider1.SetError(naam_box, "Vul uw voornaam in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(naam_box, null);
+            }
+
+        }
+
+        private void achternaam_box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(achternaam_box.Text))
+            {
+                e.Cancel = true;
+                achternaam_box.Focus();
+                errorProvider1.SetError(achternaam_box, "Vul uw achternaam in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(achternaam_box, null);
+            }
+        }
+
+        private void telefoon_Box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(telefoon_Box.Text))
+            {
+                e.Cancel = true;
+                telefoon_Box.Focus();
+                errorProvider1.SetError(telefoon_Box, "Vul uw telefoonnummer in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(telefoon_Box, null);
+            }
         }
     }
 }
