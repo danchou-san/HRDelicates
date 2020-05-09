@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< HEAD
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-=======
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
->>>>>>> Kevin
             this.naam_box = new System.Windows.Forms.TextBox();
             this.achternaam_box = new System.Windows.Forms.TextBox();
             this.adres_box = new System.Windows.Forms.TextBox();
@@ -83,11 +78,8 @@
             this.time_box = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.datum_box = new System.Windows.Forms.DateTimePicker();
-<<<<<<< HEAD
-=======
             this.telefoon_Box = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
->>>>>>> Kevin
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
@@ -96,10 +88,7 @@
             this.table_panel.SuspendLayout();
             this.verification_panel.SuspendLayout();
             this.finish_panel.SuspendLayout();
-<<<<<<< HEAD
-=======
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
->>>>>>> Kevin
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -284,16 +273,6 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-<<<<<<< HEAD
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-=======
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -302,22 +281,11 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
->>>>>>> Kevin
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nummerDataGridViewTextBoxColumn,
             this.capaciteitDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tablesBindingSource2;
-<<<<<<< HEAD
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-=======
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -326,7 +294,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
->>>>>>> Kevin
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(63, 94);
             this.dataGridView1.Name = "dataGridView1";
@@ -341,10 +308,7 @@
             this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
             this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
-<<<<<<< HEAD
-=======
             this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
->>>>>>> Kevin
             this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
             this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -353,10 +317,7 @@
             this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
             this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
-<<<<<<< HEAD
-=======
             this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
->>>>>>> Kevin
             this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
             this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -411,11 +372,7 @@
             this.finish_panel.Controls.Add(this.finish_text);
             this.finish_panel.Location = new System.Drawing.Point(0, 0);
             this.finish_panel.Name = "finish_panel";
-<<<<<<< HEAD
-            this.finish_panel.Size = new System.Drawing.Size(890, 467);
-=======
             this.finish_panel.Size = new System.Drawing.Size(890, 468);
->>>>>>> Kevin
             this.finish_panel.TabIndex = 39;
             this.finish_panel.Visible = false;
             // 
@@ -725,8 +682,6 @@
             this.datum_box.Size = new System.Drawing.Size(284, 27);
             this.datum_box.TabIndex = 7;
             // 
-<<<<<<< HEAD
-=======
             // telefoon_Box
             // 
             this.telefoon_Box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -740,7 +695,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
->>>>>>> Kevin
             // tablesBindingSource1
             // 
             this.tablesBindingSource1.DataSource = typeof(HRDelicates.Tables);
@@ -784,10 +738,7 @@
             this.verification_panel.PerformLayout();
             this.finish_panel.ResumeLayout(false);
             this.finish_panel.PerformLayout();
-<<<<<<< HEAD
-=======
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
->>>>>>> Kevin
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
             this.ResumeLayout(false);
