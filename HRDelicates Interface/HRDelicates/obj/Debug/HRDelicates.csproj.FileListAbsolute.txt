@@ -1,12 +1,66 @@
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\bin\Debug\HRDelicates.exe.config
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\bin\Debug\HRDelicates.exe
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\bin\Debug\HRDelicates.pdb
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.Form1.resources
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.Properties.Resources.resources
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.csproj.GenerateResource.cache
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.csproj.CoreCompileInputs.cache
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.exe
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.pdb
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.Startscreen.resources
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.Contactscreen.resources
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\bin\Debug\Newtonsoft.Json.dll
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\bin\Debug\Newtonsoft.Json.xml
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.csproj.CopyComplete
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.Menuscreen.resources
+C:\Users\arian\source\repos\HRDelicates\HRDelicates\obj\Debug\HRDelicates.Reservationscreen.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.exe.config
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.exe
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.pdb
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Newtonsoft.Json.dll
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Newtonsoft.Json.xml
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Contactscreen.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Form1.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Menuscreen.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Properties.Resources.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Reservationscreen.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Startscreen.resources
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.GenerateResource.cache
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CoreCompileInputs.cache
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CopyComplete
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
+<<<<<<< HEAD
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Adminscreen.resources
+=======
+C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csprojAssemblyReference.cache
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.exe.config
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.exe
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.pdb
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Newtonsoft.Json.dll
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Newtonsoft.Json.xml
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csprojAssemblyReference.cache
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Contactscreen.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Form1.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Menuscreen.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Properties.Resources.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Reservationscreen.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Startscreen.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.GenerateResource.cache
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CoreCompileInputs.cache
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CopyComplete
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
+>>>>>>> Kevin
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.exe.config
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.exe
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\HRDelicates.pdb
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Newtonsoft.Json.dll
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Newtonsoft.Json.xml
+C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csprojAssemblyReference.cache
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Adminscreen.resources
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Contactscreen.resources
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Form1.resources
-C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Introscreen.resources
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Menuscreen.resources
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Properties.Resources.resources
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Reservationscreen.resources
@@ -16,6 +70,3 @@ C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\o
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CopyComplete
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
-C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csprojAssemblyReference.cache
-C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Dishes.cs
-C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\bin\Debug\Tables.cs

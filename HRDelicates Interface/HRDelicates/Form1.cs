@@ -20,7 +20,6 @@ namespace HRDelicates
         {
             InitializeComponent();
             startscreen1.BringToFront();
-            introscreen1.BringToFront();
             screen_active = "home";
             home_text.Visible = true;
 
@@ -94,7 +93,7 @@ namespace HRDelicates
 
         private void admin_Click(object sender, EventArgs e)
         {
-            //adminscreen1.BringToFront();
+            adminscreen1.BringToFront();
             screen_active = "admin";
             admin_text.Visible = true;
             reserve_text.Visible = false;
@@ -241,11 +240,6 @@ namespace HRDelicates
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void introscreen1_Load(object sender, EventArgs e)
         {
 
         }
