@@ -214,6 +214,12 @@ namespace HRDelicates
                 telefoon_Box.Focus();
                 errorProvider1.SetError(telefoon_Box, "Vul uw telefoonnummer in.");
             }
+            else if (telefoon_Box.Text.ToLower().IndexOf('s') != -1)
+            {
+                e.Cancel = true;
+                telefoon_Box.Focus();
+                errorProvider1.SetError(telefoon_Box, "Vul een geldige telefoonnummer in.");
+            }
             else
             {
                 e.Cancel = false;

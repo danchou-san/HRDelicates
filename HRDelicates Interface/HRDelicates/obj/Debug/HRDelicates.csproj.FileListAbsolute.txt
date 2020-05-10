@@ -71,3 +71,5 @@ C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\o
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
 C:\Users\awong\Desktop\GitKraken\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
 C:\Users\arian\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Introscreen.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Adminscreen.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Introscreen.resources
