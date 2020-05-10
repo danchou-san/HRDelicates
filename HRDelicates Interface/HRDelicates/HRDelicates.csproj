@@ -67,7 +67,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dishes.cs" />
+    <Compile Include="Dishes.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Introscreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Introscreen.Designer.cs">
+      <DependentUpon>Introscreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menuscreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -88,7 +96,9 @@
     <Compile Include="Startscreen.Designer.cs">
       <DependentUpon>Startscreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tables.cs" />
+    <Compile Include="Tables.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <EmbeddedResource Include="Adminscreen.resx">
       <DependentUpon>Adminscreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introscreen.resx">
+      <DependentUpon>Introscreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menuscreen.resx">
       <DependentUpon>Menuscreen.cs</DependentUpon>
