@@ -85,6 +85,7 @@ namespace HRDelicates
         private void confirmation_back_Click(object sender, EventArgs e)
         {
             verification_panel.Visible = false;
+            table_panel.Visible = true;
         }
 
         private void confirm_button_Click(object sender, EventArgs e)
@@ -260,5 +261,10 @@ namespace HRDelicates
                 errorProvider1.SetError(email_box, null);
                 }
             }
+
+        private void finish_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
