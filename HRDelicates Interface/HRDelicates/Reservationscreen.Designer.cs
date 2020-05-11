@@ -48,9 +48,6 @@
             this.personen_box = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.table_panel = new System.Windows.Forms.Panel();
             this.verification_panel = new System.Windows.Forms.Panel();
             this.finish_panel = new System.Windows.Forms.Panel();
@@ -80,16 +77,23 @@
             this.datum_box = new System.Windows.Forms.DateTimePicker();
             this.telefoon_Box = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Verplicht_text = new System.Windows.Forms.Label();
+            this.email_box = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label_email = new System.Windows.Forms.Label();
+            this.email_value = new System.Windows.Forms.TextBox();
+            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Verplicht_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
             this.table_panel.SuspendLayout();
             this.verification_panel.SuspendLayout();
             this.finish_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -240,7 +244,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label8.Location = new System.Drawing.Point(683, 211);
+            this.label8.Location = new System.Drawing.Point(842, 207);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(162, 21);
@@ -250,7 +254,7 @@
             // personen_box
             // 
             this.personen_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.personen_box.Location = new System.Drawing.Point(539, 235);
+            this.personen_box.Location = new System.Drawing.Point(711, 234);
             this.personen_box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.personen_box.Maximum = new decimal(new int[] {
             6,
@@ -263,7 +267,7 @@
             0,
             0});
             this.personen_box.Name = "personen_box";
-            this.personen_box.Size = new System.Drawing.Size(117, 32);
+            this.personen_box.Size = new System.Drawing.Size(105, 32);
             this.personen_box.TabIndex = 17;
             this.personen_box.Value = new decimal(new int[] {
             1,
@@ -275,7 +279,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label9.Location = new System.Drawing.Point(535, 211);
+            this.label9.Location = new System.Drawing.Point(707, 210);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 21);
@@ -321,33 +325,12 @@
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.Visible = false;
             // 
-            // nummerDataGridViewTextBoxColumn
-            // 
-            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
-            this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // capaciteitDataGridViewTextBoxColumn
-            // 
-            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
-            this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tablesBindingSource2
-            // 
-            this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
-            // 
             // table_panel
             // 
+            this.table_panel.Controls.Add(this.finish_panel);
             this.table_panel.Controls.Add(this.verification_panel);
-            this.table_panel.Controls.Add(this.table_next);
             this.table_panel.Controls.Add(this.table_back);
+            this.table_panel.Controls.Add(this.table_next);
             this.table_panel.Controls.Add(this.table_header_text);
             this.table_panel.Controls.Add(this.label11);
             this.table_panel.Controls.Add(this.label10);
@@ -358,42 +341,43 @@
             this.table_panel.Location = new System.Drawing.Point(0, 0);
             this.table_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.table_panel.Name = "table_panel";
-            this.table_panel.Size = new System.Drawing.Size(1183, 539);
+            this.table_panel.Size = new System.Drawing.Size(1187, 536);
             this.table_panel.TabIndex = 21;
             this.table_panel.Visible = false;
             // 
             // verification_panel
             // 
-            this.verification_panel.Controls.Add(this.finish_panel);
-            this.verification_panel.Controls.Add(this.confirmation_back);
             this.verification_panel.Controls.Add(this.confirm_button);
-            this.verification_panel.Controls.Add(this.tijd_label);
+            this.verification_panel.Controls.Add(this.confirmation_back);
+            this.verification_panel.Controls.Add(this.email_value);
             this.verification_panel.Controls.Add(this.time_value);
             this.verification_panel.Controls.Add(this.table_value);
             this.verification_panel.Controls.Add(this.name_value);
+            this.verification_panel.Controls.Add(this.phone_value);
+            this.verification_panel.Controls.Add(this.date_value);
+            this.verification_panel.Controls.Add(this.tijd_label);
+            this.verification_panel.Controls.Add(this.label_email);
             this.verification_panel.Controls.Add(this.table_label);
             this.verification_panel.Controls.Add(this.phone_label);
             this.verification_panel.Controls.Add(this.name_label);
-            this.verification_panel.Controls.Add(this.phone_value);
             this.verification_panel.Controls.Add(this.confirmation_title);
             this.verification_panel.Controls.Add(this.date_label);
-            this.verification_panel.Controls.Add(this.date_value);
-            this.verification_panel.Location = new System.Drawing.Point(0, 3);
+            this.verification_panel.Location = new System.Drawing.Point(4, 3);
             this.verification_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.verification_panel.Name = "verification_panel";
-            this.verification_panel.Size = new System.Drawing.Size(1187, 536);
+            this.verification_panel.Size = new System.Drawing.Size(1183, 533);
             this.verification_panel.TabIndex = 26;
             this.verification_panel.Visible = false;
             this.verification_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.verification_screen_Paint);
             // 
             // finish_panel
             // 
-            this.finish_panel.Controls.Add(this.back_begin);
             this.finish_panel.Controls.Add(this.finish_text);
-            this.finish_panel.Location = new System.Drawing.Point(4, 0);
+            this.finish_panel.Controls.Add(this.back_begin);
+            this.finish_panel.Location = new System.Drawing.Point(3, 0);
             this.finish_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.finish_panel.Name = "finish_panel";
-            this.finish_panel.Size = new System.Drawing.Size(1179, 536);
+            this.finish_panel.Size = new System.Drawing.Size(1184, 536);
             this.finish_panel.TabIndex = 39;
             this.finish_panel.Visible = false;
             // 
@@ -433,7 +417,7 @@
             this.confirmation_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confirmation_back.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.confirmation_back.ForeColor = System.Drawing.Color.White;
-            this.confirmation_back.Location = new System.Drawing.Point(353, 283);
+            this.confirmation_back.Location = new System.Drawing.Point(353, 315);
             this.confirmation_back.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.confirmation_back.Name = "confirmation_back";
             this.confirmation_back.Size = new System.Drawing.Size(227, 70);
@@ -450,7 +434,7 @@
             this.confirm_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confirm_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.confirm_button.ForeColor = System.Drawing.Color.White;
-            this.confirm_button.Location = new System.Drawing.Point(588, 283);
+            this.confirm_button.Location = new System.Drawing.Point(600, 315);
             this.confirm_button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.confirm_button.Name = "confirm_button";
             this.confirm_button.Size = new System.Drawing.Size(227, 70);
@@ -464,7 +448,7 @@
             this.tijd_label.AutoSize = true;
             this.tijd_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.tijd_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tijd_label.Location = new System.Drawing.Point(257, 211);
+            this.tijd_label.Location = new System.Drawing.Point(257, 242);
             this.tijd_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tijd_label.Name = "tijd_label";
             this.tijd_label.Size = new System.Drawing.Size(43, 23);
@@ -477,7 +461,7 @@
             this.time_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.time_value.Enabled = false;
             this.time_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time_value.Location = new System.Drawing.Point(308, 211);
+            this.time_value.Location = new System.Drawing.Point(308, 240);
             this.time_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.time_value.Name = "time_value";
             this.time_value.ReadOnly = true;
@@ -491,7 +475,7 @@
             this.table_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.table_value.Enabled = false;
             this.table_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.table_value.Location = new System.Drawing.Point(325, 242);
+            this.table_value.Location = new System.Drawing.Point(325, 267);
             this.table_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.table_value.Name = "table_value";
             this.table_value.ReadOnly = true;
@@ -517,7 +501,7 @@
             this.table_label.AutoSize = true;
             this.table_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.table_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.table_label.Location = new System.Drawing.Point(257, 242);
+            this.table_label.Location = new System.Drawing.Point(256, 269);
             this.table_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.table_label.Name = "table_label";
             this.table_label.Size = new System.Drawing.Size(61, 23);
@@ -580,7 +564,7 @@
             this.date_label.AutoSize = true;
             this.date_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.date_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.date_label.Location = new System.Drawing.Point(257, 180);
+            this.date_label.Location = new System.Drawing.Point(257, 214);
             this.date_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.date_label.Name = "date_label";
             this.date_label.Size = new System.Drawing.Size(194, 23);
@@ -594,7 +578,7 @@
             this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.date_value.Enabled = false;
             this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_value.Location = new System.Drawing.Point(476, 179);
+            this.date_value.Location = new System.Drawing.Point(463, 214);
             this.date_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.date_value.Name = "date_value";
             this.date_value.ReadOnly = true;
@@ -720,11 +704,11 @@
             // datum_box
             // 
             this.datum_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datum_box.Location = new System.Drawing.Point(685, 235);
+            this.datum_box.Location = new System.Drawing.Point(846, 234);
             this.datum_box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.datum_box.MinDate = new System.DateTime(2020, 4, 20, 0, 0, 0, 0);
             this.datum_box.Name = "datum_box";
-            this.datum_box.Size = new System.Drawing.Size(377, 32);
+            this.datum_box.Size = new System.Drawing.Size(225, 32);
             this.datum_box.TabIndex = 7;
             // 
             // telefoon_Box
@@ -733,21 +717,13 @@
             this.telefoon_Box.Location = new System.Drawing.Point(131, 234);
             this.telefoon_Box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.telefoon_Box.Name = "telefoon_Box";
-            this.telefoon_Box.Size = new System.Drawing.Size(377, 32);
+            this.telefoon_Box.Size = new System.Drawing.Size(244, 32);
             this.telefoon_Box.TabIndex = 22;
             this.telefoon_Box.Validating += new System.ComponentModel.CancelEventHandler(this.telefoon_Box_Validating);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // tablesBindingSource1
-            // 
-            this.tablesBindingSource1.DataSource = typeof(HRDelicates.Tables);
-            // 
-            // tablesBindingSource
-            // 
-            this.tablesBindingSource.DataSource = typeof(HRDelicates.Tables);
             // 
             // Verplicht_text
             // 
@@ -759,6 +735,82 @@
             this.Verplicht_text.Size = new System.Drawing.Size(141, 17);
             this.Verplicht_text.TabIndex = 23;
             this.Verplicht_text.Text = "* Verplichte velden";
+            // 
+            // email_box
+            // 
+            this.email_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_box.Location = new System.Drawing.Point(403, 233);
+            this.email_box.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.email_box.Name = "email_box";
+            this.email_box.Size = new System.Drawing.Size(271, 32);
+            this.email_box.TabIndex = 24;
+            this.email_box.Validating += new System.ComponentModel.CancelEventHandler(this.email_box_Validating);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label12.Location = new System.Drawing.Point(399, 209);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 21);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "Email *";
+            // 
+            // label_email
+            // 
+            this.label_email.AutoSize = true;
+            this.label_email.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label_email.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label_email.Location = new System.Drawing.Point(256, 181);
+            this.label_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_email.Name = "label_email";
+            this.label_email.Size = new System.Drawing.Size(67, 23);
+            this.label_email.TabIndex = 42;
+            this.label_email.Text = "Email:";
+            // 
+            // email_value
+            // 
+            this.email_value.BackColor = System.Drawing.SystemColors.Control;
+            this.email_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_value.Enabled = false;
+            this.email_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_value.Location = new System.Drawing.Point(331, 182);
+            this.email_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.email_value.Name = "email_value";
+            this.email_value.ReadOnly = true;
+            this.email_value.Size = new System.Drawing.Size(594, 25);
+            this.email_value.TabIndex = 43;
+            // 
+            // nummerDataGridViewTextBoxColumn
+            // 
+            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
+            this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // capaciteitDataGridViewTextBoxColumn
+            // 
+            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
+            this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tablesBindingSource2
+            // 
+            this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
+            // 
+            // tablesBindingSource1
+            // 
+            this.tablesBindingSource1.DataSource = typeof(HRDelicates.Tables);
+            // 
+            // tablesBindingSource
+            // 
+            this.tablesBindingSource.DataSource = typeof(HRDelicates.Tables);
             // 
             // Reservationscreen
             // 
@@ -784,13 +836,14 @@
             this.Controls.Add(this.naam_box);
             this.Controls.Add(this.telefoon_Box);
             this.Controls.Add(this.Verplicht_text);
+            this.Controls.Add(this.email_box);
+            this.Controls.Add(this.label12);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Reservationscreen";
             this.Size = new System.Drawing.Size(1187, 539);
             this.Load += new System.EventHandler(this.Reservationscreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             this.table_panel.ResumeLayout(false);
             this.table_panel.PerformLayout();
             this.verification_panel.ResumeLayout(false);
@@ -798,6 +851,7 @@
             this.finish_panel.ResumeLayout(false);
             this.finish_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -858,5 +912,9 @@
         private System.Windows.Forms.TextBox date_value;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label Verplicht_text;
+        private System.Windows.Forms.TextBox email_box;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox email_value;
+        private System.Windows.Forms.Label label_email;
     }
 }

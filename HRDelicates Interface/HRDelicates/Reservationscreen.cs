@@ -72,6 +72,7 @@ namespace HRDelicates
             date_value.Text = datum_box.Value.ToString("dd-MM-yyyy");
             time_value.Text = time_box.Text;
             phone_value.Text = telefoon_Box.Text;
+            email_value.Text = email_box.Text;
         }
 
         private void table_back_Click(object sender, EventArgs e)
@@ -107,7 +108,7 @@ namespace HRDelicates
             jsonObj[Int32.Parse(table_value.Text) - 1]["D_reservering"] = date_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Time"] = time_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Telefoon"] = phone_value.Text;
-
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Email"] = email_value.Text;
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
             File.WriteAllText(path, output);
 
@@ -220,13 +221,13 @@ namespace HRDelicates
                 telefoon_Box.Focus();
                 errorProvider1.SetError(telefoon_Box, "Vul een geldige telefoonnummer in.");
             }
-            else if (telefoon_Box.Text.Length!= 10)
+            else if (!telefoon_Box.Text.StartsWith("06") && (!telefoon_Box.Text.StartsWith("010")))
             {
                 e.Cancel = true;
                 telefoon_Box.Focus();
                 errorProvider1.SetError(telefoon_Box, "Vul een geldige telefoonnummer in.");
             }
-            else if (!telefoon_Box.Text.StartsWith("06"))
+            else if (telefoon_Box.Text.Length != 10)
             {
                 e.Cancel = true;
                 telefoon_Box.Focus();
@@ -238,5 +239,26 @@ namespace HRDelicates
                 errorProvider1.SetError(telefoon_Box, null);
             }
         }
+
+        private void email_box_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(email_box.Text))
+            {
+                e.Cancel = true;
+                email_box.Focus();
+                errorProvider1.SetError(email_box, "Vul uw email in.");
+            }
+            else if(!email_box.Text.Contains("@") || (!email_box.Text.EndsWith(".com")))
+            {
+                e.Cancel = true;
+                email_box.Focus();
+                errorProvider1.SetError(email_box, "Vul een geldige email in.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(email_box, null);
+                }
+            }
     }
 }
