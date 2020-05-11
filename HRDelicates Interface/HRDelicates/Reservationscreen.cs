@@ -35,31 +35,31 @@ namespace HRDelicates
                 table_header_text.Visible = true;
                 table_panel.Visible = true;
                 dataGridView1.Visible = true;
-            }
 
-            //personen_box.Value = value;
-            var serializedStr = File.ReadAllText(path);
-            var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
-            //var personen_value = Convert.ToInt32(personen_box.Value);
+                //personen_box.Value = value;
+                var serializedStr = File.ReadAllText(path);
+                var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
+                //var personen_value = Convert.ToInt32(personen_box.Value);
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("Nummer");
-            dt.Columns.Add("Capaciteit");
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Nummer");
+                dt.Columns.Add("Capaciteit");
 
-            foreach (var n in tables)
-            {
-                var capaciteit = Convert.ToInt32(n.Capaciteit);
-                if (n.Status == "Available" && capaciteit >= personen_box.Value)
+                foreach (var n in tables)
                 {
-                    DataRow dr = dt.NewRow();
-                    dr["Nummer"] = n.Nummer;
-                    dr["Capaciteit"] = n.Capaciteit;
-                    dt.Rows.Add(dr);
+                    var capaciteit = Convert.ToInt32(n.Capaciteit);
+                    if (n.Status == "Available" && capaciteit >= personen_box.Value)
+                    {
+                        DataRow dr = dt.NewRow();
+                        dr["Nummer"] = n.Nummer;
+                        dr["Capaciteit"] = n.Capaciteit;
+                        dt.Rows.Add(dr);
 
-                    table_combo.Items.Add(dr["Nummer"]);
+                        table_combo.Items.Add(dr["Nummer"]);
+                    }
                 }
+                dataGridView1.DataSource = dt;
             }
-            dataGridView1.DataSource = dt;
 
         }
 
