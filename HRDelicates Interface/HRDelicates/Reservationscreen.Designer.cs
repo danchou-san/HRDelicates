@@ -48,26 +48,31 @@
             this.personen_box = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.table_panel = new System.Windows.Forms.Panel();
-            this.verification_panel = new System.Windows.Forms.Panel();
             this.finish_panel = new System.Windows.Forms.Panel();
-            this.back_begin = new System.Windows.Forms.Button();
             this.finish_text = new System.Windows.Forms.Label();
-            this.confirmation_back = new System.Windows.Forms.Button();
+            this.back_begin = new System.Windows.Forms.Button();
+            this.verification_panel = new System.Windows.Forms.Panel();
             this.confirm_button = new System.Windows.Forms.Button();
-            this.tijd_label = new System.Windows.Forms.Label();
+            this.confirmation_back = new System.Windows.Forms.Button();
+            this.email_value = new System.Windows.Forms.TextBox();
             this.time_value = new System.Windows.Forms.TextBox();
             this.table_value = new System.Windows.Forms.TextBox();
             this.name_value = new System.Windows.Forms.TextBox();
+            this.phone_value = new System.Windows.Forms.TextBox();
+            this.date_value = new System.Windows.Forms.TextBox();
+            this.tijd_label = new System.Windows.Forms.Label();
+            this.label_email = new System.Windows.Forms.Label();
             this.table_label = new System.Windows.Forms.Label();
             this.phone_label = new System.Windows.Forms.Label();
             this.name_label = new System.Windows.Forms.Label();
-            this.phone_value = new System.Windows.Forms.TextBox();
             this.confirmation_title = new System.Windows.Forms.Label();
             this.date_label = new System.Windows.Forms.Label();
-            this.date_value = new System.Windows.Forms.TextBox();
-            this.table_next = new System.Windows.Forms.Button();
             this.table_back = new System.Windows.Forms.Button();
+            this.table_next = new System.Windows.Forms.Button();
             this.table_header_text = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -80,20 +85,15 @@
             this.Verplicht_text = new System.Windows.Forms.Label();
             this.email_box = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label_email = new System.Windows.Forms.Label();
-            this.email_value = new System.Windows.Forms.TextBox();
-            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.table_panel.SuspendLayout();
-            this.verification_panel.SuspendLayout();
-            this.finish_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
+            this.table_panel.SuspendLayout();
+            this.finish_panel.SuspendLayout();
+            this.verification_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -325,6 +325,28 @@
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.Visible = false;
             // 
+            // nummerDataGridViewTextBoxColumn
+            // 
+            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
+            this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // capaciteitDataGridViewTextBoxColumn
+            // 
+            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
+            this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tablesBindingSource2
+            // 
+            this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
+            // 
             // table_panel
             // 
             this.table_panel.Controls.Add(this.finish_panel);
@@ -344,6 +366,45 @@
             this.table_panel.Size = new System.Drawing.Size(1187, 536);
             this.table_panel.TabIndex = 21;
             this.table_panel.Visible = false;
+            // 
+            // finish_panel
+            // 
+            this.finish_panel.Controls.Add(this.finish_text);
+            this.finish_panel.Controls.Add(this.back_begin);
+            this.finish_panel.Location = new System.Drawing.Point(3, 0);
+            this.finish_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.finish_panel.Name = "finish_panel";
+            this.finish_panel.Size = new System.Drawing.Size(1184, 536);
+            this.finish_panel.TabIndex = 39;
+            this.finish_panel.Visible = false;
+            // 
+            // finish_text
+            // 
+            this.finish_text.AutoSize = true;
+            this.finish_text.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.finish_text.Location = new System.Drawing.Point(432, 164);
+            this.finish_text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.finish_text.Name = "finish_text";
+            this.finish_text.Size = new System.Drawing.Size(303, 33);
+            this.finish_text.TabIndex = 40;
+            this.finish_text.Text = "U heeft gereserveerd!";
+            this.finish_text.Visible = false;
+            // 
+            // back_begin
+            // 
+            this.back_begin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.back_begin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_begin.FlatAppearance.BorderSize = 0;
+            this.back_begin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_begin.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.back_begin.ForeColor = System.Drawing.Color.White;
+            this.back_begin.Location = new System.Drawing.Point(459, 257);
+            this.back_begin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.back_begin.Name = "back_begin";
+            this.back_begin.Size = new System.Drawing.Size(264, 70);
+            this.back_begin.TabIndex = 40;
+            this.back_begin.Text = "Terug naar reserveren";
+            this.back_begin.UseVisualStyleBackColor = false;
             // 
             // verification_panel
             // 
@@ -370,44 +431,22 @@
             this.verification_panel.Visible = false;
             this.verification_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.verification_screen_Paint);
             // 
-            // finish_panel
+            // confirm_button
             // 
-            this.finish_panel.Controls.Add(this.finish_text);
-            this.finish_panel.Controls.Add(this.back_begin);
-            this.finish_panel.Location = new System.Drawing.Point(3, 0);
-            this.finish_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.finish_panel.Name = "finish_panel";
-            this.finish_panel.Size = new System.Drawing.Size(1184, 536);
-            this.finish_panel.TabIndex = 39;
-            this.finish_panel.Visible = false;
-            // 
-            // back_begin
-            // 
-            this.back_begin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
-            this.back_begin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_begin.FlatAppearance.BorderSize = 0;
-            this.back_begin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back_begin.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.back_begin.ForeColor = System.Drawing.Color.White;
-            this.back_begin.Location = new System.Drawing.Point(459, 257);
-            this.back_begin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.back_begin.Name = "back_begin";
-            this.back_begin.Size = new System.Drawing.Size(264, 70);
-            this.back_begin.TabIndex = 40;
-            this.back_begin.Text = "Terug naar reserveren";
-            this.back_begin.UseVisualStyleBackColor = false;
-            // 
-            // finish_text
-            // 
-            this.finish_text.AutoSize = true;
-            this.finish_text.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.finish_text.Location = new System.Drawing.Point(432, 164);
-            this.finish_text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.finish_text.Name = "finish_text";
-            this.finish_text.Size = new System.Drawing.Size(303, 33);
-            this.finish_text.TabIndex = 40;
-            this.finish_text.Text = "U heeft gereserveerd!";
-            this.finish_text.Visible = false;
+            this.confirm_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.confirm_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirm_button.FlatAppearance.BorderSize = 0;
+            this.confirm_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confirm_button.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.confirm_button.ForeColor = System.Drawing.Color.White;
+            this.confirm_button.Location = new System.Drawing.Point(600, 315);
+            this.confirm_button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.confirm_button.Name = "confirm_button";
+            this.confirm_button.Size = new System.Drawing.Size(227, 70);
+            this.confirm_button.TabIndex = 29;
+            this.confirm_button.Text = "Reserveren";
+            this.confirm_button.UseVisualStyleBackColor = false;
+            this.confirm_button.Click += new System.EventHandler(this.confirm_button_Click);
             // 
             // confirmation_back
             // 
@@ -426,34 +465,18 @@
             this.confirmation_back.UseVisualStyleBackColor = false;
             this.confirmation_back.Click += new System.EventHandler(this.confirmation_back_Click);
             // 
-            // confirm_button
+            // email_value
             // 
-            this.confirm_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
-            this.confirm_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.confirm_button.FlatAppearance.BorderSize = 0;
-            this.confirm_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.confirm_button.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.confirm_button.ForeColor = System.Drawing.Color.White;
-            this.confirm_button.Location = new System.Drawing.Point(600, 315);
-            this.confirm_button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.confirm_button.Name = "confirm_button";
-            this.confirm_button.Size = new System.Drawing.Size(227, 70);
-            this.confirm_button.TabIndex = 29;
-            this.confirm_button.Text = "Reserveren";
-            this.confirm_button.UseVisualStyleBackColor = false;
-            this.confirm_button.Click += new System.EventHandler(this.confirm_button_Click);
-            // 
-            // tijd_label
-            // 
-            this.tijd_label.AutoSize = true;
-            this.tijd_label.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.tijd_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tijd_label.Location = new System.Drawing.Point(257, 242);
-            this.tijd_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.tijd_label.Name = "tijd_label";
-            this.tijd_label.Size = new System.Drawing.Size(43, 23);
-            this.tijd_label.TabIndex = 37;
-            this.tijd_label.Text = "Tijd:";
+            this.email_value.BackColor = System.Drawing.SystemColors.Control;
+            this.email_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.email_value.Enabled = false;
+            this.email_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_value.Location = new System.Drawing.Point(331, 182);
+            this.email_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.email_value.Name = "email_value";
+            this.email_value.ReadOnly = true;
+            this.email_value.Size = new System.Drawing.Size(594, 25);
+            this.email_value.TabIndex = 43;
             // 
             // time_value
             // 
@@ -496,6 +519,58 @@
             this.name_value.TabIndex = 34;
             this.name_value.TextChanged += new System.EventHandler(this.name_value_TextChanged);
             // 
+            // phone_value
+            // 
+            this.phone_value.BackColor = System.Drawing.SystemColors.Control;
+            this.phone_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.phone_value.Enabled = false;
+            this.phone_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phone_value.Location = new System.Drawing.Point(444, 149);
+            this.phone_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.phone_value.Name = "phone_value";
+            this.phone_value.ReadOnly = true;
+            this.phone_value.Size = new System.Drawing.Size(600, 25);
+            this.phone_value.TabIndex = 28;
+            this.phone_value.TextChanged += new System.EventHandler(this.phone_value_TextChanged);
+            // 
+            // date_value
+            // 
+            this.date_value.BackColor = System.Drawing.SystemColors.Control;
+            this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.date_value.Enabled = false;
+            this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_value.Location = new System.Drawing.Point(463, 214);
+            this.date_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.date_value.Name = "date_value";
+            this.date_value.ReadOnly = true;
+            this.date_value.Size = new System.Drawing.Size(600, 25);
+            this.date_value.TabIndex = 41;
+            this.date_value.TextChanged += new System.EventHandler(this.date_value_TextChanged);
+            // 
+            // tijd_label
+            // 
+            this.tijd_label.AutoSize = true;
+            this.tijd_label.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.tijd_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tijd_label.Location = new System.Drawing.Point(257, 242);
+            this.tijd_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tijd_label.Name = "tijd_label";
+            this.tijd_label.Size = new System.Drawing.Size(43, 23);
+            this.tijd_label.TabIndex = 37;
+            this.tijd_label.Text = "Tijd:";
+            // 
+            // label_email
+            // 
+            this.label_email.AutoSize = true;
+            this.label_email.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label_email.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label_email.Location = new System.Drawing.Point(256, 181);
+            this.label_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_email.Name = "label_email";
+            this.label_email.Size = new System.Drawing.Size(67, 23);
+            this.label_email.TabIndex = 42;
+            this.label_email.Text = "Email:";
+            // 
             // table_label
             // 
             this.table_label.AutoSize = true;
@@ -533,20 +608,6 @@
             this.name_label.TabIndex = 29;
             this.name_label.Text = "Volledige naam:";
             // 
-            // phone_value
-            // 
-            this.phone_value.BackColor = System.Drawing.SystemColors.Control;
-            this.phone_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.phone_value.Enabled = false;
-            this.phone_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone_value.Location = new System.Drawing.Point(444, 149);
-            this.phone_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.phone_value.Name = "phone_value";
-            this.phone_value.ReadOnly = true;
-            this.phone_value.Size = new System.Drawing.Size(600, 25);
-            this.phone_value.TabIndex = 28;
-            this.phone_value.TextChanged += new System.EventHandler(this.phone_value_TextChanged);
-            // 
             // confirmation_title
             // 
             this.confirmation_title.AutoSize = true;
@@ -572,19 +633,22 @@
             this.date_label.Text = "Datum reservering:";
             this.date_label.Click += new System.EventHandler(this.date_label_Click);
             // 
-            // date_value
+            // table_back
             // 
-            this.date_value.BackColor = System.Drawing.SystemColors.Control;
-            this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.date_value.Enabled = false;
-            this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_value.Location = new System.Drawing.Point(463, 214);
-            this.date_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.date_value.Name = "date_value";
-            this.date_value.ReadOnly = true;
-            this.date_value.Size = new System.Drawing.Size(600, 25);
-            this.date_value.TabIndex = 41;
-            this.date_value.TextChanged += new System.EventHandler(this.date_value_TextChanged);
+            this.table_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.table_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table_back.FlatAppearance.BorderSize = 0;
+            this.table_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table_back.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table_back.ForeColor = System.Drawing.Color.White;
+            this.table_back.Location = new System.Drawing.Point(651, 273);
+            this.table_back.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.table_back.Name = "table_back";
+            this.table_back.Size = new System.Drawing.Size(227, 70);
+            this.table_back.TabIndex = 24;
+            this.table_back.Text = "Terug";
+            this.table_back.UseVisualStyleBackColor = false;
+            this.table_back.Click += new System.EventHandler(this.table_back_Click);
             // 
             // table_next
             // 
@@ -602,23 +666,6 @@
             this.table_next.Text = "Verder";
             this.table_next.UseVisualStyleBackColor = false;
             this.table_next.Click += new System.EventHandler(this.table_next_Click);
-            // 
-            // table_back
-            // 
-            this.table_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
-            this.table_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table_back.FlatAppearance.BorderSize = 0;
-            this.table_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table_back.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table_back.ForeColor = System.Drawing.Color.White;
-            this.table_back.Location = new System.Drawing.Point(651, 273);
-            this.table_back.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.table_back.Name = "table_back";
-            this.table_back.Size = new System.Drawing.Size(227, 70);
-            this.table_back.TabIndex = 24;
-            this.table_back.Text = "Terug";
-            this.table_back.UseVisualStyleBackColor = false;
-            this.table_back.Click += new System.EventHandler(this.table_back_Click);
             // 
             // table_header_text
             // 
@@ -757,53 +804,6 @@
             this.label12.TabIndex = 25;
             this.label12.Text = "Email *";
             // 
-            // label_email
-            // 
-            this.label_email.AutoSize = true;
-            this.label_email.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label_email.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label_email.Location = new System.Drawing.Point(256, 181);
-            this.label_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label_email.Name = "label_email";
-            this.label_email.Size = new System.Drawing.Size(67, 23);
-            this.label_email.TabIndex = 42;
-            this.label_email.Text = "Email:";
-            // 
-            // email_value
-            // 
-            this.email_value.BackColor = System.Drawing.SystemColors.Control;
-            this.email_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.email_value.Enabled = false;
-            this.email_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_value.Location = new System.Drawing.Point(331, 182);
-            this.email_value.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.email_value.Name = "email_value";
-            this.email_value.ReadOnly = true;
-            this.email_value.Size = new System.Drawing.Size(594, 25);
-            this.email_value.TabIndex = 43;
-            // 
-            // nummerDataGridViewTextBoxColumn
-            // 
-            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
-            this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // capaciteitDataGridViewTextBoxColumn
-            // 
-            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
-            this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tablesBindingSource2
-            // 
-            this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
-            // 
             // tablesBindingSource1
             // 
             this.tablesBindingSource1.DataSource = typeof(HRDelicates.Tables);
@@ -844,14 +844,14 @@
             this.Load += new System.EventHandler(this.Reservationscreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             this.table_panel.ResumeLayout(false);
             this.table_panel.PerformLayout();
-            this.verification_panel.ResumeLayout(false);
-            this.verification_panel.PerformLayout();
             this.finish_panel.ResumeLayout(false);
             this.finish_panel.PerformLayout();
+            this.verification_panel.ResumeLayout(false);
+            this.verification_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
             this.ResumeLayout(false);
