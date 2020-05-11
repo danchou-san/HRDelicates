@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.naam_box = new System.Windows.Forms.TextBox();
             this.achternaam_box = new System.Windows.Forms.TextBox();
             this.adres_box = new System.Windows.Forms.TextBox();
@@ -82,6 +82,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Verplicht_text = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
@@ -289,27 +290,27 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nummerDataGridViewTextBoxColumn,
             this.capaciteitDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tablesBindingSource2;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(84, 108);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -357,7 +358,7 @@
             this.table_panel.Location = new System.Drawing.Point(0, 0);
             this.table_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.table_panel.Name = "table_panel";
-            this.table_panel.Size = new System.Drawing.Size(1187, 539);
+            this.table_panel.Size = new System.Drawing.Size(1183, 539);
             this.table_panel.TabIndex = 21;
             this.table_panel.Visible = false;
             // 
@@ -377,10 +378,10 @@
             this.verification_panel.Controls.Add(this.confirmation_title);
             this.verification_panel.Controls.Add(this.date_label);
             this.verification_panel.Controls.Add(this.date_value);
-            this.verification_panel.Location = new System.Drawing.Point(0, 0);
+            this.verification_panel.Location = new System.Drawing.Point(0, 3);
             this.verification_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.verification_panel.Name = "verification_panel";
-            this.verification_panel.Size = new System.Drawing.Size(1187, 539);
+            this.verification_panel.Size = new System.Drawing.Size(1187, 536);
             this.verification_panel.TabIndex = 26;
             this.verification_panel.Visible = false;
             this.verification_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.verification_screen_Paint);
@@ -389,10 +390,10 @@
             // 
             this.finish_panel.Controls.Add(this.back_begin);
             this.finish_panel.Controls.Add(this.finish_text);
-            this.finish_panel.Location = new System.Drawing.Point(0, 0);
+            this.finish_panel.Location = new System.Drawing.Point(4, 0);
             this.finish_panel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.finish_panel.Name = "finish_panel";
-            this.finish_panel.Size = new System.Drawing.Size(1187, 539);
+            this.finish_panel.Size = new System.Drawing.Size(1179, 536);
             this.finish_panel.TabIndex = 39;
             this.finish_panel.Visible = false;
             // 
@@ -748,6 +749,17 @@
             // 
             this.tablesBindingSource.DataSource = typeof(HRDelicates.Tables);
             // 
+            // Verplicht_text
+            // 
+            this.Verplicht_text.AutoSize = true;
+            this.Verplicht_text.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Verplicht_text.Location = new System.Drawing.Point(129, 303);
+            this.Verplicht_text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Verplicht_text.Name = "Verplicht_text";
+            this.Verplicht_text.Size = new System.Drawing.Size(141, 17);
+            this.Verplicht_text.TabIndex = 23;
+            this.Verplicht_text.Text = "* Verplichte velden";
+            // 
             // Reservationscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -771,6 +783,7 @@
             this.Controls.Add(this.achternaam_box);
             this.Controls.Add(this.naam_box);
             this.Controls.Add(this.telefoon_Box);
+            this.Controls.Add(this.Verplicht_text);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Reservationscreen";
             this.Size = new System.Drawing.Size(1187, 539);
@@ -844,5 +857,6 @@
         private System.Windows.Forms.Label date_label;
         private System.Windows.Forms.TextBox date_value;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label Verplicht_text;
     }
 }

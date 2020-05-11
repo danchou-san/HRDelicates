@@ -220,6 +220,18 @@ namespace HRDelicates
                 telefoon_Box.Focus();
                 errorProvider1.SetError(telefoon_Box, "Vul een geldige telefoonnummer in.");
             }
+            else if (telefoon_Box.Text.Length!= 10)
+            {
+                e.Cancel = true;
+                telefoon_Box.Focus();
+                errorProvider1.SetError(telefoon_Box, "Vul een geldige telefoonnummer in.");
+            }
+            else if (!telefoon_Box.Text.StartsWith("06"))
+            {
+                e.Cancel = true;
+                telefoon_Box.Focus();
+                errorProvider1.SetError(telefoon_Box, "Vul een geldige telefoonnummer in.");
+            }
             else
             {
                 e.Cancel = false;
