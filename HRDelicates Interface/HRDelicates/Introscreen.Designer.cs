@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Introscreen));
             this.intropanel = new System.Windows.Forms.Panel();
             this.terug_admin = new System.Windows.Forms.Button();
             this.terug_login = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefoon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.login_button = new System.Windows.Forms.Button();
             this.login_header = new System.Windows.Forms.Label();
             this.password_text = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.worker_button = new System.Windows.Forms.Button();
             this.klant_button = new System.Windows.Forms.Button();
             this.error_login = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefoon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -108,6 +108,7 @@
             this.intropanel.Name = "intropanel";
             this.intropanel.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.TabIndex = 14;
+            this.intropanel.Paint += new System.Windows.Forms.PaintEventHandler(this.intropanel_Paint);
             // 
             // terug_admin
             // 
@@ -152,14 +153,14 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nummerDataGridViewTextBoxColumn,
@@ -171,27 +172,27 @@
             this.Telefoon,
             this.timeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tablesBindingSource4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(220, 18);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.ShowCellToolTips = false;
             this.dataGridView1.ShowEditingIcon = false;
@@ -199,6 +200,22 @@
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Email
+            // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Width = 61;
+            // 
+            // Telefoon
+            // 
+            this.Telefoon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Telefoon.DataPropertyName = "Telefoon";
+            this.Telefoon.HeaderText = "Telefoon";
+            this.Telefoon.Name = "Telefoon";
+            this.Telefoon.Width = 78;
             // 
             // login_button
             // 
@@ -208,7 +225,7 @@
             this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.login_button.ForeColor = System.Drawing.Color.White;
-            this.login_button.Location = new System.Drawing.Point(376, 476);
+            this.login_button.Location = new System.Drawing.Point(377, 476);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(114, 32);
             this.login_button.TabIndex = 53;
@@ -221,7 +238,7 @@
             // 
             this.login_header.AutoSize = true;
             this.login_header.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.login_header.Location = new System.Drawing.Point(371, 321);
+            this.login_header.Location = new System.Drawing.Point(372, 321);
             this.login_header.Name = "login_header";
             this.login_header.Size = new System.Drawing.Size(74, 25);
             this.login_header.TabIndex = 52;
@@ -235,12 +252,13 @@
             this.password_text.Cursor = System.Windows.Forms.Cursors.Default;
             this.password_text.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.password_text.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.password_text.Location = new System.Drawing.Point(372, 419);
+            this.password_text.Location = new System.Drawing.Point(373, 419);
             this.password_text.Name = "password_text";
             this.password_text.Size = new System.Drawing.Size(117, 21);
             this.password_text.TabIndex = 51;
             this.password_text.Text = "Wachtwoord:";
             this.password_text.Visible = false;
+            this.password_text.Click += new System.EventHandler(this.password_text_Click);
             // 
             // username_text
             // 
@@ -248,7 +266,7 @@
             this.username_text.Cursor = System.Windows.Forms.Cursors.Default;
             this.username_text.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.username_text.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.username_text.Location = new System.Drawing.Point(372, 359);
+            this.username_text.Location = new System.Drawing.Point(373, 359);
             this.username_text.Name = "username_text";
             this.username_text.Size = new System.Drawing.Size(143, 21);
             this.username_text.TabIndex = 50;
@@ -258,25 +276,27 @@
             // password_box
             // 
             this.password_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_box.Location = new System.Drawing.Point(375, 443);
+            this.password_box.Location = new System.Drawing.Point(376, 443);
             this.password_box.Name = "password_box";
             this.password_box.Size = new System.Drawing.Size(309, 27);
             this.password_box.TabIndex = 49;
             this.password_box.Visible = false;
+            this.password_box.TextChanged += new System.EventHandler(this.password_box_TextChanged);
             // 
             // username_box
             // 
             this.username_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username_box.Location = new System.Drawing.Point(375, 382);
+            this.username_box.Location = new System.Drawing.Point(376, 382);
             this.username_box.Name = "username_box";
             this.username_box.Size = new System.Drawing.Size(309, 27);
             this.username_box.TabIndex = 48;
             this.username_box.Visible = false;
+            this.username_box.TextChanged += new System.EventHandler(this.username_box_TextChanged);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(840, 18);
+            this.pictureBox3.Location = new System.Drawing.Point(841, 18);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(220, 582);
@@ -323,7 +343,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(324, 235);
+            this.label2.Location = new System.Drawing.Point(319, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(430, 36);
             this.label2.TabIndex = 44;
@@ -333,7 +353,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(394, 86);
+            this.pictureBox2.Location = new System.Drawing.Point(394, 64);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(270, 146);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -348,7 +368,7 @@
             this.worker_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.worker_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.worker_button.ForeColor = System.Drawing.Color.White;
-            this.worker_button.Location = new System.Drawing.Point(344, 438);
+            this.worker_button.Location = new System.Drawing.Point(345, 437);
             this.worker_button.Name = "worker_button";
             this.worker_button.Size = new System.Drawing.Size(370, 61);
             this.worker_button.TabIndex = 42;
@@ -364,7 +384,7 @@
             this.klant_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.klant_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.klant_button.ForeColor = System.Drawing.Color.White;
-            this.klant_button.Location = new System.Drawing.Point(344, 365);
+            this.klant_button.Location = new System.Drawing.Point(345, 364);
             this.klant_button.Name = "klant_button";
             this.klant_button.Size = new System.Drawing.Size(370, 61);
             this.klant_button.TabIndex = 41;
@@ -386,22 +406,6 @@
             this.error_login.Text = "Gegevens kloppen niet";
             this.error_login.Visible = false;
             this.error_login.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.Width = 61;
-            // 
-            // Telefoon
-            // 
-            this.Telefoon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Telefoon.DataPropertyName = "Telefoon";
-            this.Telefoon.HeaderText = "Telefoon";
-            this.Telefoon.Name = "Telefoon";
-            this.Telefoon.Width = 78;
             // 
             // nummerDataGridViewTextBoxColumn
             // 

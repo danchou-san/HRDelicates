@@ -157,5 +157,25 @@ namespace HRDelicates
         {
 
         }
+
+        private void intropanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void password_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void username_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

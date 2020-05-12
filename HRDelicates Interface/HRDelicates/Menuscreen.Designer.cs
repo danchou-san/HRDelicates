@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menuscreen));
-            this.finish_text = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -112,6 +111,9 @@
             this.dishesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.terug_admin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -146,18 +148,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dishesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            this.panel16.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // finish_text
-            // 
-            this.finish_text.AutoSize = true;
-            this.finish_text.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.finish_text.Location = new System.Drawing.Point(372, 7);
-            this.finish_text.Name = "finish_text";
-            this.finish_text.Size = new System.Drawing.Size(128, 25);
-            this.finish_text.TabIndex = 41;
-            this.finish_text.Text = "Gerechten";
-            this.finish_text.Click += new System.EventHandler(this.finish_text_Click);
             // 
             // imageList1
             // 
@@ -186,18 +178,20 @@
             this.flowLayoutPanel1.Controls.Add(this.panel13);
             this.flowLayoutPanel1.Controls.Add(this.panel14);
             this.flowLayoutPanel1.Controls.Add(this.panel15);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 37);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 40);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(890, 430);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(890, 427);
             this.flowLayoutPanel1.TabIndex = 42;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.dish_descriptions);
             this.panel1.Controls.Add(this.dish_title);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 307);
             this.panel1.TabIndex = 0;
@@ -213,7 +207,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -222,11 +216,11 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(187, 33);
             this.textBox1.TabIndex = 45;
-            this.textBox1.Text = "$1,50";
+            this.textBox1.Text = "€10,00";
             // 
             // dish_descriptions
             // 
-            this.dish_descriptions.BackColor = System.Drawing.SystemColors.Control;
+            this.dish_descriptions.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.dish_descriptions.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dish_descriptions.Enabled = false;
             this.dish_descriptions.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -236,11 +230,11 @@
             this.dish_descriptions.ReadOnly = true;
             this.dish_descriptions.Size = new System.Drawing.Size(187, 59);
             this.dish_descriptions.TabIndex = 44;
-            this.dish_descriptions.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.dish_descriptions.Text = "Allerlekkerste bami goreng van heel Rotterdam!";
             // 
             // dish_title
             // 
-            this.dish_title.BackColor = System.Drawing.SystemColors.Control;
+            this.dish_title.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.dish_title.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dish_title.Enabled = false;
             this.dish_title.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,32 +243,33 @@
             this.dish_title.ReadOnly = true;
             this.dish_title.Size = new System.Drawing.Size(187, 20);
             this.dish_title.TabIndex = 43;
-            this.dish_title.Text = "Bami";
+            this.dish_title.Text = "Bami goreng met saté";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox1.Size = new System.Drawing.Size(212, 165);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 42;
             this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.textBox4);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(221, 3);
+            this.panel2.Location = new System.Drawing.Point(222, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(212, 307);
             this.panel2.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -283,11 +278,11 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(187, 33);
             this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "$1,50";
+            this.textBox2.Text = "€12,50";
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -301,7 +296,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -310,32 +305,33 @@
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(187, 20);
             this.textBox4.TabIndex = 43;
-            this.textBox4.Text = "Bami";
+            this.textBox4.Text = "Cheeseburger";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox2.Size = new System.Drawing.Size(212, 165);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 42;
             this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.textBox6);
             this.panel3.Controls.Add(this.textBox7);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(439, 3);
+            this.panel3.Location = new System.Drawing.Point(440, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(212, 307);
             this.panel3.TabIndex = 2;
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Enabled = false;
             this.textBox5.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -344,11 +340,11 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(187, 33);
             this.textBox5.TabIndex = 45;
-            this.textBox5.Text = "$1,50";
+            this.textBox5.Text = "€6,50";
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -362,7 +358,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,32 +367,33 @@
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(187, 20);
             this.textBox7.TabIndex = 43;
-            this.textBox7.Text = "Bami";
+            this.textBox7.Text = "Chocolademousse";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox3.Size = new System.Drawing.Size(212, 165);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 42;
             this.pictureBox3.TabStop = false;
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel4.Controls.Add(this.textBox8);
             this.panel4.Controls.Add(this.textBox9);
             this.panel4.Controls.Add(this.textBox10);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(657, 3);
+            this.panel4.Location = new System.Drawing.Point(658, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(212, 307);
             this.panel4.TabIndex = 3;
             // 
             // textBox8
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -405,11 +402,11 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(187, 33);
             this.textBox8.TabIndex = 45;
-            this.textBox8.Text = "$1,50";
+            this.textBox8.Text = "€4,50";
             // 
             // textBox9
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -423,7 +420,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Enabled = false;
             this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -432,32 +429,33 @@
             this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(187, 20);
             this.textBox10.TabIndex = 43;
-            this.textBox10.Text = "Bami";
+            this.textBox10.Text = "Dame blanche";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox4.Size = new System.Drawing.Size(212, 165);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 42;
             this.pictureBox4.TabStop = false;
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel5.Controls.Add(this.textBox11);
             this.panel5.Controls.Add(this.textBox12);
             this.panel5.Controls.Add(this.textBox13);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(3, 316);
+            this.panel5.Location = new System.Drawing.Point(4, 316);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(212, 307);
             this.panel5.TabIndex = 4;
             // 
             // textBox11
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Enabled = false;
             this.textBox11.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -470,7 +468,7 @@
             // 
             // textBox12
             // 
-            this.textBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox12.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Enabled = false;
             this.textBox12.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -484,7 +482,7 @@
             // 
             // textBox13
             // 
-            this.textBox13.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox13.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox13.Enabled = false;
             this.textBox13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -493,32 +491,33 @@
             this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(187, 20);
             this.textBox13.TabIndex = 43;
-            this.textBox13.Text = "Bami";
+            this.textBox13.Text = "Geitenkaas";
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox5.Size = new System.Drawing.Size(212, 165);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 42;
             this.pictureBox5.TabStop = false;
             // 
             // panel6
             // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel6.Controls.Add(this.textBox14);
             this.panel6.Controls.Add(this.textBox15);
             this.panel6.Controls.Add(this.textBox16);
             this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Location = new System.Drawing.Point(221, 316);
+            this.panel6.Location = new System.Drawing.Point(222, 316);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(212, 307);
             this.panel6.TabIndex = 5;
             // 
             // textBox14
             // 
-            this.textBox14.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox14.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Enabled = false;
             this.textBox14.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -531,7 +530,7 @@
             // 
             // textBox15
             // 
-            this.textBox15.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox15.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox15.Enabled = false;
             this.textBox15.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -545,7 +544,7 @@
             // 
             // textBox16
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox16.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox16.Enabled = false;
             this.textBox16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -554,32 +553,33 @@
             this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(187, 20);
             this.textBox16.TabIndex = 43;
-            this.textBox16.Text = "Bami";
+            this.textBox16.Text = "Kaasplankje";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox6.Size = new System.Drawing.Size(212, 165);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 42;
             this.pictureBox6.TabStop = false;
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel7.Controls.Add(this.textBox17);
             this.panel7.Controls.Add(this.textBox18);
             this.panel7.Controls.Add(this.textBox19);
             this.panel7.Controls.Add(this.pictureBox7);
-            this.panel7.Location = new System.Drawing.Point(439, 316);
+            this.panel7.Location = new System.Drawing.Point(440, 316);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(212, 307);
             this.panel7.TabIndex = 6;
             // 
             // textBox17
             // 
-            this.textBox17.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox17.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox17.Enabled = false;
             this.textBox17.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -592,7 +592,7 @@
             // 
             // textBox18
             // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox18.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox18.Enabled = false;
             this.textBox18.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -606,7 +606,7 @@
             // 
             // textBox19
             // 
-            this.textBox19.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox19.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox19.Enabled = false;
             this.textBox19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -615,32 +615,33 @@
             this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(187, 20);
             this.textBox19.TabIndex = 43;
-            this.textBox19.Text = "Bami";
+            this.textBox19.Text = "Kippensoep";
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox7.Size = new System.Drawing.Size(212, 165);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 42;
             this.pictureBox7.TabStop = false;
             // 
             // panel8
             // 
+            this.panel8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel8.Controls.Add(this.textBox20);
             this.panel8.Controls.Add(this.textBox21);
             this.panel8.Controls.Add(this.textBox22);
             this.panel8.Controls.Add(this.pictureBox8);
-            this.panel8.Location = new System.Drawing.Point(657, 316);
+            this.panel8.Location = new System.Drawing.Point(658, 316);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(212, 307);
             this.panel8.TabIndex = 7;
             // 
             // textBox20
             // 
-            this.textBox20.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox20.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox20.Enabled = false;
             this.textBox20.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -653,7 +654,7 @@
             // 
             // textBox21
             // 
-            this.textBox21.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox21.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox21.Enabled = false;
             this.textBox21.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -667,7 +668,7 @@
             // 
             // textBox22
             // 
-            this.textBox22.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox22.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox22.Enabled = false;
             this.textBox22.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -676,32 +677,33 @@
             this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(187, 20);
             this.textBox22.TabIndex = 43;
-            this.textBox22.Text = "Bami";
+            this.textBox22.Text = "Kipsaté";
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox8.Size = new System.Drawing.Size(212, 165);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 42;
             this.pictureBox8.TabStop = false;
             // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel9.Controls.Add(this.textBox23);
             this.panel9.Controls.Add(this.textBox24);
             this.panel9.Controls.Add(this.textBox25);
             this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Location = new System.Drawing.Point(3, 629);
+            this.panel9.Location = new System.Drawing.Point(4, 629);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(212, 307);
             this.panel9.TabIndex = 8;
             // 
             // textBox23
             // 
-            this.textBox23.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox23.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox23.Enabled = false;
             this.textBox23.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -714,7 +716,7 @@
             // 
             // textBox24
             // 
-            this.textBox24.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox24.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox24.Enabled = false;
             this.textBox24.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -728,7 +730,7 @@
             // 
             // textBox25
             // 
-            this.textBox25.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox25.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox25.Enabled = false;
             this.textBox25.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -737,32 +739,33 @@
             this.textBox25.ReadOnly = true;
             this.textBox25.Size = new System.Drawing.Size(187, 20);
             this.textBox25.TabIndex = 43;
-            this.textBox25.Text = "Bami";
+            this.textBox25.Text = "Lasagna";
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox9.Size = new System.Drawing.Size(212, 165);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 42;
             this.pictureBox9.TabStop = false;
             // 
             // panel10
             // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel10.Controls.Add(this.textBox26);
             this.panel10.Controls.Add(this.textBox27);
             this.panel10.Controls.Add(this.textBox28);
             this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Location = new System.Drawing.Point(221, 629);
+            this.panel10.Location = new System.Drawing.Point(222, 629);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(212, 307);
             this.panel10.TabIndex = 9;
             // 
             // textBox26
             // 
-            this.textBox26.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox26.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox26.Enabled = false;
             this.textBox26.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -775,7 +778,7 @@
             // 
             // textBox27
             // 
-            this.textBox27.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox27.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox27.Enabled = false;
             this.textBox27.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -789,7 +792,7 @@
             // 
             // textBox28
             // 
-            this.textBox28.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox28.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox28.Enabled = false;
             this.textBox28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -798,32 +801,34 @@
             this.textBox28.ReadOnly = true;
             this.textBox28.Size = new System.Drawing.Size(187, 20);
             this.textBox28.TabIndex = 43;
-            this.textBox28.Text = "Bami";
+            this.textBox28.Text = "Roomijs met advocaat";
             // 
             // pictureBox10
             // 
+            this.pictureBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox10.Size = new System.Drawing.Size(212, 165);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 42;
             this.pictureBox10.TabStop = false;
             // 
             // panel11
             // 
+            this.panel11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel11.Controls.Add(this.textBox29);
             this.panel11.Controls.Add(this.textBox30);
             this.panel11.Controls.Add(this.textBox31);
             this.panel11.Controls.Add(this.pictureBox11);
-            this.panel11.Location = new System.Drawing.Point(439, 629);
+            this.panel11.Location = new System.Drawing.Point(440, 629);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(212, 307);
             this.panel11.TabIndex = 10;
             // 
             // textBox29
             // 
-            this.textBox29.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox29.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox29.Enabled = false;
             this.textBox29.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -836,7 +841,7 @@
             // 
             // textBox30
             // 
-            this.textBox30.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox30.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox30.Enabled = false;
             this.textBox30.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -850,7 +855,7 @@
             // 
             // textBox31
             // 
-            this.textBox31.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox31.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox31.Enabled = false;
             this.textBox31.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -859,32 +864,33 @@
             this.textBox31.ReadOnly = true;
             this.textBox31.Size = new System.Drawing.Size(187, 20);
             this.textBox31.TabIndex = 43;
-            this.textBox31.Text = "Bami";
+            this.textBox31.Text = "Spaghetti";
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox11.Size = new System.Drawing.Size(212, 165);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 42;
             this.pictureBox11.TabStop = false;
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel12.Controls.Add(this.textBox32);
             this.panel12.Controls.Add(this.textBox33);
             this.panel12.Controls.Add(this.textBox34);
             this.panel12.Controls.Add(this.pictureBox12);
-            this.panel12.Location = new System.Drawing.Point(657, 629);
+            this.panel12.Location = new System.Drawing.Point(658, 629);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(212, 307);
             this.panel12.TabIndex = 11;
             // 
             // textBox32
             // 
-            this.textBox32.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox32.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox32.Enabled = false;
             this.textBox32.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -897,7 +903,7 @@
             // 
             // textBox33
             // 
-            this.textBox33.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox33.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox33.Enabled = false;
             this.textBox33.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -911,7 +917,7 @@
             // 
             // textBox34
             // 
-            this.textBox34.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox34.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox34.Enabled = false;
             this.textBox34.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -920,32 +926,33 @@
             this.textBox34.ReadOnly = true;
             this.textBox34.Size = new System.Drawing.Size(187, 20);
             this.textBox34.TabIndex = 43;
-            this.textBox34.Text = "Bami";
+            this.textBox34.Text = "Spareribs";
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox12.Size = new System.Drawing.Size(212, 165);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 42;
             this.pictureBox12.TabStop = false;
             // 
             // panel13
             // 
+            this.panel13.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel13.Controls.Add(this.textBox35);
             this.panel13.Controls.Add(this.textBox36);
             this.panel13.Controls.Add(this.textBox37);
             this.panel13.Controls.Add(this.pictureBox13);
-            this.panel13.Location = new System.Drawing.Point(3, 942);
+            this.panel13.Location = new System.Drawing.Point(4, 942);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(212, 307);
             this.panel13.TabIndex = 12;
             // 
             // textBox35
             // 
-            this.textBox35.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox35.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox35.Enabled = false;
             this.textBox35.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -958,7 +965,7 @@
             // 
             // textBox36
             // 
-            this.textBox36.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox36.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox36.Enabled = false;
             this.textBox36.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -972,7 +979,7 @@
             // 
             // textBox37
             // 
-            this.textBox37.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox37.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox37.Enabled = false;
             this.textBox37.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -981,32 +988,33 @@
             this.textBox37.ReadOnly = true;
             this.textBox37.Size = new System.Drawing.Size(187, 20);
             this.textBox37.TabIndex = 43;
-            this.textBox37.Text = "Bami";
+            this.textBox37.Text = "Steak tartaar";
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox13.Location = new System.Drawing.Point(0, 0);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox13.Size = new System.Drawing.Size(212, 165);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 42;
             this.pictureBox13.TabStop = false;
             // 
             // panel14
             // 
+            this.panel14.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel14.Controls.Add(this.textBox38);
             this.panel14.Controls.Add(this.textBox39);
             this.panel14.Controls.Add(this.textBox40);
             this.panel14.Controls.Add(this.pictureBox14);
-            this.panel14.Location = new System.Drawing.Point(221, 942);
+            this.panel14.Location = new System.Drawing.Point(222, 942);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(212, 307);
             this.panel14.TabIndex = 13;
             // 
             // textBox38
             // 
-            this.textBox38.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox38.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox38.Enabled = false;
             this.textBox38.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -1019,7 +1027,7 @@
             // 
             // textBox39
             // 
-            this.textBox39.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox39.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox39.Enabled = false;
             this.textBox39.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -1033,7 +1041,7 @@
             // 
             // textBox40
             // 
-            this.textBox40.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox40.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox40.Enabled = false;
             this.textBox40.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1042,32 +1050,33 @@
             this.textBox40.ReadOnly = true;
             this.textBox40.Size = new System.Drawing.Size(187, 20);
             this.textBox40.TabIndex = 43;
-            this.textBox40.Text = "Bami";
+            this.textBox40.Text = "Stokbrood";
             // 
             // pictureBox14
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox14.Size = new System.Drawing.Size(212, 165);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 42;
             this.pictureBox14.TabStop = false;
             // 
             // panel15
             // 
+            this.panel15.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel15.Controls.Add(this.textBox41);
             this.panel15.Controls.Add(this.textBox42);
             this.panel15.Controls.Add(this.textBox43);
             this.panel15.Controls.Add(this.pictureBox15);
-            this.panel15.Location = new System.Drawing.Point(439, 942);
+            this.panel15.Location = new System.Drawing.Point(440, 942);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(212, 307);
             this.panel15.TabIndex = 14;
             // 
             // textBox41
             // 
-            this.textBox41.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox41.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox41.Enabled = false;
             this.textBox41.Font = new System.Drawing.Font("Century Gothic", 20F);
@@ -1080,7 +1089,7 @@
             // 
             // textBox42
             // 
-            this.textBox42.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox42.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox42.Enabled = false;
             this.textBox42.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -1094,7 +1103,7 @@
             // 
             // textBox43
             // 
-            this.textBox43.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox43.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox43.Enabled = false;
             this.textBox43.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1103,14 +1112,14 @@
             this.textBox43.ReadOnly = true;
             this.textBox43.Size = new System.Drawing.Size(187, 20);
             this.textBox43.TabIndex = 43;
-            this.textBox43.Text = "Bami";
+            this.textBox43.Text = "Vlaamsestoof";
             // 
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(13, 14);
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(187, 151);
+            this.pictureBox15.Size = new System.Drawing.Size(212, 165);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 42;
             this.pictureBox15.TabStop = false;
@@ -1127,12 +1136,52 @@
             // 
             this.bindingSource2.DataSource = typeof(HRDelicates.Dishes);
             // 
+            // terug_admin
+            // 
+            this.terug_admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.terug_admin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.terug_admin.FlatAppearance.BorderSize = 0;
+            this.terug_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.terug_admin.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.terug_admin.ForeColor = System.Drawing.Color.White;
+            this.terug_admin.Location = new System.Drawing.Point(0, 0);
+            this.terug_admin.Name = "terug_admin";
+            this.terug_admin.Size = new System.Drawing.Size(434, 40);
+            this.terug_admin.TabIndex = 56;
+            this.terug_admin.Text = "Gerechten";
+            this.terug_admin.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button1.Location = new System.Drawing.Point(440, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(450, 40);
+            this.button1.TabIndex = 57;
+            this.button1.Text = "Dranken";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.SystemColors.Control;
+            this.panel16.Controls.Add(this.button1);
+            this.panel16.Controls.Add(this.terug_admin);
+            this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(890, 43);
+            this.panel16.TabIndex = 46;
+            // 
             // Menuscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.finish_text);
+            this.Controls.Add(this.panel16);
             this.Name = "Menuscreen";
             this.Size = new System.Drawing.Size(890, 467);
             this.Load += new System.EventHandler(this.Menuscreen_Load);
@@ -1185,14 +1234,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dishesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            this.panel16.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.BindingSource dishesBindingSource;
-        private System.Windows.Forms.Label finish_text;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -1273,5 +1321,8 @@
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.BindingSource bindingSource2;
+        private System.Windows.Forms.Button terug_admin;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel16;
     }
 }
