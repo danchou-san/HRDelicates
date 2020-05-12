@@ -38,6 +38,7 @@ namespace HRDelicates
             password_box.Visible = true;
             login_button.Visible = true;
             terug_login.Visible = true;
+            login_header.Visible = true;
             password_box.PasswordChar = '*';
         }
 
@@ -51,6 +52,7 @@ namespace HRDelicates
             password_box.Visible = false;
             login_button.Visible = false;
             terug_login.Visible = false;
+            login_header.Visible = false;
 
             username_box.Text = "";
             password_box.Text = "";
@@ -69,6 +71,7 @@ namespace HRDelicates
             login_button.Visible = true;
             terug_login.Visible = true;
             terug_admin.Visible = false;
+            login_header.Visible = true;
 
             username_box.Text = "";
             password_box.Text = "";
@@ -106,14 +109,42 @@ namespace HRDelicates
                 dataGridView1.BringToFront();
                 terug_admin.Visible = true;
                 terug_login.Visible = false;
+                login_header.Visible = false;
 
                 username_box.Text = "";
                 password_box.Text = "";
 
                 var serializedStr = File.ReadAllText(path);
-                var tafels = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
+                var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
 
-                dataGridView1.DataSource = tafels;
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Nummer");
+                dt.Columns.Add("Capaciteit");
+                dt.Columns.Add("Status");
+                dt.Columns.Add("Persoon");
+                dt.Columns.Add("Email");
+                dt.Columns.Add("D_reservering");
+                dt.Columns.Add("Time");
+
+                foreach (var n in tables)
+                {
+                    if (n.Persoon != "")
+                    {
+                        DataRow dr = dt.NewRow();
+                        dr["Nummer"] = n.Nummer;
+                        dr["Capaciteit"] = n.Capaciteit;
+                        dr["Status"] = n.Status;
+                        dr["Persoon"] = n.Persoon;
+                        dr["Email"] = n.Email;
+                        dr["D_reservering"] = n.D_reservering;
+                        dr["Time"] = n.Time;
+
+                        dt.Rows.Add(dr);
+                    }
+                }
+                dataGridView1.DataSource = dt;
+
+                //dataGridView1.DataSource = tafels;
             }
             else
             {

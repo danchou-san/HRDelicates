@@ -217,7 +217,7 @@
             this.exit_button2.Name = "exit_button2";
             this.exit_button2.Size = new System.Drawing.Size(170, 61);
             this.exit_button2.TabIndex = 11;
-            this.exit_button2.Text = "Afsluiten";
+            this.exit_button2.Text = "Terug";
             this.exit_button2.UseVisualStyleBackColor = true;
             this.exit_button2.Click += new System.EventHandler(this.exit_button2_Click);
             // 

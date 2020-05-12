@@ -214,10 +214,13 @@ namespace HRDelicates
 
         private void exit_button2_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Weet u zeker dat u het programma wilt aflsuiten?", "Programma afsluiten", MessageBoxButtons.OKCancel) == DialogResult.OK)
-            {
-                Application.Exit();
-            }
+            //if (MessageBox.Show("Weet u zeker dat u het programma wilt aflsuiten?", "Programma afsluiten", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            //{
+            //    Application.Exit();
+            //}
+
+            introscreen1.BringToFront();
+            introscreen1.Visible = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
