@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.naam_box = new System.Windows.Forms.TextBox();
             this.achternaam_box = new System.Windows.Forms.TextBox();
             this.adres_box = new System.Windows.Forms.TextBox();
@@ -48,11 +48,14 @@
             this.personen_box = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.table_panel = new System.Windows.Forms.Panel();
+            this.verification_panel = new System.Windows.Forms.Panel();
             this.finish_panel = new System.Windows.Forms.Panel();
             this.finish_text = new System.Windows.Forms.Label();
             this.back_begin = new System.Windows.Forms.Button();
-            this.verification_panel = new System.Windows.Forms.Panel();
             this.confirm_button = new System.Windows.Forms.Button();
             this.confirmation_back = new System.Windows.Forms.Button();
             this.email_value = new System.Windows.Forms.TextBox();
@@ -82,18 +85,15 @@
             this.Verplicht_text = new System.Windows.Forms.Label();
             this.email_box = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.table_panel.SuspendLayout();
-            this.finish_panel.SuspendLayout();
-            this.verification_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
+            this.table_panel.SuspendLayout();
+            this.verification_panel.SuspendLayout();
+            this.finish_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -278,27 +278,27 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nummerDataGridViewTextBoxColumn,
             this.capaciteitDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tablesBindingSource2;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(63, 94);
             this.dataGridView1.Name = "dataGridView1";
@@ -307,6 +307,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(415, 299);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.Visible = false;
+            // 
+            // nummerDataGridViewTextBoxColumn
+            // 
+            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
+            this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // capaciteitDataGridViewTextBoxColumn
+            // 
+            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
+            this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tablesBindingSource2
+            // 
+            this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
             // 
             // table_panel
             // 
@@ -325,6 +347,31 @@
             this.table_panel.Size = new System.Drawing.Size(890, 465);
             this.table_panel.TabIndex = 21;
             this.table_panel.Visible = false;
+            // 
+            // verification_panel
+            // 
+            this.verification_panel.Controls.Add(this.finish_panel);
+            this.verification_panel.Controls.Add(this.confirm_button);
+            this.verification_panel.Controls.Add(this.confirmation_back);
+            this.verification_panel.Controls.Add(this.email_value);
+            this.verification_panel.Controls.Add(this.time_value);
+            this.verification_panel.Controls.Add(this.table_value);
+            this.verification_panel.Controls.Add(this.name_value);
+            this.verification_panel.Controls.Add(this.phone_value);
+            this.verification_panel.Controls.Add(this.date_value);
+            this.verification_panel.Controls.Add(this.tijd_label);
+            this.verification_panel.Controls.Add(this.label_email);
+            this.verification_panel.Controls.Add(this.table_label);
+            this.verification_panel.Controls.Add(this.phone_label);
+            this.verification_panel.Controls.Add(this.name_label);
+            this.verification_panel.Controls.Add(this.confirmation_title);
+            this.verification_panel.Controls.Add(this.date_label);
+            this.verification_panel.Location = new System.Drawing.Point(0, 0);
+            this.verification_panel.Name = "verification_panel";
+            this.verification_panel.Size = new System.Drawing.Size(890, 467);
+            this.verification_panel.TabIndex = 26;
+            this.verification_panel.Visible = false;
+            this.verification_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.verification_screen_Paint);
             // 
             // finish_panel
             // 
@@ -362,31 +409,6 @@
             this.back_begin.TabIndex = 40;
             this.back_begin.Text = "Terug naar reserveren";
             this.back_begin.UseVisualStyleBackColor = false;
-            // 
-            // verification_panel
-            // 
-            this.verification_panel.Controls.Add(this.finish_panel);
-            this.verification_panel.Controls.Add(this.confirm_button);
-            this.verification_panel.Controls.Add(this.confirmation_back);
-            this.verification_panel.Controls.Add(this.email_value);
-            this.verification_panel.Controls.Add(this.time_value);
-            this.verification_panel.Controls.Add(this.table_value);
-            this.verification_panel.Controls.Add(this.name_value);
-            this.verification_panel.Controls.Add(this.phone_value);
-            this.verification_panel.Controls.Add(this.date_value);
-            this.verification_panel.Controls.Add(this.tijd_label);
-            this.verification_panel.Controls.Add(this.label_email);
-            this.verification_panel.Controls.Add(this.table_label);
-            this.verification_panel.Controls.Add(this.phone_label);
-            this.verification_panel.Controls.Add(this.name_label);
-            this.verification_panel.Controls.Add(this.confirmation_title);
-            this.verification_panel.Controls.Add(this.date_label);
-            this.verification_panel.Location = new System.Drawing.Point(0, 0);
-            this.verification_panel.Name = "verification_panel";
-            this.verification_panel.Size = new System.Drawing.Size(890, 467);
-            this.verification_panel.TabIndex = 26;
-            this.verification_panel.Visible = false;
-            this.verification_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.verification_screen_Paint);
             // 
             // confirm_button
             // 
@@ -523,7 +545,7 @@
             this.table_label.AutoSize = true;
             this.table_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.table_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.table_label.Location = new System.Drawing.Point(192, 233);
+            this.table_label.Location = new System.Drawing.Point(193, 233);
             this.table_label.Name = "table_label";
             this.table_label.Size = new System.Drawing.Size(51, 21);
             this.table_label.TabIndex = 33;
@@ -733,28 +755,6 @@
             this.label12.TabIndex = 25;
             this.label12.Text = "Email *";
             // 
-            // nummerDataGridViewTextBoxColumn
-            // 
-            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
-            this.nummerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // capaciteitDataGridViewTextBoxColumn
-            // 
-            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
-            this.capaciteitDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tablesBindingSource2
-            // 
-            this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
-            // 
             // tablesBindingSource1
             // 
             this.tablesBindingSource1.DataSource = typeof(HRDelicates.Tables);
@@ -794,14 +794,14 @@
             this.Load += new System.EventHandler(this.Reservationscreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             this.table_panel.ResumeLayout(false);
             this.table_panel.PerformLayout();
-            this.finish_panel.ResumeLayout(false);
-            this.finish_panel.PerformLayout();
             this.verification_panel.ResumeLayout(false);
             this.verification_panel.PerformLayout();
+            this.finish_panel.ResumeLayout(false);
+            this.finish_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
             this.ResumeLayout(false);

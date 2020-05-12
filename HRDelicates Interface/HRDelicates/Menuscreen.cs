@@ -28,10 +28,10 @@ namespace HRDelicates
             var serializedStr = File.ReadAllText(path);
             var gerechten = JsonConvert.DeserializeObject<Dishes[]>(serializedStr);
 
-            foreach(var n in gerechten)
-            {
-                Console.WriteLine(n.Naam);
-            }
+            //foreach(var n in gerechten)
+            //{
+            //    Console.WriteLine(n.Naam);
+            //}
 
             dataGridView1.DataSource = gerechten;
         }

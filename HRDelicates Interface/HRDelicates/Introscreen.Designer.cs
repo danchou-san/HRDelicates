@@ -28,7 +28,21 @@
         /// </summary> 
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Introscreen));
             this.intropanel = new System.Windows.Forms.Panel();
+            this.terug_admin = new System.Windows.Forms.Button();
+            this.terug_login = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.login_button = new System.Windows.Forms.Button();
+            this.confirmation_title = new System.Windows.Forms.Label();
+            this.password_text = new System.Windows.Forms.Label();
+            this.username_text = new System.Windows.Forms.Label();
+            this.password_box = new System.Windows.Forms.TextBox();
+            this.username_box = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -37,15 +51,41 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.worker_button = new System.Windows.Forms.Button();
             this.klant_button = new System.Windows.Forms.Button();
+            this.error_login = new System.Windows.Forms.Label();
+            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.persoonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dreserveringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.adminscreenBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.adminscreenBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.adminscreenBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.intropanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // intropanel
             // 
+            this.intropanel.Controls.Add(this.error_login);
+            this.intropanel.Controls.Add(this.terug_admin);
+            this.intropanel.Controls.Add(this.terug_login);
+            this.intropanel.Controls.Add(this.dataGridView1);
+            this.intropanel.Controls.Add(this.login_button);
+            this.intropanel.Controls.Add(this.confirmation_title);
+            this.intropanel.Controls.Add(this.password_text);
+            this.intropanel.Controls.Add(this.username_text);
+            this.intropanel.Controls.Add(this.password_box);
+            this.intropanel.Controls.Add(this.username_box);
             this.intropanel.Controls.Add(this.pictureBox3);
             this.intropanel.Controls.Add(this.pictureBox1);
             this.intropanel.Controls.Add(this.panel4);
@@ -59,8 +99,171 @@
             this.intropanel.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.TabIndex = 14;
             // 
+            // terug_admin
+            // 
+            this.terug_admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.terug_admin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.terug_admin.FlatAppearance.BorderSize = 0;
+            this.terug_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.terug_admin.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.terug_admin.ForeColor = System.Drawing.Color.White;
+            this.terug_admin.Location = new System.Drawing.Point(24, 41);
+            this.terug_admin.Name = "terug_admin";
+            this.terug_admin.Size = new System.Drawing.Size(172, 61);
+            this.terug_admin.TabIndex = 55;
+            this.terug_admin.Text = "Terug";
+            this.terug_admin.UseVisualStyleBackColor = false;
+            this.terug_admin.Visible = false;
+            this.terug_admin.Click += new System.EventHandler(this.terug_admin_Click);
+            // 
+            // terug_login
+            // 
+            this.terug_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.terug_login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.terug_login.FlatAppearance.BorderSize = 0;
+            this.terug_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.terug_login.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.terug_login.ForeColor = System.Drawing.Color.White;
+            this.terug_login.Location = new System.Drawing.Point(24, 41);
+            this.terug_login.Name = "terug_login";
+            this.terug_login.Size = new System.Drawing.Size(172, 61);
+            this.terug_login.TabIndex = 54;
+            this.terug_login.Text = "Terug";
+            this.terug_login.UseVisualStyleBackColor = false;
+            this.terug_login.Visible = false;
+            this.terug_login.Click += new System.EventHandler(this.terug_login_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nummerDataGridViewTextBoxColumn,
+            this.capaciteitDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn,
+            this.persoonDataGridViewTextBoxColumn,
+            this.dreserveringDataGridViewTextBoxColumn,
+            this.timeDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tablesBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.Location = new System.Drawing.Point(766, 68);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 582);
+            this.dataGridView1.TabIndex = 47;
+            this.dataGridView1.Visible = false;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // login_button
+            // 
+            this.login_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_button.FlatAppearance.BorderSize = 0;
+            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_button.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.login_button.ForeColor = System.Drawing.Color.White;
+            this.login_button.Location = new System.Drawing.Point(376, 483);
+            this.login_button.Name = "login_button";
+            this.login_button.Size = new System.Drawing.Size(114, 32);
+            this.login_button.TabIndex = 53;
+            this.login_button.Text = "Inloggen";
+            this.login_button.UseVisualStyleBackColor = false;
+            this.login_button.Visible = false;
+            this.login_button.Click += new System.EventHandler(this.login_button_Click);
+            // 
+            // confirmation_title
+            // 
+            this.confirmation_title.AutoSize = true;
+            this.confirmation_title.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.confirmation_title.Location = new System.Drawing.Point(494, 312);
+            this.confirmation_title.Name = "confirmation_title";
+            this.confirmation_title.Size = new System.Drawing.Size(74, 25);
+            this.confirmation_title.TabIndex = 52;
+            this.confirmation_title.Text = "Log in";
+            this.confirmation_title.Visible = false;
+            this.confirmation_title.Click += new System.EventHandler(this.confirmation_title_Click);
+            // 
+            // password_text
+            // 
+            this.password_text.AutoSize = true;
+            this.password_text.Cursor = System.Windows.Forms.Cursors.Default;
+            this.password_text.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.password_text.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.password_text.Location = new System.Drawing.Point(372, 426);
+            this.password_text.Name = "password_text";
+            this.password_text.Size = new System.Drawing.Size(117, 21);
+            this.password_text.TabIndex = 51;
+            this.password_text.Text = "Wachtwoord:";
+            this.password_text.Visible = false;
+            // 
+            // username_text
+            // 
+            this.username_text.AutoSize = true;
+            this.username_text.Cursor = System.Windows.Forms.Cursors.Default;
+            this.username_text.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.username_text.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.username_text.Location = new System.Drawing.Point(372, 354);
+            this.username_text.Name = "username_text";
+            this.username_text.Size = new System.Drawing.Size(143, 21);
+            this.username_text.TabIndex = 50;
+            this.username_text.Text = "Gebruikersnaam:";
+            this.username_text.Visible = false;
+            // 
+            // password_box
+            // 
+            this.password_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_box.Location = new System.Drawing.Point(375, 450);
+            this.password_box.Name = "password_box";
+            this.password_box.Size = new System.Drawing.Size(309, 27);
+            this.password_box.TabIndex = 49;
+            this.password_box.Visible = false;
+            // 
+            // username_box
+            // 
+            this.username_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username_box.Location = new System.Drawing.Point(375, 377);
+            this.username_box.Name = "username_box";
+            this.username_box.Size = new System.Drawing.Size(309, 27);
+            this.username_box.TabIndex = 48;
+            this.username_box.Visible = false;
+            // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(840, 18);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
@@ -71,6 +274,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 18);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -94,12 +298,13 @@
             this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.exit_button.ForeColor = System.Drawing.Color.White;
+            this.exit_button.Image = ((System.Drawing.Image)(resources.GetObject("exit_button.Image")));
             this.exit_button.Location = new System.Drawing.Point(1044, 1);
             this.exit_button.Name = "exit_button";
             this.exit_button.Size = new System.Drawing.Size(14, 14);
-            this.exit_button.TabIndex = 9;
+            this.exit_button.TabIndex = 47;
             this.exit_button.UseVisualStyleBackColor = true;
-            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click_1);
             // 
             // label2
             // 
@@ -115,6 +320,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(394, 86);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(270, 146);
@@ -130,12 +336,13 @@
             this.worker_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.worker_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.worker_button.ForeColor = System.Drawing.Color.White;
-            this.worker_button.Location = new System.Drawing.Point(346, 438);
+            this.worker_button.Location = new System.Drawing.Point(344, 438);
             this.worker_button.Name = "worker_button";
             this.worker_button.Size = new System.Drawing.Size(370, 61);
             this.worker_button.TabIndex = 42;
             this.worker_button.Text = "Ik ben een werknemer";
             this.worker_button.UseVisualStyleBackColor = false;
+            this.worker_button.Click += new System.EventHandler(this.worker_button_Click);
             // 
             // klant_button
             // 
@@ -145,13 +352,92 @@
             this.klant_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.klant_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.klant_button.ForeColor = System.Drawing.Color.White;
-            this.klant_button.Location = new System.Drawing.Point(346, 365);
+            this.klant_button.Location = new System.Drawing.Point(344, 365);
             this.klant_button.Name = "klant_button";
             this.klant_button.Size = new System.Drawing.Size(370, 61);
             this.klant_button.TabIndex = 41;
             this.klant_button.Text = "Ik ben een klant";
             this.klant_button.UseVisualStyleBackColor = false;
             this.klant_button.Click += new System.EventHandler(this.klant_button_Click);
+            // 
+            // error_login
+            // 
+            this.error_login.AutoSize = true;
+            this.error_login.BackColor = System.Drawing.SystemColors.Control;
+            this.error_login.Cursor = System.Windows.Forms.Cursors.Default;
+            this.error_login.Font = new System.Drawing.Font("Century Gothic", 8F);
+            this.error_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.error_login.Location = new System.Drawing.Point(496, 483);
+            this.error_login.Name = "error_login";
+            this.error_login.Size = new System.Drawing.Size(135, 16);
+            this.error_login.TabIndex = 56;
+            this.error_login.Text = "Gegevens kloppen niet";
+            this.error_login.Visible = false;
+            this.error_login.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // nummerDataGridViewTextBoxColumn
+            // 
+            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.HeaderText = "Tafelnummer";
+            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
+            this.nummerDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // capaciteitDataGridViewTextBoxColumn
+            // 
+            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
+            this.capaciteitDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // persoonDataGridViewTextBoxColumn
+            // 
+            this.persoonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.persoonDataGridViewTextBoxColumn.DataPropertyName = "Persoon";
+            this.persoonDataGridViewTextBoxColumn.HeaderText = "Persoon";
+            this.persoonDataGridViewTextBoxColumn.Name = "persoonDataGridViewTextBoxColumn";
+            this.persoonDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dreserveringDataGridViewTextBoxColumn
+            // 
+            this.dreserveringDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dreserveringDataGridViewTextBoxColumn.DataPropertyName = "D_reservering";
+            this.dreserveringDataGridViewTextBoxColumn.HeaderText = "Datum reservering";
+            this.dreserveringDataGridViewTextBoxColumn.Name = "dreserveringDataGridViewTextBoxColumn";
+            this.dreserveringDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Tijd";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            this.timeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // tablesBindingSource
+            // 
+            this.tablesBindingSource.DataSource = typeof(HRDelicates.Tables);
+            // 
+            // adminscreenBindingSource
+            // 
+            this.adminscreenBindingSource.DataSource = typeof(HRDelicates.Adminscreen);
+            // 
+            // adminscreenBindingSource1
+            // 
+            this.adminscreenBindingSource1.DataSource = typeof(HRDelicates.Adminscreen);
+            // 
+            // adminscreenBindingSource2
+            // 
+            this.adminscreenBindingSource2.DataSource = typeof(HRDelicates.Adminscreen);
             // 
             // Introscreen
             // 
@@ -163,10 +449,15 @@
             this.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.ResumeLayout(false);
             this.intropanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -175,12 +466,32 @@
 
         private System.Windows.Forms.Panel intropanel;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button exit_button;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button worker_button;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button klant_button;
+        private System.Windows.Forms.Button exit_button;
+        private System.Windows.Forms.BindingSource tablesBindingSource;
+        private System.Windows.Forms.BindingSource adminscreenBindingSource;
+        private System.Windows.Forms.BindingSource adminscreenBindingSource1;
+        private System.Windows.Forms.BindingSource adminscreenBindingSource2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nummerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn capaciteitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn persoonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dreserveringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox password_box;
+        private System.Windows.Forms.TextBox username_box;
+        private System.Windows.Forms.Label password_text;
+        private System.Windows.Forms.Label username_text;
+        private System.Windows.Forms.Label confirmation_title;
+        private System.Windows.Forms.Button login_button;
+        private System.Windows.Forms.Button terug_login;
+        private System.Windows.Forms.Button terug_admin;
+        private System.Windows.Forms.Label error_login;
     }
 }

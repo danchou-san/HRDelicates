@@ -126,6 +126,7 @@
       <DependentUpon>Startscreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Adminscreen.datasource" />
     <None Include="Properties\DataSources\Dishes.datasource" />
     <None Include="Properties\DataSources\Tables.datasource" />
     <None Include="Properties\Settings.settings">

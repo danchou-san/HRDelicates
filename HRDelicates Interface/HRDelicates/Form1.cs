@@ -20,6 +20,7 @@ namespace HRDelicates
         {
             InitializeComponent();
             startscreen1.BringToFront();
+            introscreen1.BringToFront();
             screen_active = "home";
             home_text.Visible = true;
 
@@ -91,21 +92,21 @@ namespace HRDelicates
             }
         }
 
-        private void admin_Click(object sender, EventArgs e)
-        {
-            adminscreen1.BringToFront();
-            screen_active = "admin";
-            admin_text.Visible = true;
-            reserve_text.Visible = false;
-            menu_text.Visible = false;
-            contact_text.Visible = false;
+        //private void admin_Click(object sender, EventArgs e)
+        //{
+        //    adminscreen1.BringToFront();
+        //    screen_active = "admin";
+        //    admin_text.Visible = true;
+        //    reserve_text.Visible = false;
+        //    menu_text.Visible = false;
+        //    contact_text.Visible = false;
 
-            choose_home.Visible = false;
-            choose_reserve.Visible = false;
-            choose_menu.Visible = false;
-            choose_contact.Visible = false;
-            choose_close.Visible = false;
-        }
+        //    choose_home.Visible = false;
+        //    choose_reserve.Visible = false;
+        //    choose_menu.Visible = false;
+        //    choose_contact.Visible = false;
+        //    choose_close.Visible = false;
+        //}
 
         private void home_nav_Click(object sender, EventArgs e)
         {
@@ -240,6 +241,11 @@ namespace HRDelicates
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void introscreen1_Load(object sender, EventArgs e)
         {
 
         }
