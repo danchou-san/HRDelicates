@@ -25,15 +25,26 @@ namespace HRDelicates
 
         private void Menuscreen_Load(object sender, EventArgs e)
         {
-            var serializedStr = File.ReadAllText(path);
-            var gerechten = JsonConvert.DeserializeObject<Dishes[]>(serializedStr);
+            //    var serializedStr = File.ReadAllText(path);
+            //    var gerechten = JsonConvert.DeserializeObject<Dishes[]>(serializedStr);
 
-            //foreach(var n in gerechten)
-            //{
-            //    Console.WriteLine(n.Naam);
-            //}
+            ////foreach(var n in gerechten)
+            ////{
+            ////    Console.WriteLine(n.Naam);
+            ////}
 
-            dataGridView1.DataSource = gerechten;
+            //dataGridView1.DataSource = gerechten;
+
+            //    Dishes[] listItems = new Dishes[15];
+
+            //    for (int i = 0; i < listItems.Length; i++)
+            //    {
+            //        listItems[i] = new Dishes();
+            //        listItems[i].Naam = "Get Data";
+
+            //        //flowLayoutPanel1.Controls.Clear();
+            //        flowLayoutPanel1.Controls.Add(listItems[i]);
+            //    }
         }
 
         private void propertyGrid1_Click(object sender, EventArgs e)
@@ -47,6 +58,39 @@ namespace HRDelicates
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dishdescriptions11_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dishdescriptions5_Load(object sender, EventArgs e)
+        {
+                    }
+
+        private void finish_text_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dishdescriptions8_Load(object sender, EventArgs e)
+        {
+                    }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }

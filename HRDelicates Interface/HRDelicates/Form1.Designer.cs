@@ -55,12 +55,12 @@
             this.admin_text = new System.Windows.Forms.Label();
             this.reserve_text = new System.Windows.Forms.Label();
             this.menu_text = new System.Windows.Forms.Label();
+            this.introscreen1 = new HRDelicates.Introscreen();
+            this.reservationscreen1 = new HRDelicates.Reservationscreen();
+            this.menuscreen1 = new HRDelicates.Menuscreen();
             this.startscreen2 = new HRDelicates.Startscreen();
             this.contactscreen1 = new HRDelicates.Contactscreen();
             this.startscreen1 = new HRDelicates.Startscreen();
-            this.menuscreen1 = new HRDelicates.Menuscreen();
-            this.reservationscreen1 = new HRDelicates.Reservationscreen();
-            this.introscreen1 = new HRDelicates.Introscreen();
             this.panel1.SuspendLayout();
             this.choose_close.SuspendLayout();
             this.choose_contact.SuspendLayout();
@@ -404,6 +404,32 @@
             this.menu_text.Text = "Menukaart";
             this.menu_text.Visible = false;
             // 
+            // introscreen1
+            // 
+            this.introscreen1.Location = new System.Drawing.Point(0, 0);
+            this.introscreen1.Margin = new System.Windows.Forms.Padding(2);
+            this.introscreen1.Name = "introscreen1";
+            this.introscreen1.Size = new System.Drawing.Size(1060, 600);
+            this.introscreen1.TabIndex = 13;
+            this.introscreen1.Tables = null;
+            this.introscreen1.Load += new System.EventHandler(this.introscreen1_Load);
+            // 
+            // reservationscreen1
+            // 
+            this.reservationscreen1.Location = new System.Drawing.Point(170, 133);
+            this.reservationscreen1.Name = "reservationscreen1";
+            this.reservationscreen1.Size = new System.Drawing.Size(890, 467);
+            this.reservationscreen1.TabIndex = 11;
+            this.reservationscreen1.Tables = null;
+            // 
+            // menuscreen1
+            // 
+            this.menuscreen1.Dishes = null;
+            this.menuscreen1.Location = new System.Drawing.Point(170, 133);
+            this.menuscreen1.Name = "menuscreen1";
+            this.menuscreen1.Size = new System.Drawing.Size(890, 467);
+            this.menuscreen1.TabIndex = 10;
+            // 
             // startscreen2
             // 
             this.startscreen2.Location = new System.Drawing.Point(1047, 572);
@@ -424,32 +450,6 @@
             this.startscreen1.Name = "startscreen1";
             this.startscreen1.Size = new System.Drawing.Size(890, 467);
             this.startscreen1.TabIndex = 5;
-            // 
-            // menuscreen1
-            // 
-            this.menuscreen1.Dishes = null;
-            this.menuscreen1.Location = new System.Drawing.Point(170, 133);
-            this.menuscreen1.Name = "menuscreen1";
-            this.menuscreen1.Size = new System.Drawing.Size(890, 467);
-            this.menuscreen1.TabIndex = 10;
-            // 
-            // reservationscreen1
-            // 
-            this.reservationscreen1.Location = new System.Drawing.Point(170, 133);
-            this.reservationscreen1.Name = "reservationscreen1";
-            this.reservationscreen1.Size = new System.Drawing.Size(890, 467);
-            this.reservationscreen1.TabIndex = 11;
-            this.reservationscreen1.Tables = null;
-            // 
-            // introscreen1
-            // 
-            this.introscreen1.Location = new System.Drawing.Point(0, 0);
-            this.introscreen1.Margin = new System.Windows.Forms.Padding(2);
-            this.introscreen1.Name = "introscreen1";
-            this.introscreen1.Size = new System.Drawing.Size(1060, 600);
-            this.introscreen1.TabIndex = 13;
-            this.introscreen1.Tables = null;
-            this.introscreen1.Load += new System.EventHandler(this.introscreen1_Load);
             // 
             // Form1
             // 

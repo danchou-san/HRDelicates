@@ -61,6 +61,12 @@
     <Compile Include="Contactscreen.Designer.cs">
       <DependentUpon>Contactscreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dishdescriptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dishdescriptions.Designer.cs">
+      <DependentUpon>Dishdescriptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Contactscreen.resx">
       <DependentUpon>Contactscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dishdescriptions.resx">
+      <DependentUpon>Dishdescriptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
