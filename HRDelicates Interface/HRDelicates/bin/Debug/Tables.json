@@ -67,7 +67,7 @@
   },
   {
     "Nummer": 7,
-    "Capaciteit": 4,
+    "Capaciteit": 2,
     "Status": "Available",
     "Persoon": "",
     "Email": null,
@@ -78,7 +78,7 @@
   },
   {
     "Nummer": 8,
-    "Capaciteit": 4,
+    "Capaciteit": 2,
     "Status": "Available",
     "Persoon": "",
     "Email": null,
@@ -122,7 +122,7 @@
   },
   {
     "Nummer": 12,
-    "Capaciteit": 6,
+    "Capaciteit": 4,
     "Status": "Available",
     "Persoon": "Ariano Wongsosetro",
     "Email": null,
@@ -133,6 +133,17 @@
   },
   {
     "Nummer": 13,
+    "Capaciteit": 6,
+    "Status": "Available",
+    "Persoon": "asdasd sadasd",
+    "Email": null,
+    "Telefoon": "",
+    "A_P_P": null,
+    "D_reservering": "09-05-2020",
+    "Time": "17:00"
+  },
+  {
+    "Nummer": 14,
     "Capaciteit": 6,
     "Status": "Available",
     "Persoon": "asdasd sadasd",

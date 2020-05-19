@@ -34,31 +34,33 @@ namespace HRDelicates
             {
                 table_header_text.Visible = true;
                 table_panel.Visible = true;
-                dataGridView1.Visible = true;
+                //dataGridView1.Visible = true;
 
                 //personen_box.Value = value;
+                
                 var serializedStr = File.ReadAllText(path);
                 var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
                 //var personen_value = Convert.ToInt32(personen_box.Value);
 
                 DataTable dt = new DataTable();
-                dt.Columns.Add("Nummer");
-                dt.Columns.Add("Capaciteit");
+                //dt.Columns.Add("Nummer");
+                //dt.Columns.Add("Capaciteit");
 
                 foreach (var n in tables)
                 {
                     var capaciteit = Convert.ToInt32(n.Capaciteit);
-                    if (n.Status == "Available" && capaciteit >= personen_box.Value)
+                    if (capaciteit >= personen_box.Value && capaciteit <= (personen_box.Value + 2))
                     {
                         DataRow dr = dt.NewRow();
-                        dr["Nummer"] = n.Nummer;
-                        dr["Capaciteit"] = n.Capaciteit;
-                        dt.Rows.Add(dr);
+                        //dr["Nummer"] = n.Nummer;
+                        //dr["Capaciteit"] = n.Capaciteit;
+                        //dt.Rows.Add(dr);
 
-                        table_combo.Items.Add(dr["Nummer"]);
+                        //table_combo.Items.Add(d["Nummer"]);
+                        table_combo.Items.Add(n.Nummer);
                     }
                 }
-                dataGridView1.DataSource = dt;
+                //dataGridView1.DataSource = dt;
             }
 
         }
@@ -263,6 +265,16 @@ namespace HRDelicates
             }
 
         private void finish_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
