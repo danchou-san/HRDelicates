@@ -94,5 +94,30 @@ namespace HRDelicates
         {
 
         }
+
+        private void textBox36_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox39_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox38_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

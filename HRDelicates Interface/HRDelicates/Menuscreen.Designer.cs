@@ -33,7 +33,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dish_descriptions = new System.Windows.Forms.TextBox();
             this.dish_title = new System.Windows.Forms.TextBox();
@@ -108,6 +107,7 @@
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.dishesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -196,15 +196,6 @@
             this.panel1.Size = new System.Drawing.Size(212, 307);
             this.panel1.TabIndex = 0;
             // 
-            // imageList2
-            // 
-            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
-            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "wm.png");
-            this.imageList2.Images.SetKeyName(1, "WhatsApp Image 2020-03-17 at 22.39.51.jpeg");
-            this.imageList2.Images.SetKeyName(2, "Testplan (1).PNG");
-            this.imageList2.Images.SetKeyName(3, "spaghetti+pretty.jpg");
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -216,7 +207,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(187, 33);
             this.textBox1.TabIndex = 45;
-            this.textBox1.Text = "€10,00";
+            this.textBox1.Text = "€ 10,-";
             // 
             // dish_descriptions
             // 
@@ -278,7 +269,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(187, 33);
             this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "€12,50";
+            this.textBox2.Text = "€ 12,50,-";
             // 
             // textBox3
             // 
@@ -292,7 +283,8 @@
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(187, 59);
             this.textBox3.TabIndex = 44;
-            this.textBox3.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox3.Text = "Gevuld met sla, tomaat, kaas, rode ui en bacon.";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -340,7 +332,7 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(187, 33);
             this.textBox5.TabIndex = 45;
-            this.textBox5.Text = "€6,50";
+            this.textBox5.Text = "€ 6,50,-";
             // 
             // textBox6
             // 
@@ -354,7 +346,7 @@
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(187, 59);
             this.textBox6.TabIndex = 44;
-            this.textBox6.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox6.Text = "Een mousse met slagroom, keuze uit melk of witte chocola.";
             // 
             // textBox7
             // 
@@ -402,7 +394,7 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(187, 33);
             this.textBox8.TabIndex = 45;
-            this.textBox8.Text = "€4,50";
+            this.textBox8.Text = "€ 4,50,-";
             // 
             // textBox9
             // 
@@ -416,7 +408,8 @@
             this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(187, 59);
             this.textBox9.TabIndex = 44;
-            this.textBox9.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox9.Text = "Vanille ijs met chocoladesaus en slagroom.\r\n";
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox10
             // 
@@ -464,7 +457,7 @@
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(187, 33);
             this.textBox11.TabIndex = 45;
-            this.textBox11.Text = "$1,50";
+            this.textBox11.Text = "€ 6,50,-";
             // 
             // textBox12
             // 
@@ -476,9 +469,9 @@
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(187, 59);
+            this.textBox12.Size = new System.Drawing.Size(187, 76);
             this.textBox12.TabIndex = 44;
-            this.textBox12.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox12.Text = "Geserveerd met honingmosterd dressing, walnoten, croutons en pijnboompitten.";
             // 
             // textBox13
             // 
@@ -526,7 +519,7 @@
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(187, 33);
             this.textBox14.TabIndex = 45;
-            this.textBox14.Text = "$1,50";
+            this.textBox14.Text = "€ 12,50,-";
             // 
             // textBox15
             // 
@@ -538,9 +531,10 @@
             this.textBox15.Multiline = true;
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(187, 59);
+            this.textBox15.Size = new System.Drawing.Size(187, 76);
             this.textBox15.TabIndex = 44;
-            this.textBox15.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox15.Text = "Ons zelfgemaakte kaasplankje! Met roquefort kaas, goudse kaas, en onze eigen kaas" +
+    " van 2 jaar oud.\r\n";
             // 
             // textBox16
             // 
@@ -588,7 +582,7 @@
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(187, 33);
             this.textBox17.TabIndex = 45;
-            this.textBox17.Text = "$1,50";
+            this.textBox17.Text = "€ 5,50,-";
             // 
             // textBox18
             // 
@@ -602,7 +596,8 @@
             this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(187, 59);
             this.textBox18.TabIndex = 44;
-            this.textBox18.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox18.Text = "Een bondige kippensoep, bereid met ui, prei, wortel, tijm, laurier en peterselie." +
+    "";
             // 
             // textBox19
             // 
@@ -650,7 +645,7 @@
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(187, 33);
             this.textBox20.TabIndex = 45;
-            this.textBox20.Text = "$1,50";
+            this.textBox20.Text = "€ 13,50,-";
             // 
             // textBox21
             // 
@@ -664,7 +659,7 @@
             this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(187, 59);
             this.textBox21.TabIndex = 44;
-            this.textBox21.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox21.Text = "4 stokjes kipsate, met pindasaus.\r\n";
             // 
             // textBox22
             // 
@@ -712,7 +707,7 @@
             this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(187, 33);
             this.textBox23.TabIndex = 45;
-            this.textBox23.Text = "$1,50";
+            this.textBox23.Text = "€ 12,-";
             // 
             // textBox24
             // 
@@ -724,9 +719,10 @@
             this.textBox24.Multiline = true;
             this.textBox24.Name = "textBox24";
             this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(187, 59);
+            this.textBox24.Size = new System.Drawing.Size(187, 70);
             this.textBox24.TabIndex = 44;
-            this.textBox24.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox24.Text = "Een heerlijke lasagne, Bereid met rundergehakt, romige bechamelsaus, geraspte kaa" +
+    "s, ui en knoflook.";
             // 
             // textBox25
             // 
@@ -774,7 +770,7 @@
             this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(187, 33);
             this.textBox26.TabIndex = 45;
-            this.textBox26.Text = "$1,50";
+            this.textBox26.Text = "€ 4,50,-";
             // 
             // textBox27
             // 
@@ -788,7 +784,7 @@
             this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(187, 59);
             this.textBox27.TabIndex = 44;
-            this.textBox27.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox27.Text = " Romig vanilleijs samen met stukjes fruit, koek en een toefje slagroom.";
             // 
             // textBox28
             // 
@@ -837,7 +833,7 @@
             this.textBox29.ReadOnly = true;
             this.textBox29.Size = new System.Drawing.Size(187, 33);
             this.textBox29.TabIndex = 45;
-            this.textBox29.Text = "$1,50";
+            this.textBox29.Text = "€ 11,75,-";
             // 
             // textBox30
             // 
@@ -851,7 +847,7 @@
             this.textBox30.ReadOnly = true;
             this.textBox30.Size = new System.Drawing.Size(187, 59);
             this.textBox30.TabIndex = 44;
-            this.textBox30.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox30.Text = "Gemaakt met een smeuïge bolognesesaus.";
             // 
             // textBox31
             // 
@@ -899,7 +895,7 @@
             this.textBox32.ReadOnly = true;
             this.textBox32.Size = new System.Drawing.Size(187, 33);
             this.textBox32.TabIndex = 45;
-            this.textBox32.Text = "$1,50";
+            this.textBox32.Text = "€ 16,-";
             // 
             // textBox33
             // 
@@ -913,7 +909,7 @@
             this.textBox33.ReadOnly = true;
             this.textBox33.Size = new System.Drawing.Size(187, 59);
             this.textBox33.TabIndex = 44;
-            this.textBox33.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox33.Text = "Spareribs met een smaak naar keuze: honing, ketjap, pittig of kruidenboter.";
             // 
             // textBox34
             // 
@@ -961,7 +957,7 @@
             this.textBox35.ReadOnly = true;
             this.textBox35.Size = new System.Drawing.Size(187, 33);
             this.textBox35.TabIndex = 45;
-            this.textBox35.Text = "$1,50";
+            this.textBox35.Text = "€ 9,-";
             // 
             // textBox36
             // 
@@ -975,7 +971,8 @@
             this.textBox36.ReadOnly = true;
             this.textBox36.Size = new System.Drawing.Size(187, 59);
             this.textBox36.TabIndex = 44;
-            this.textBox36.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox36.Text = "Gemaakt van 100% rundvlees, bereid met ui, ei, mayonaise en kappertjes.";
+            this.textBox36.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
             // 
             // textBox37
             // 
@@ -1023,7 +1020,8 @@
             this.textBox38.ReadOnly = true;
             this.textBox38.Size = new System.Drawing.Size(187, 33);
             this.textBox38.TabIndex = 45;
-            this.textBox38.Text = "$1,50";
+            this.textBox38.Text = "€ 5,-";
+            this.textBox38.TextChanged += new System.EventHandler(this.textBox38_TextChanged);
             // 
             // textBox39
             // 
@@ -1037,7 +1035,8 @@
             this.textBox39.ReadOnly = true;
             this.textBox39.Size = new System.Drawing.Size(187, 59);
             this.textBox39.TabIndex = 44;
-            this.textBox39.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox39.Text = "Een heerlijk voorafje! Met knoflookboter en tampenade.";
+            this.textBox39.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
             // 
             // textBox40
             // 
@@ -1085,7 +1084,7 @@
             this.textBox41.ReadOnly = true;
             this.textBox41.Size = new System.Drawing.Size(187, 33);
             this.textBox41.TabIndex = 45;
-            this.textBox41.Text = "$1,50";
+            this.textBox41.Text = "€ 15,50,-";
             // 
             // textBox42
             // 
@@ -1097,9 +1096,10 @@
             this.textBox42.Multiline = true;
             this.textBox42.Name = "textBox42";
             this.textBox42.ReadOnly = true;
-            this.textBox42.Size = new System.Drawing.Size(187, 59);
+            this.textBox42.Size = new System.Drawing.Size(187, 70);
             this.textBox42.TabIndex = 44;
-            this.textBox42.Text = "iusdhgisudghuierghiuerghergjehrgkdfjgldfg";
+            this.textBox42.Text = "Keuze uit varkensvlees/rundvlees: Bereid met knoflook, laurier, tijm, en mosterd." +
+    "";
             // 
             // textBox43
             // 
@@ -1123,6 +1123,15 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 42;
             this.pictureBox15.TabStop = false;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "wm.png");
+            this.imageList2.Images.SetKeyName(1, "WhatsApp Image 2020-03-17 at 22.39.51.jpeg");
+            this.imageList2.Images.SetKeyName(2, "Testplan (1).PNG");
+            this.imageList2.Images.SetKeyName(3, "spaghetti+pretty.jpg");
             // 
             // dishesBindingSource
             // 
