@@ -61,6 +61,7 @@ namespace HRDelicates
 
         private void terug_admin_Click(object sender, EventArgs e)
         {
+            edit_panel.Visible = false;
             dataGridView1.Visible = false;
             klant_button.Visible = false;
             worker_button.Visible = false;
@@ -108,6 +109,8 @@ namespace HRDelicates
                 dataGridView1.Visible = true;
                 dataGridView1.BringToFront();
                 terug_admin.Visible = true;
+                edit_panel.Visible = true;
+                edit_panel.BringToFront();
                 terug_login.Visible = false;
                 login_header.Visible = false;
 
@@ -174,6 +177,21 @@ namespace HRDelicates
         }
 
         private void username_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void table_edit_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

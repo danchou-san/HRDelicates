@@ -34,6 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Introscreen));
             this.intropanel = new System.Windows.Forms.Panel();
+            this.edit_panel = new System.Windows.Forms.Panel();
+            this.delete_reservation = new System.Windows.Forms.Button();
+            this.edit_reservation = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.table_edit = new System.Windows.Forms.ComboBox();
+            this.edit_label = new System.Windows.Forms.Label();
             this.terug_admin = new System.Windows.Forms.Button();
             this.terug_login = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -61,6 +67,7 @@
             this.dreserveringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tablesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.tablesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.adminscreenBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.adminscreenBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -69,12 +76,14 @@
             this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.intropanel.SuspendLayout();
+            this.edit_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource1)).BeginInit();
@@ -86,6 +95,7 @@
             // 
             // intropanel
             // 
+            this.intropanel.Controls.Add(this.edit_panel);
             this.intropanel.Controls.Add(this.terug_admin);
             this.intropanel.Controls.Add(this.terug_login);
             this.intropanel.Controls.Add(this.dataGridView1);
@@ -109,6 +119,98 @@
             this.intropanel.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.TabIndex = 14;
             this.intropanel.Paint += new System.Windows.Forms.PaintEventHandler(this.intropanel_Paint);
+            // 
+            // edit_panel
+            // 
+            this.edit_panel.Controls.Add(this.delete_reservation);
+            this.edit_panel.Controls.Add(this.edit_reservation);
+            this.edit_panel.Controls.Add(this.label13);
+            this.edit_panel.Controls.Add(this.table_edit);
+            this.edit_panel.Controls.Add(this.edit_label);
+            this.edit_panel.Location = new System.Drawing.Point(220, 391);
+            this.edit_panel.Name = "edit_panel";
+            this.edit_panel.Size = new System.Drawing.Size(840, 209);
+            this.edit_panel.TabIndex = 58;
+            this.edit_panel.Visible = false;
+            this.edit_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // delete_reservation
+            // 
+            this.delete_reservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.delete_reservation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delete_reservation.FlatAppearance.BorderSize = 0;
+            this.delete_reservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_reservation.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.delete_reservation.ForeColor = System.Drawing.Color.White;
+            this.delete_reservation.Location = new System.Drawing.Point(589, 99);
+            this.delete_reservation.Name = "delete_reservation";
+            this.delete_reservation.Size = new System.Drawing.Size(172, 61);
+            this.delete_reservation.TabIndex = 60;
+            this.delete_reservation.Text = "Verwijderen";
+            this.delete_reservation.UseVisualStyleBackColor = false;
+            // 
+            // edit_reservation
+            // 
+            this.edit_reservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.edit_reservation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.edit_reservation.FlatAppearance.BorderSize = 0;
+            this.edit_reservation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.edit_reservation.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.edit_reservation.ForeColor = System.Drawing.Color.White;
+            this.edit_reservation.Location = new System.Drawing.Point(333, 99);
+            this.edit_reservation.Name = "edit_reservation";
+            this.edit_reservation.Size = new System.Drawing.Size(172, 61);
+            this.edit_reservation.TabIndex = 59;
+            this.edit_reservation.Text = "Bewerken";
+            this.edit_reservation.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label13.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label13.Location = new System.Drawing.Point(83, 99);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 21);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Tafel:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // table_edit
+            // 
+            this.table_edit.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table_edit.FormattingEnabled = true;
+            this.table_edit.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14"});
+            this.table_edit.Location = new System.Drawing.Point(87, 123);
+            this.table_edit.Name = "table_edit";
+            this.table_edit.Size = new System.Drawing.Size(162, 29);
+            this.table_edit.TabIndex = 42;
+            this.table_edit.SelectedIndexChanged += new System.EventHandler(this.table_edit_SelectedIndexChanged);
+            // 
+            // edit_label
+            // 
+            this.edit_label.AutoSize = true;
+            this.edit_label.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.edit_label.Location = new System.Drawing.Point(191, 23);
+            this.edit_label.Name = "edit_label";
+            this.edit_label.Size = new System.Drawing.Size(444, 25);
+            this.edit_label.TabIndex = 41;
+            this.edit_label.Text = "Kies een reservering die u wilt bewerken:";
             // 
             // terug_admin
             // 
@@ -196,7 +298,7 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.ShowCellToolTips = false;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(840, 582);
+            this.dataGridView1.Size = new System.Drawing.Size(840, 373);
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -457,6 +559,10 @@
             // 
             this.tablesBindingSource4.DataSource = typeof(HRDelicates.Tables);
             // 
+            // tablesBindingSource5
+            // 
+            this.tablesBindingSource5.DataSource = typeof(HRDelicates.Tables);
+            // 
             // tablesBindingSource
             // 
             this.tablesBindingSource.DataSource = typeof(HRDelicates.Tables);
@@ -495,12 +601,15 @@
             this.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.ResumeLayout(false);
             this.intropanel.PerformLayout();
+            this.edit_panel.ResumeLayout(false);
+            this.edit_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource1)).EndInit();
@@ -549,5 +658,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Telefoon;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel edit_panel;
+        private System.Windows.Forms.Label edit_label;
+        private System.Windows.Forms.ComboBox table_edit;
+        private System.Windows.Forms.Button delete_reservation;
+        private System.Windows.Forms.Button edit_reservation;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.BindingSource tablesBindingSource5;
     }
 }

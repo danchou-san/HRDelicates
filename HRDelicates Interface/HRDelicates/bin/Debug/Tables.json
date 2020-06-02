@@ -135,12 +135,12 @@
     "Nummer": 13,
     "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": "asdasd sadasd",
-    "Email": null,
-    "Telefoon": "",
+    "Persoon": "a a",
+    "Email": "@.com",
+    "Telefoon": "0612345678",
     "A_P_P": null,
-    "D_reservering": "09-05-2020",
-    "Time": "17:00"
+    "D_reservering": "02-06-2020",
+    "Time": "23:00"
   },
   {
     "Nummer": 14,
