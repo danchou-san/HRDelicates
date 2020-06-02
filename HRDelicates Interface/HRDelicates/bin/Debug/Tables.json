@@ -3,34 +3,34 @@
     "Nummer": 1,
     "Capaciteit": 2,
     "Status": "Unavailable",
-    "Persoon": "Ariano Wongsosetro",
-    "Email": null,
-    "Telefoon": null,
+    "Persoon": "",
+    "Email": "",
+    "Telefoon": "",
     "A_P_P": null,
-    "D_reservering": "20-10-2020",
-    "Time": "18:00"
+    "D_reservering": "",
+    "Time": ""
   },
   {
     "Nummer": 2,
     "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": "dsadas asdasd",
-    "Email": "@.com",
-    "Telefoon": "0616788802",
+    "Persoon": "",
+    "Email": "",
+    "Telefoon": "",
     "A_P_P": null,
-    "D_reservering": "11-05-2020",
-    "Time": "18:00"
+    "D_reservering": "",
+    "Time": ""
   },
   {
     "Nummer": 3,
     "Capaciteit": 2,
     "Status": "Available",
-    "Persoon": "kevin ling",
-    "Email": "kevingosu1@gmail.com",
-    "Telefoon": "0616788802",
+    "Persoon": "",
+    "Email": "",
+    "Telefoon": "",
     "A_P_P": null,
-    "D_reservering": "11-05-2020",
-    "Time": "18:00"
+    "D_reservering": "",
+    "Time": ""
   },
   {
     "Nummer": 4,
@@ -92,8 +92,8 @@
     "Capaciteit": 4,
     "Status": "Unavailable",
     "Persoon": "Ariano Bob",
-    "Email": null,
-    "Telefoon": null,
+    "Email": "@.com",
+    "Telefoon": "",
     "A_P_P": null,
     "D_reservering": "22-01-2020",
     "Time": "19:00"
@@ -113,9 +113,9 @@
     "Nummer": 11,
     "Capaciteit": 4,
     "Status": "Available",
-    "Persoon": "Jan Bob",
-    "Email": null,
-    "Telefoon": null,
+    "Persoon": "Jan Bob ",
+    "Email": "@.com",
+    "Telefoon": "",
     "A_P_P": null,
     "D_reservering": "20-12-2020",
     "Time": "18:00"
@@ -135,22 +135,22 @@
     "Nummer": 13,
     "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": "a a",
-    "Email": "@.com",
-    "Telefoon": "0612345678",
+    "Persoon": "",
+    "Email": "",
+    "Telefoon": "",
     "A_P_P": null,
-    "D_reservering": "02-06-2020",
-    "Time": "23:00"
+    "D_reservering": "",
+    "Time": ""
   },
   {
     "Nummer": 14,
     "Capaciteit": 6,
     "Status": "Available",
-    "Persoon": "asdasd sadasd",
-    "Email": null,
+    "Persoon": "",
+    "Email": "",
     "Telefoon": "",
     "A_P_P": null,
-    "D_reservering": "09-05-2020",
-    "Time": "17:00"
+    "D_reservering": "",
+    "Time": ""
   }
 ]

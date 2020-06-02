@@ -21,6 +21,8 @@ namespace HRDelicates
         public Introscreen()
         {
             InitializeComponent();
+            dataGridView1.DefaultCellStyle.SelectionBackColor = dataGridView1.DefaultCellStyle.BackColor;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = dataGridView1.DefaultCellStyle.ForeColor;
         }
 
         private void klant_button_Click(object sender, EventArgs e)
@@ -131,8 +133,11 @@ namespace HRDelicates
 
                 foreach (var n in tables)
                 {
+
                     if (n.Persoon != "")
                     {
+                        table_edit.Items.Add(n.Nummer);
+
                         DataRow dr = dt.NewRow();
                         dr["Nummer"] = n.Nummer;
                         dr["Capaciteit"] = n.Capaciteit;
@@ -153,7 +158,6 @@ namespace HRDelicates
             {
                 error_login.Visible = true;
             }
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -191,9 +195,126 @@ namespace HRDelicates
 
         }
 
+        private void delete_reservation_Click(object sender, EventArgs e)
+        { 
+            string json = File.ReadAllText(path);
+            dynamic jsonObj = JsonConvert.DeserializeObject(json);
+
+            if (table_edit.Text != "")
+            {
+                jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"] = "";
+                jsonObj[Int32.Parse(table_edit.Text) - 1]["D_reservering"] = "";
+                jsonObj[Int32.Parse(table_edit.Text) - 1]["Time"] = "";
+                jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"] = "";
+                jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"] = "";
+                string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
+                File.WriteAllText(path, output);
+                dataGridView1.Update();
+                dataGridView1.Refresh();
+
+                var serializedStr = File.ReadAllText(path);
+                var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
+
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Nummer");
+                dt.Columns.Add("Capaciteit");
+                dt.Columns.Add("Status");
+                dt.Columns.Add("Persoon");
+                dt.Columns.Add("Email");
+                dt.Columns.Add("D_reservering");
+                dt.Columns.Add("Time");
+
+                foreach (var n in tables)
+                {
+                    if (n.Persoon != "")
+                    {
+                        DataRow dr = dt.NewRow();
+                        dr["Nummer"] = n.Nummer;
+                        dr["Capaciteit"] = n.Capaciteit;
+                        dr["Status"] = n.Status;
+                        dr["Persoon"] = n.Persoon;
+                        dr["Email"] = n.Email;
+                        dr["D_reservering"] = n.D_reservering;
+                        dr["Time"] = n.Time;
+
+                        dt.Rows.Add(dr);
+                    }
+                }
+                dataGridView1.DataSource = dt;
+            }
+            
+        }
+
+        private void edit_reservation_Click(object sender, EventArgs e)
+        {
+            edit_panel2.Visible = true;
+            edit_panel2.BringToFront();
+
+            string json = File.ReadAllText(path);
+            dynamic jsonObj = JsonConvert.DeserializeObject(json);
+
+            edit_name.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"];
+            edit_phone.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"];
+            edit_mail.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"];
+
+            table_number.Text = table_edit.Text;
+        }
+
+        private void confirm_edit_Click(object sender, EventArgs e)
+        {
+            string json = File.ReadAllText(path);
+            dynamic jsonObj = JsonConvert.DeserializeObject(json);
+
+            jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"] = edit_name.Text + " " + edit_lastname.Text;
+            jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"] = edit_phone.Text;
+            jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"] = edit_mail.Text;
+
+            string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
+            File.WriteAllText(path, output);
+
+            edit_panel2.Visible = false;
+
+            var serializedStr = File.ReadAllText(path);
+            var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Nummer");
+            dt.Columns.Add("Capaciteit");
+            dt.Columns.Add("Status");
+            dt.Columns.Add("Persoon");
+            dt.Columns.Add("Email");
+            dt.Columns.Add("D_reservering");
+            dt.Columns.Add("Time");
+
+            foreach (var n in tables)
+            {
+                if (n.Persoon != "")
+                {
+                    DataRow dr = dt.NewRow();
+                    dr["Nummer"] = n.Nummer;
+                    dr["Capaciteit"] = n.Capaciteit;
+                    dr["Status"] = n.Status;
+                    dr["Persoon"] = n.Persoon;
+                    dr["Email"] = n.Email;
+                    dr["D_reservering"] = n.D_reservering;
+                    dr["Time"] = n.Time;
+
+                    dt.Rows.Add(dr);
+                }
+            }
+            dataGridView1.DataSource = dt;
+        }
+
+        private void edit_back_Click(object sender, EventArgs e)
+        {
+            edit_panel2.Visible = false;
+        }
+        
         private void table_edit_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

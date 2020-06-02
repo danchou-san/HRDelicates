@@ -287,7 +287,7 @@ namespace HRDelicates
             jsonObj[Int32.Parse(table_value.Text) - 1]["D_reservering"] = date_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Time"] = time_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Telefoon"] = phone_value.Text;
-            jsonObj[Int32.Parse(table_value.Text) - 1]["Email"] = email_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Email"] = email_value.Text; 
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
             File.WriteAllText(path, output);
 

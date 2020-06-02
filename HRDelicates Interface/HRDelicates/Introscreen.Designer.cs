@@ -34,6 +34,26 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Introscreen));
             this.intropanel = new System.Windows.Forms.Panel();
+            this.edit_panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.confirm_edit = new System.Windows.Forms.Button();
+            this.edit_place = new System.Windows.Forms.TextBox();
+            this.edit_postal = new System.Windows.Forms.TextBox();
+            this.edit_address = new System.Windows.Forms.TextBox();
+            this.edit_lastname = new System.Windows.Forms.TextBox();
+            this.edit_name = new System.Windows.Forms.TextBox();
+            this.edit_phone = new System.Windows.Forms.TextBox();
+            this.Verplicht_text = new System.Windows.Forms.Label();
+            this.edit_mail = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.table_number = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.edit_panel = new System.Windows.Forms.Panel();
             this.delete_reservation = new System.Windows.Forms.Button();
             this.edit_reservation = new System.Windows.Forms.Button();
@@ -60,6 +80,7 @@
             this.worker_button = new System.Windows.Forms.Button();
             this.klant_button = new System.Windows.Forms.Button();
             this.error_login = new System.Windows.Forms.Label();
+            this.edit_back = new System.Windows.Forms.Button();
             this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,6 +97,7 @@
             this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.intropanel.SuspendLayout();
+            this.edit_panel2.SuspendLayout();
             this.edit_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -95,6 +117,7 @@
             // 
             // intropanel
             // 
+            this.intropanel.Controls.Add(this.edit_panel2);
             this.intropanel.Controls.Add(this.edit_panel);
             this.intropanel.Controls.Add(this.terug_admin);
             this.intropanel.Controls.Add(this.terug_login);
@@ -119,6 +142,216 @@
             this.intropanel.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.TabIndex = 14;
             this.intropanel.Paint += new System.Windows.Forms.PaintEventHandler(this.intropanel_Paint);
+            // 
+            // edit_panel2
+            // 
+            this.edit_panel2.Controls.Add(this.edit_back);
+            this.edit_panel2.Controls.Add(this.label7);
+            this.edit_panel2.Controls.Add(this.label6);
+            this.edit_panel2.Controls.Add(this.label5);
+            this.edit_panel2.Controls.Add(this.label4);
+            this.edit_panel2.Controls.Add(this.label3);
+            this.edit_panel2.Controls.Add(this.label10);
+            this.edit_panel2.Controls.Add(this.label11);
+            this.edit_panel2.Controls.Add(this.confirm_edit);
+            this.edit_panel2.Controls.Add(this.edit_place);
+            this.edit_panel2.Controls.Add(this.edit_postal);
+            this.edit_panel2.Controls.Add(this.edit_address);
+            this.edit_panel2.Controls.Add(this.edit_lastname);
+            this.edit_panel2.Controls.Add(this.edit_name);
+            this.edit_panel2.Controls.Add(this.edit_phone);
+            this.edit_panel2.Controls.Add(this.Verplicht_text);
+            this.edit_panel2.Controls.Add(this.edit_mail);
+            this.edit_panel2.Controls.Add(this.label12);
+            this.edit_panel2.Controls.Add(this.table_number);
+            this.edit_panel2.Controls.Add(this.label1);
+            this.edit_panel2.Location = new System.Drawing.Point(220, 18);
+            this.edit_panel2.Name = "edit_panel2";
+            this.edit_panel2.Size = new System.Drawing.Size(840, 582);
+            this.edit_panel2.TabIndex = 59;
+            this.edit_panel2.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label7.Location = new System.Drawing.Point(72, 267);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(133, 19);
+            this.label7.TabIndex = 57;
+            this.label7.Text = "Telefoonnummer *";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label6.Location = new System.Drawing.Point(489, 213);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 19);
+            this.label6.TabIndex = 56;
+            this.label6.Text = "Plaats";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label5.Location = new System.Drawing.Point(378, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 19);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Postcode";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label4.Location = new System.Drawing.Point(72, 212);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 19);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Adres";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label3.Location = new System.Drawing.Point(406, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 19);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "Achternaam *";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label10.Location = new System.Drawing.Point(72, 157);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 19);
+            this.label10.TabIndex = 52;
+            this.label10.Text = "Voornaam *";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 16F);
+            this.label11.Location = new System.Drawing.Point(310, 118);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(229, 25);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "Vul uw gegevens in:";
+            // 
+            // confirm_edit
+            // 
+            this.confirm_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.confirm_edit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirm_edit.FlatAppearance.BorderSize = 0;
+            this.confirm_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confirm_edit.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.confirm_edit.ForeColor = System.Drawing.Color.White;
+            this.confirm_edit.Location = new System.Drawing.Point(417, 401);
+            this.confirm_edit.Name = "confirm_edit";
+            this.confirm_edit.Size = new System.Drawing.Size(170, 61);
+            this.confirm_edit.TabIndex = 50;
+            this.confirm_edit.Text = "Bewerken";
+            this.confirm_edit.UseVisualStyleBackColor = false;
+            this.confirm_edit.Click += new System.EventHandler(this.confirm_edit_Click);
+            // 
+            // edit_place
+            // 
+            this.edit_place.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_place.Location = new System.Drawing.Point(491, 234);
+            this.edit_place.Name = "edit_place";
+            this.edit_place.Size = new System.Drawing.Size(284, 27);
+            this.edit_place.TabIndex = 48;
+            // 
+            // edit_postal
+            // 
+            this.edit_postal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_postal.Location = new System.Drawing.Point(381, 234);
+            this.edit_postal.Name = "edit_postal";
+            this.edit_postal.Size = new System.Drawing.Size(88, 27);
+            this.edit_postal.TabIndex = 47;
+            // 
+            // edit_address
+            // 
+            this.edit_address.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_address.Location = new System.Drawing.Point(76, 234);
+            this.edit_address.Name = "edit_address";
+            this.edit_address.Size = new System.Drawing.Size(284, 27);
+            this.edit_address.TabIndex = 46;
+            // 
+            // edit_lastname
+            // 
+            this.edit_lastname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_lastname.Location = new System.Drawing.Point(405, 179);
+            this.edit_lastname.Name = "edit_lastname";
+            this.edit_lastname.Size = new System.Drawing.Size(370, 27);
+            this.edit_lastname.TabIndex = 45;
+            // 
+            // edit_name
+            // 
+            this.edit_name.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_name.Location = new System.Drawing.Point(76, 179);
+            this.edit_name.Name = "edit_name";
+            this.edit_name.Size = new System.Drawing.Size(309, 27);
+            this.edit_name.TabIndex = 44;
+            // 
+            // edit_phone
+            // 
+            this.edit_phone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_phone.Location = new System.Drawing.Point(75, 288);
+            this.edit_phone.Name = "edit_phone";
+            this.edit_phone.Size = new System.Drawing.Size(328, 27);
+            this.edit_phone.TabIndex = 61;
+            // 
+            // Verplicht_text
+            // 
+            this.Verplicht_text.AutoSize = true;
+            this.Verplicht_text.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Verplicht_text.Location = new System.Drawing.Point(74, 348);
+            this.Verplicht_text.Name = "Verplicht_text";
+            this.Verplicht_text.Size = new System.Drawing.Size(114, 15);
+            this.Verplicht_text.TabIndex = 62;
+            this.Verplicht_text.Text = "* Verplichte velden";
+            // 
+            // edit_mail
+            // 
+            this.edit_mail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_mail.Location = new System.Drawing.Point(421, 288);
+            this.edit_mail.Name = "edit_mail";
+            this.edit_mail.Size = new System.Drawing.Size(354, 27);
+            this.edit_mail.TabIndex = 63;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label12.Location = new System.Drawing.Point(417, 267);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(56, 19);
+            this.label12.TabIndex = 64;
+            this.label12.Text = "Email *";
+            // 
+            // table_number
+            // 
+            this.table_number.AutoSize = true;
+            this.table_number.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.table_number.Location = new System.Drawing.Point(443, 10);
+            this.table_number.Name = "table_number";
+            this.table_number.Size = new System.Drawing.Size(30, 33);
+            this.table_number.TabIndex = 43;
+            this.table_number.Text = "1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.label1.Location = new System.Drawing.Point(376, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 33);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Tafel";
             // 
             // edit_panel
             // 
@@ -148,6 +381,7 @@
             this.delete_reservation.TabIndex = 60;
             this.delete_reservation.Text = "Verwijderen";
             this.delete_reservation.UseVisualStyleBackColor = false;
+            this.delete_reservation.Click += new System.EventHandler(this.delete_reservation_Click);
             // 
             // edit_reservation
             // 
@@ -163,6 +397,7 @@
             this.edit_reservation.TabIndex = 59;
             this.edit_reservation.Text = "Bewerken";
             this.edit_reservation.UseVisualStyleBackColor = false;
+            this.edit_reservation.Click += new System.EventHandler(this.edit_reservation_Click);
             // 
             // label13
             // 
@@ -181,21 +416,6 @@
             // 
             this.table_edit.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.table_edit.FormattingEnabled = true;
-            this.table_edit.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14"});
             this.table_edit.Location = new System.Drawing.Point(87, 123);
             this.table_edit.Name = "table_edit";
             this.table_edit.Size = new System.Drawing.Size(162, 29);
@@ -282,6 +502,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Enabled = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(220, 18);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
@@ -509,6 +730,22 @@
             this.error_login.Visible = false;
             this.error_login.Click += new System.EventHandler(this.label1_Click);
             // 
+            // edit_back
+            // 
+            this.edit_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.edit_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.edit_back.FlatAppearance.BorderSize = 0;
+            this.edit_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.edit_back.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.edit_back.ForeColor = System.Drawing.Color.White;
+            this.edit_back.Location = new System.Drawing.Point(239, 401);
+            this.edit_back.Name = "edit_back";
+            this.edit_back.Size = new System.Drawing.Size(172, 61);
+            this.edit_back.TabIndex = 60;
+            this.edit_back.Text = "Terug";
+            this.edit_back.UseVisualStyleBackColor = false;
+            this.edit_back.Click += new System.EventHandler(this.edit_back_Click);
+            // 
             // nummerDataGridViewTextBoxColumn
             // 
             this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -601,6 +838,8 @@
             this.Size = new System.Drawing.Size(1060, 600);
             this.intropanel.ResumeLayout(false);
             this.intropanel.PerformLayout();
+            this.edit_panel2.ResumeLayout(false);
+            this.edit_panel2.PerformLayout();
             this.edit_panel.ResumeLayout(false);
             this.edit_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -665,5 +904,26 @@
         private System.Windows.Forms.Button edit_reservation;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.BindingSource tablesBindingSource5;
+        private System.Windows.Forms.Panel edit_panel2;
+        private System.Windows.Forms.Label table_number;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button confirm_edit;
+        private System.Windows.Forms.TextBox edit_place;
+        private System.Windows.Forms.TextBox edit_postal;
+        private System.Windows.Forms.TextBox edit_address;
+        private System.Windows.Forms.TextBox edit_lastname;
+        private System.Windows.Forms.TextBox edit_name;
+        private System.Windows.Forms.TextBox edit_phone;
+        private System.Windows.Forms.Label Verplicht_text;
+        private System.Windows.Forms.TextBox edit_mail;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button edit_back;
     }
 }

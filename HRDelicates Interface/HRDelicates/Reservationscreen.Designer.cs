@@ -47,36 +47,6 @@
             this.personen_box = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.table_panel = new System.Windows.Forms.Panel();
-            this.chosen_table = new System.Windows.Forms.TextBox();
-            this.table14 = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.table13 = new System.Windows.Forms.Button();
-            this.table12 = new System.Windows.Forms.Button();
-            this.table11 = new System.Windows.Forms.Button();
-            this.table10 = new System.Windows.Forms.Button();
-            this.table9 = new System.Windows.Forms.Button();
-            this.table8 = new System.Windows.Forms.Button();
-            this.table7 = new System.Windows.Forms.Button();
-            this.table6 = new System.Windows.Forms.Button();
-            this.table5 = new System.Windows.Forms.Button();
-            this.table4 = new System.Windows.Forms.Button();
-            this.table3 = new System.Windows.Forms.Button();
-            this.table2 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.table1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.verification_panel = new System.Windows.Forms.Panel();
             this.finish_panel = new System.Windows.Forms.Panel();
             this.finish_text = new System.Windows.Forms.Label();
@@ -103,6 +73,41 @@
             this.label10 = new System.Windows.Forms.Label();
             this.time_box = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.table1 = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.table3 = new System.Windows.Forms.Button();
+            this.table13 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.table9 = new System.Windows.Forms.Button();
+            this.table11 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.table5 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.table7 = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.table2 = new System.Windows.Forms.Button();
+            this.table4 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.table10 = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.table12 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.table6 = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.table14 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.table8 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.chosen_table = new System.Windows.Forms.TextBox();
             this.datum_box = new System.Windows.Forms.DateTimePicker();
             this.telefoon_Box = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -110,19 +115,14 @@
             this.email_box = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
             this.table_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.verification_panel.SuspendLayout();
             this.finish_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
@@ -346,400 +346,11 @@
             this.table_panel.Controls.Add(this.button1);
             this.table_panel.Controls.Add(this.label11);
             this.table_panel.Controls.Add(this.chosen_table);
-            this.table_panel.Location = new System.Drawing.Point(0, 0);
+            this.table_panel.Location = new System.Drawing.Point(827, 419);
             this.table_panel.Name = "table_panel";
             this.table_panel.Size = new System.Drawing.Size(890, 467);
             this.table_panel.TabIndex = 21;
             this.table_panel.Visible = false;
-            // 
-            // chosen_table
-            // 
-            this.chosen_table.BackColor = System.Drawing.SystemColors.Control;
-            this.chosen_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chosen_table.Enabled = false;
-            this.chosen_table.Font = new System.Drawing.Font("Century Gothic", 24F);
-            this.chosen_table.Location = new System.Drawing.Point(642, 229);
-            this.chosen_table.Name = "chosen_table";
-            this.chosen_table.ReadOnly = true;
-            this.chosen_table.Size = new System.Drawing.Size(135, 40);
-            this.chosen_table.TabIndex = 85;
-            this.chosen_table.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.chosen_table.TextChanged += new System.EventHandler(this.chosen_table_TextChanged);
-            // 
-            // table14
-            // 
-            this.table14.BackColor = System.Drawing.Color.Green;
-            this.table14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table14.FlatAppearance.BorderSize = 0;
-            this.table14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table14.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table14.ForeColor = System.Drawing.Color.White;
-            this.table14.Location = new System.Drawing.Point(329, 370);
-            this.table14.Name = "table14";
-            this.table14.Size = new System.Drawing.Size(22, 23);
-            this.table14.TabIndex = 84;
-            this.table14.UseVisualStyleBackColor = false;
-            this.table14.Click += new System.EventHandler(this.table14_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.White;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label27.Location = new System.Drawing.Point(287, 372);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(25, 19);
-            this.label27.TabIndex = 83;
-            this.label27.Text = "14";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.White;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label26.Location = new System.Drawing.Point(108, 204);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(25, 19);
-            this.label26.TabIndex = 82;
-            this.label26.Text = "13";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.White;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label25.Location = new System.Drawing.Point(205, 306);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(25, 19);
-            this.label25.TabIndex = 81;
-            this.label25.Text = "12";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.White;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label24.Location = new System.Drawing.Point(114, 304);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(25, 19);
-            this.label24.TabIndex = 80;
-            this.label24.Text = "11";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.White;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label23.Location = new System.Drawing.Point(206, 250);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(25, 19);
-            this.label23.TabIndex = 79;
-            this.label23.Text = "10";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.White;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label22.Location = new System.Drawing.Point(118, 249);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(17, 19);
-            this.label22.TabIndex = 78;
-            this.label22.Text = "9";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.White;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label21.Location = new System.Drawing.Point(206, 394);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(17, 19);
-            this.label21.TabIndex = 77;
-            this.label21.Text = "8";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.White;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label20.Location = new System.Drawing.Point(117, 395);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(17, 19);
-            this.label20.TabIndex = 76;
-            this.label20.Text = "7";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label19.Location = new System.Drawing.Point(206, 354);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(17, 19);
-            this.label19.TabIndex = 75;
-            this.label19.Text = "6";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.White;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label18.Location = new System.Drawing.Point(117, 353);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(17, 19);
-            this.label18.TabIndex = 74;
-            this.label18.Text = "5";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label16.Location = new System.Drawing.Point(197, 149);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(17, 19);
-            this.label16.TabIndex = 73;
-            this.label16.Text = "4";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label15.Location = new System.Drawing.Point(117, 150);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 19);
-            this.label15.TabIndex = 72;
-            this.label15.Text = "3";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label14.Location = new System.Drawing.Point(197, 107);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 19);
-            this.label14.TabIndex = 71;
-            this.label14.Text = "2";
-            // 
-            // table13
-            // 
-            this.table13.BackColor = System.Drawing.Color.Green;
-            this.table13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table13.FlatAppearance.BorderSize = 0;
-            this.table13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table13.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table13.ForeColor = System.Drawing.Color.White;
-            this.table13.Location = new System.Drawing.Point(159, 202);
-            this.table13.Name = "table13";
-            this.table13.Size = new System.Drawing.Size(22, 23);
-            this.table13.TabIndex = 70;
-            this.table13.UseVisualStyleBackColor = false;
-            this.table13.Click += new System.EventHandler(this.table13_Click);
-            // 
-            // table12
-            // 
-            this.table12.BackColor = System.Drawing.Color.Green;
-            this.table12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table12.FlatAppearance.BorderSize = 0;
-            this.table12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table12.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table12.ForeColor = System.Drawing.Color.White;
-            this.table12.Location = new System.Drawing.Point(243, 304);
-            this.table12.Name = "table12";
-            this.table12.Size = new System.Drawing.Size(22, 23);
-            this.table12.TabIndex = 69;
-            this.table12.UseVisualStyleBackColor = false;
-            this.table12.Click += new System.EventHandler(this.table12_Click);
-            // 
-            // table11
-            // 
-            this.table11.BackColor = System.Drawing.Color.Green;
-            this.table11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table11.FlatAppearance.BorderSize = 0;
-            this.table11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table11.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table11.ForeColor = System.Drawing.Color.White;
-            this.table11.Location = new System.Drawing.Point(155, 302);
-            this.table11.Name = "table11";
-            this.table11.Size = new System.Drawing.Size(22, 23);
-            this.table11.TabIndex = 68;
-            this.table11.UseVisualStyleBackColor = false;
-            this.table11.Click += new System.EventHandler(this.table11_Click);
-            // 
-            // table10
-            // 
-            this.table10.BackColor = System.Drawing.Color.Green;
-            this.table10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table10.FlatAppearance.BorderSize = 0;
-            this.table10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table10.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table10.ForeColor = System.Drawing.Color.White;
-            this.table10.Location = new System.Drawing.Point(243, 248);
-            this.table10.Name = "table10";
-            this.table10.Size = new System.Drawing.Size(22, 23);
-            this.table10.TabIndex = 67;
-            this.table10.UseVisualStyleBackColor = false;
-            this.table10.Click += new System.EventHandler(this.table10_Click);
-            // 
-            // table9
-            // 
-            this.table9.BackColor = System.Drawing.Color.Green;
-            this.table9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table9.FlatAppearance.BorderSize = 0;
-            this.table9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table9.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table9.ForeColor = System.Drawing.Color.White;
-            this.table9.Location = new System.Drawing.Point(155, 248);
-            this.table9.Name = "table9";
-            this.table9.Size = new System.Drawing.Size(22, 23);
-            this.table9.TabIndex = 66;
-            this.table9.UseVisualStyleBackColor = false;
-            this.table9.Click += new System.EventHandler(this.table9_Click);
-            // 
-            // table8
-            // 
-            this.table8.BackColor = System.Drawing.Color.Green;
-            this.table8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table8.FlatAppearance.BorderSize = 0;
-            this.table8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table8.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table8.ForeColor = System.Drawing.Color.White;
-            this.table8.Location = new System.Drawing.Point(243, 392);
-            this.table8.Name = "table8";
-            this.table8.Size = new System.Drawing.Size(22, 23);
-            this.table8.TabIndex = 65;
-            this.table8.UseVisualStyleBackColor = false;
-            this.table8.Click += new System.EventHandler(this.table8_Click);
-            // 
-            // table7
-            // 
-            this.table7.BackColor = System.Drawing.Color.Green;
-            this.table7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table7.FlatAppearance.BorderSize = 0;
-            this.table7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table7.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table7.ForeColor = System.Drawing.Color.White;
-            this.table7.Location = new System.Drawing.Point(155, 392);
-            this.table7.Name = "table7";
-            this.table7.Size = new System.Drawing.Size(22, 23);
-            this.table7.TabIndex = 64;
-            this.table7.UseVisualStyleBackColor = false;
-            this.table7.Click += new System.EventHandler(this.table7_Click);
-            // 
-            // table6
-            // 
-            this.table6.BackColor = System.Drawing.Color.Green;
-            this.table6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table6.FlatAppearance.BorderSize = 0;
-            this.table6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table6.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table6.ForeColor = System.Drawing.Color.White;
-            this.table6.Location = new System.Drawing.Point(243, 351);
-            this.table6.Name = "table6";
-            this.table6.Size = new System.Drawing.Size(22, 23);
-            this.table6.TabIndex = 63;
-            this.table6.UseVisualStyleBackColor = false;
-            this.table6.Click += new System.EventHandler(this.table6_Click);
-            // 
-            // table5
-            // 
-            this.table5.BackColor = System.Drawing.Color.Green;
-            this.table5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table5.FlatAppearance.BorderSize = 0;
-            this.table5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table5.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table5.ForeColor = System.Drawing.Color.White;
-            this.table5.Location = new System.Drawing.Point(155, 350);
-            this.table5.Name = "table5";
-            this.table5.Size = new System.Drawing.Size(22, 23);
-            this.table5.TabIndex = 62;
-            this.table5.UseVisualStyleBackColor = false;
-            this.table5.Click += new System.EventHandler(this.table5_Click);
-            // 
-            // table4
-            // 
-            this.table4.BackColor = System.Drawing.Color.Green;
-            this.table4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table4.FlatAppearance.BorderSize = 0;
-            this.table4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table4.ForeColor = System.Drawing.Color.White;
-            this.table4.Location = new System.Drawing.Point(235, 147);
-            this.table4.Name = "table4";
-            this.table4.Size = new System.Drawing.Size(22, 23);
-            this.table4.TabIndex = 61;
-            this.table4.UseVisualStyleBackColor = false;
-            this.table4.Click += new System.EventHandler(this.table4_Click);
-            // 
-            // table3
-            // 
-            this.table3.BackColor = System.Drawing.Color.Green;
-            this.table3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table3.FlatAppearance.BorderSize = 0;
-            this.table3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table3.ForeColor = System.Drawing.Color.White;
-            this.table3.Location = new System.Drawing.Point(155, 147);
-            this.table3.Name = "table3";
-            this.table3.Size = new System.Drawing.Size(22, 23);
-            this.table3.TabIndex = 60;
-            this.table3.UseVisualStyleBackColor = false;
-            this.table3.Click += new System.EventHandler(this.table3_Click);
-            // 
-            // table2
-            // 
-            this.table2.BackColor = System.Drawing.Color.Green;
-            this.table2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table2.FlatAppearance.BorderSize = 0;
-            this.table2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table2.ForeColor = System.Drawing.Color.White;
-            this.table2.Location = new System.Drawing.Point(235, 105);
-            this.table2.Name = "table2";
-            this.table2.Size = new System.Drawing.Size(22, 23);
-            this.table2.TabIndex = 59;
-            this.table2.UseVisualStyleBackColor = false;
-            this.table2.Click += new System.EventHandler(this.table2_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.White;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label17.Location = new System.Drawing.Point(117, 107);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(17, 19);
-            this.label17.TabIndex = 48;
-            this.label17.Text = "1";
-            // 
-            // table1
-            // 
-            this.table1.BackColor = System.Drawing.Color.Green;
-            this.table1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.table1.FlatAppearance.BorderSize = 0;
-            this.table1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.table1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.table1.ForeColor = System.Drawing.Color.White;
-            this.table1.Location = new System.Drawing.Point(155, 105);
-            this.table1.Name = "table1";
-            this.table1.Size = new System.Drawing.Size(22, 23);
-            this.table1.TabIndex = 32;
-            this.table1.UseVisualStyleBackColor = false;
-            this.table1.Click += new System.EventHandler(this.table1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(63, 94);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(472, 333);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // verification_panel
             // 
@@ -759,7 +370,7 @@
             this.verification_panel.Controls.Add(this.name_label);
             this.verification_panel.Controls.Add(this.confirmation_title);
             this.verification_panel.Controls.Add(this.date_label);
-            this.verification_panel.Location = new System.Drawing.Point(0, 0);
+            this.verification_panel.Location = new System.Drawing.Point(851, 427);
             this.verification_panel.Name = "verification_panel";
             this.verification_panel.Size = new System.Drawing.Size(890, 467);
             this.verification_panel.TabIndex = 26;
@@ -770,7 +381,7 @@
             // 
             this.finish_panel.Controls.Add(this.finish_text);
             this.finish_panel.Controls.Add(this.back_begin);
-            this.finish_panel.Location = new System.Drawing.Point(0, 0);
+            this.finish_panel.Location = new System.Drawing.Point(804, 395);
             this.finish_panel.Name = "finish_panel";
             this.finish_panel.Size = new System.Drawing.Size(890, 467);
             this.finish_panel.TabIndex = 39;
@@ -1088,6 +699,466 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "Tijd:";
             // 
+            // table1
+            // 
+            this.table1.BackColor = System.Drawing.Color.Green;
+            this.table1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table1.FlatAppearance.BorderSize = 0;
+            this.table1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table1.ForeColor = System.Drawing.Color.White;
+            this.table1.Location = new System.Drawing.Point(155, 105);
+            this.table1.Name = "table1";
+            this.table1.Size = new System.Drawing.Size(22, 23);
+            this.table1.TabIndex = 32;
+            this.table1.UseVisualStyleBackColor = false;
+            this.table1.Click += new System.EventHandler(this.table1_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label17.Location = new System.Drawing.Point(117, 107);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(17, 19);
+            this.label17.TabIndex = 48;
+            this.label17.Text = "1";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label15.Location = new System.Drawing.Point(117, 150);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(17, 19);
+            this.label15.TabIndex = 72;
+            this.label15.Text = "3";
+            // 
+            // table3
+            // 
+            this.table3.BackColor = System.Drawing.Color.Green;
+            this.table3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table3.FlatAppearance.BorderSize = 0;
+            this.table3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table3.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table3.ForeColor = System.Drawing.Color.White;
+            this.table3.Location = new System.Drawing.Point(155, 147);
+            this.table3.Name = "table3";
+            this.table3.Size = new System.Drawing.Size(22, 23);
+            this.table3.TabIndex = 60;
+            this.table3.UseVisualStyleBackColor = false;
+            this.table3.Click += new System.EventHandler(this.table3_Click);
+            // 
+            // table13
+            // 
+            this.table13.BackColor = System.Drawing.Color.Green;
+            this.table13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table13.FlatAppearance.BorderSize = 0;
+            this.table13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table13.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table13.ForeColor = System.Drawing.Color.White;
+            this.table13.Location = new System.Drawing.Point(159, 202);
+            this.table13.Name = "table13";
+            this.table13.Size = new System.Drawing.Size(22, 23);
+            this.table13.TabIndex = 70;
+            this.table13.UseVisualStyleBackColor = false;
+            this.table13.Click += new System.EventHandler(this.table13_Click);
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label26.Location = new System.Drawing.Point(108, 204);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(25, 19);
+            this.label26.TabIndex = 82;
+            this.label26.Text = "13";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label22.Location = new System.Drawing.Point(118, 249);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(17, 19);
+            this.label22.TabIndex = 78;
+            this.label22.Text = "9";
+            // 
+            // table9
+            // 
+            this.table9.BackColor = System.Drawing.Color.Green;
+            this.table9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table9.FlatAppearance.BorderSize = 0;
+            this.table9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table9.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table9.ForeColor = System.Drawing.Color.White;
+            this.table9.Location = new System.Drawing.Point(155, 248);
+            this.table9.Name = "table9";
+            this.table9.Size = new System.Drawing.Size(22, 23);
+            this.table9.TabIndex = 66;
+            this.table9.UseVisualStyleBackColor = false;
+            this.table9.Click += new System.EventHandler(this.table9_Click);
+            // 
+            // table11
+            // 
+            this.table11.BackColor = System.Drawing.Color.Green;
+            this.table11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table11.FlatAppearance.BorderSize = 0;
+            this.table11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table11.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table11.ForeColor = System.Drawing.Color.White;
+            this.table11.Location = new System.Drawing.Point(155, 302);
+            this.table11.Name = "table11";
+            this.table11.Size = new System.Drawing.Size(22, 23);
+            this.table11.TabIndex = 68;
+            this.table11.UseVisualStyleBackColor = false;
+            this.table11.Click += new System.EventHandler(this.table11_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label24.Location = new System.Drawing.Point(114, 304);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(25, 19);
+            this.label24.TabIndex = 80;
+            this.label24.Text = "11";
+            // 
+            // table5
+            // 
+            this.table5.BackColor = System.Drawing.Color.Green;
+            this.table5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table5.FlatAppearance.BorderSize = 0;
+            this.table5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table5.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table5.ForeColor = System.Drawing.Color.White;
+            this.table5.Location = new System.Drawing.Point(155, 350);
+            this.table5.Name = "table5";
+            this.table5.Size = new System.Drawing.Size(22, 23);
+            this.table5.TabIndex = 62;
+            this.table5.UseVisualStyleBackColor = false;
+            this.table5.Click += new System.EventHandler(this.table5_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.White;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label18.Location = new System.Drawing.Point(117, 353);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(17, 19);
+            this.label18.TabIndex = 74;
+            this.label18.Text = "5";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label20.Location = new System.Drawing.Point(117, 395);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(17, 19);
+            this.label20.TabIndex = 76;
+            this.label20.Text = "7";
+            // 
+            // table7
+            // 
+            this.table7.BackColor = System.Drawing.Color.Green;
+            this.table7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table7.FlatAppearance.BorderSize = 0;
+            this.table7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table7.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table7.ForeColor = System.Drawing.Color.White;
+            this.table7.Location = new System.Drawing.Point(155, 392);
+            this.table7.Name = "table7";
+            this.table7.Size = new System.Drawing.Size(22, 23);
+            this.table7.TabIndex = 64;
+            this.table7.UseVisualStyleBackColor = false;
+            this.table7.Click += new System.EventHandler(this.table7_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label14.Location = new System.Drawing.Point(197, 107);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 19);
+            this.label14.TabIndex = 71;
+            this.label14.Text = "2";
+            // 
+            // table2
+            // 
+            this.table2.BackColor = System.Drawing.Color.Green;
+            this.table2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table2.FlatAppearance.BorderSize = 0;
+            this.table2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table2.ForeColor = System.Drawing.Color.White;
+            this.table2.Location = new System.Drawing.Point(235, 105);
+            this.table2.Name = "table2";
+            this.table2.Size = new System.Drawing.Size(22, 23);
+            this.table2.TabIndex = 59;
+            this.table2.UseVisualStyleBackColor = false;
+            this.table2.Click += new System.EventHandler(this.table2_Click);
+            // 
+            // table4
+            // 
+            this.table4.BackColor = System.Drawing.Color.Green;
+            this.table4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table4.FlatAppearance.BorderSize = 0;
+            this.table4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table4.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table4.ForeColor = System.Drawing.Color.White;
+            this.table4.Location = new System.Drawing.Point(235, 147);
+            this.table4.Name = "table4";
+            this.table4.Size = new System.Drawing.Size(22, 23);
+            this.table4.TabIndex = 61;
+            this.table4.UseVisualStyleBackColor = false;
+            this.table4.Click += new System.EventHandler(this.table4_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label16.Location = new System.Drawing.Point(197, 149);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(17, 19);
+            this.label16.TabIndex = 73;
+            this.label16.Text = "4";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label23.Location = new System.Drawing.Point(206, 250);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(25, 19);
+            this.label23.TabIndex = 79;
+            this.label23.Text = "10";
+            // 
+            // table10
+            // 
+            this.table10.BackColor = System.Drawing.Color.Green;
+            this.table10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table10.FlatAppearance.BorderSize = 0;
+            this.table10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table10.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table10.ForeColor = System.Drawing.Color.White;
+            this.table10.Location = new System.Drawing.Point(243, 248);
+            this.table10.Name = "table10";
+            this.table10.Size = new System.Drawing.Size(22, 23);
+            this.table10.TabIndex = 67;
+            this.table10.UseVisualStyleBackColor = false;
+            this.table10.Click += new System.EventHandler(this.table10_Click);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.White;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label25.Location = new System.Drawing.Point(205, 306);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(25, 19);
+            this.label25.TabIndex = 81;
+            this.label25.Text = "12";
+            // 
+            // table12
+            // 
+            this.table12.BackColor = System.Drawing.Color.Green;
+            this.table12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table12.FlatAppearance.BorderSize = 0;
+            this.table12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table12.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table12.ForeColor = System.Drawing.Color.White;
+            this.table12.Location = new System.Drawing.Point(243, 304);
+            this.table12.Name = "table12";
+            this.table12.Size = new System.Drawing.Size(22, 23);
+            this.table12.TabIndex = 69;
+            this.table12.UseVisualStyleBackColor = false;
+            this.table12.Click += new System.EventHandler(this.table12_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label19.Location = new System.Drawing.Point(206, 354);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(17, 19);
+            this.label19.TabIndex = 75;
+            this.label19.Text = "6";
+            // 
+            // table6
+            // 
+            this.table6.BackColor = System.Drawing.Color.Green;
+            this.table6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table6.FlatAppearance.BorderSize = 0;
+            this.table6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table6.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table6.ForeColor = System.Drawing.Color.White;
+            this.table6.Location = new System.Drawing.Point(243, 351);
+            this.table6.Name = "table6";
+            this.table6.Size = new System.Drawing.Size(22, 23);
+            this.table6.TabIndex = 63;
+            this.table6.UseVisualStyleBackColor = false;
+            this.table6.Click += new System.EventHandler(this.table6_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.White;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label27.Location = new System.Drawing.Point(287, 372);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(25, 19);
+            this.label27.TabIndex = 83;
+            this.label27.Text = "14";
+            // 
+            // table14
+            // 
+            this.table14.BackColor = System.Drawing.Color.Green;
+            this.table14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table14.FlatAppearance.BorderSize = 0;
+            this.table14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table14.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table14.ForeColor = System.Drawing.Color.White;
+            this.table14.Location = new System.Drawing.Point(329, 370);
+            this.table14.Name = "table14";
+            this.table14.Size = new System.Drawing.Size(22, 23);
+            this.table14.TabIndex = 84;
+            this.table14.UseVisualStyleBackColor = false;
+            this.table14.Click += new System.EventHandler(this.table14_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.label21.Location = new System.Drawing.Point(206, 394);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(17, 19);
+            this.label21.TabIndex = 77;
+            this.label21.Text = "8";
+            // 
+            // table8
+            // 
+            this.table8.BackColor = System.Drawing.Color.Green;
+            this.table8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.table8.FlatAppearance.BorderSize = 0;
+            this.table8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table8.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.table8.ForeColor = System.Drawing.Color.White;
+            this.table8.Location = new System.Drawing.Point(243, 392);
+            this.table8.Name = "table8";
+            this.table8.Size = new System.Drawing.Size(22, 23);
+            this.table8.TabIndex = 65;
+            this.table8.UseVisualStyleBackColor = false;
+            this.table8.Click += new System.EventHandler(this.table8_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(63, 94);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(472, 333);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label29.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label29.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label29.Location = new System.Drawing.Point(749, 158);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(69, 21);
+            this.label29.TabIndex = 90;
+            this.label29.Text = "= bezet";
+            this.label29.Click += new System.EventHandler(this.label29_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Enabled = false;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(724, 157);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(22, 23);
+            this.button2.TabIndex = 89;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label28.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label28.Location = new System.Drawing.Point(749, 124);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(120, 21);
+            this.label28.TabIndex = 88;
+            this.label28.Text = "= beschikbaar";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Enabled = false;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(724, 123);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.TabIndex = 87;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label11.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label11.Location = new System.Drawing.Point(720, 94);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 21);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "Legenda:";
+            this.label11.Click += new System.EventHandler(this.label11_Click_1);
+            // 
+            // chosen_table
+            // 
+            this.chosen_table.BackColor = System.Drawing.SystemColors.Control;
+            this.chosen_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chosen_table.Enabled = false;
+            this.chosen_table.Font = new System.Drawing.Font("Century Gothic", 24F);
+            this.chosen_table.Location = new System.Drawing.Point(642, 229);
+            this.chosen_table.Name = "chosen_table";
+            this.chosen_table.ReadOnly = true;
+            this.chosen_table.Size = new System.Drawing.Size(135, 40);
+            this.chosen_table.TabIndex = 85;
+            this.chosen_table.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chosen_table.TextChanged += new System.EventHandler(this.chosen_table_TextChanged);
+            // 
             // datum_box
             // 
             this.datum_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1139,77 +1210,6 @@
             this.label12.TabIndex = 25;
             this.label12.Text = "Email *";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label11.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label11.Location = new System.Drawing.Point(720, 94);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 21);
-            this.label11.TabIndex = 86;
-            this.label11.Text = "Legenda:";
-            this.label11.Click += new System.EventHandler(this.label11_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Enabled = false;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(724, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(22, 23);
-            this.button1.TabIndex = 87;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label28.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label28.Location = new System.Drawing.Point(749, 124);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(120, 21);
-            this.label28.TabIndex = 88;
-            this.label28.Text = "= beschikbaar";
-            this.label28.Click += new System.EventHandler(this.label28_Click);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label29.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label29.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label29.Location = new System.Drawing.Point(749, 158);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(69, 21);
-            this.label29.TabIndex = 90;
-            this.label29.Text = "= bezet";
-            this.label29.Click += new System.EventHandler(this.label29_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(724, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(22, 23);
-            this.button2.TabIndex = 89;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // tablesBindingSource2
             // 
             this.tablesBindingSource2.DataSource = typeof(HRDelicates.Tables);
@@ -1254,11 +1254,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).EndInit();
             this.table_panel.ResumeLayout(false);
             this.table_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.verification_panel.ResumeLayout(false);
             this.verification_panel.PerformLayout();
             this.finish_panel.ResumeLayout(false);
             this.finish_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
