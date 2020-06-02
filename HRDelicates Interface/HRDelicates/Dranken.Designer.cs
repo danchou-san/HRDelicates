@@ -30,35 +30,35 @@
         {
             this.terug_admin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox34 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dish_title = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
@@ -74,7 +74,6 @@
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
@@ -83,13 +82,18 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.textBox39 = new System.Windows.Forms.TextBox();
             this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox41 = new System.Windows.Forms.TextBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.textBox44 = new System.Windows.Forms.TextBox();
             this.textBox45 = new System.Windows.Forms.TextBox();
             this.textBox46 = new System.Windows.Forms.TextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.textBox50 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -102,6 +106,7 @@
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // terug_admin
@@ -137,14 +142,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1156, 49);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(21, 573);
-            this.vScrollBar1.TabIndex = 59;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -156,6 +153,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(283, 200);
             this.panel1.TabIndex = 60;
+            // 
+            // textBox34
+            // 
+            this.textBox34.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox34.Enabled = false;
+            this.textBox34.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.textBox34.Location = new System.Drawing.Point(4, 69);
+            this.textBox34.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox34.Multiline = true;
+            this.textBox34.Name = "textBox34";
+            this.textBox34.ReadOnly = true;
+            this.textBox34.Size = new System.Drawing.Size(263, 77);
+            this.textBox34.TabIndex = 68;
+            this.textBox34.Text = "wit, fris en droog";
             // 
             // textBox1
             // 
@@ -198,6 +210,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(283, 200);
             this.panel2.TabIndex = 61;
+            // 
+            // textBox19
+            // 
+            this.textBox19.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox19.Enabled = false;
+            this.textBox19.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox19.Location = new System.Drawing.Point(4, 34);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox19.Multiline = true;
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(146, 27);
+            this.textBox19.TabIndex = 67;
+            this.textBox19.Text = "Witte Wijn";
             // 
             // textBox2
             // 
@@ -255,6 +282,21 @@
             this.panel3.Size = new System.Drawing.Size(291, 200);
             this.panel3.TabIndex = 62;
             // 
+            // textBox17
+            // 
+            this.textBox17.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox17.Enabled = false;
+            this.textBox17.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.Location = new System.Drawing.Point(4, 34);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(146, 27);
+            this.textBox17.TabIndex = 66;
+            this.textBox17.Text = "Witte Wijn";
+            // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -310,6 +352,21 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(305, 200);
             this.panel4.TabIndex = 63;
+            // 
+            // textBox18
+            // 
+            this.textBox18.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox18.Enabled = false;
+            this.textBox18.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.Location = new System.Drawing.Point(4, 34);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(146, 27);
+            this.textBox18.TabIndex = 67;
+            this.textBox18.Text = "Witte Wijn";
             // 
             // textBox8
             // 
@@ -368,6 +425,21 @@
             this.panel5.Size = new System.Drawing.Size(283, 204);
             this.panel5.TabIndex = 64;
             // 
+            // textBox21
+            // 
+            this.textBox21.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox21.Enabled = false;
+            this.textBox21.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox21.Location = new System.Drawing.Point(4, 34);
+            this.textBox21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
+            this.textBox21.Size = new System.Drawing.Size(146, 27);
+            this.textBox21.TabIndex = 68;
+            this.textBox21.Text = "Witte Wijn";
+            // 
             // textBox11
             // 
             this.textBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -424,6 +496,21 @@
             this.panel6.Size = new System.Drawing.Size(275, 204);
             this.panel6.TabIndex = 65;
             // 
+            // textBox20
+            // 
+            this.textBox20.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox20.Enabled = false;
+            this.textBox20.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox20.Location = new System.Drawing.Point(4, 34);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox20.Multiline = true;
+            this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
+            this.textBox20.Size = new System.Drawing.Size(146, 27);
+            this.textBox20.TabIndex = 68;
+            this.textBox20.Text = "Witte Wijn";
+            // 
             // textBox14
             // 
             this.textBox14.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -466,81 +553,6 @@
             this.textBox16.Size = new System.Drawing.Size(249, 25);
             this.textBox16.TabIndex = 43;
             this.textBox16.Text = "Chardonnay";
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Enabled = false;
-            this.textBox17.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(4, 34);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(146, 27);
-            this.textBox17.TabIndex = 66;
-            this.textBox17.Text = "Witte Wijn";
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Enabled = false;
-            this.textBox18.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(4, 34);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(146, 27);
-            this.textBox18.TabIndex = 67;
-            this.textBox18.Text = "Witte Wijn";
-            // 
-            // textBox19
-            // 
-            this.textBox19.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Enabled = false;
-            this.textBox19.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(4, 34);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(146, 27);
-            this.textBox19.TabIndex = 67;
-            this.textBox19.Text = "Witte Wijn";
-            // 
-            // textBox20
-            // 
-            this.textBox20.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Enabled = false;
-            this.textBox20.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(4, 34);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(146, 27);
-            this.textBox20.TabIndex = 68;
-            this.textBox20.Text = "Witte Wijn";
-            // 
-            // textBox21
-            // 
-            this.textBox21.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Enabled = false;
-            this.textBox21.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(4, 34);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(146, 27);
-            this.textBox21.TabIndex = 68;
-            this.textBox21.Text = "Witte Wijn";
             // 
             // panel7
             // 
@@ -687,6 +699,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel9.Controls.Add(this.panel13);
             this.panel9.Controls.Add(this.textBox30);
             this.panel9.Controls.Add(this.textBox31);
             this.panel9.Controls.Add(this.textBox32);
@@ -754,21 +767,6 @@
             this.textBox33.Size = new System.Drawing.Size(249, 25);
             this.textBox33.TabIndex = 43;
             this.textBox33.Text = "Tempranillo Crianza";
-            // 
-            // textBox34
-            // 
-            this.textBox34.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox34.Enabled = false;
-            this.textBox34.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.textBox34.Location = new System.Drawing.Point(4, 69);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.ReadOnly = true;
-            this.textBox34.Size = new System.Drawing.Size(263, 77);
-            this.textBox34.TabIndex = 68;
-            this.textBox34.Text = "wit, fris en droog";
             // 
             // panel10
             // 
@@ -883,20 +881,6 @@
             this.textBox40.TabIndex = 45;
             this.textBox40.Text = "€ 2,50,-";
             // 
-            // textBox42
-            // 
-            this.textBox42.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox42.Enabled = false;
-            this.textBox42.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox42.Location = new System.Drawing.Point(4, 3);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.ReadOnly = true;
-            this.textBox42.Size = new System.Drawing.Size(249, 25);
-            this.textBox42.TabIndex = 43;
-            this.textBox42.Text = "Cola";
-            // 
             // textBox41
             // 
             this.textBox41.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -911,6 +895,20 @@
             this.textBox41.Size = new System.Drawing.Size(263, 74);
             this.textBox41.TabIndex = 44;
             this.textBox41.Text = "Bruisend";
+            // 
+            // textBox42
+            // 
+            this.textBox42.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox42.Enabled = false;
+            this.textBox42.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox42.Location = new System.Drawing.Point(4, 3);
+            this.textBox42.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
+            this.textBox42.Size = new System.Drawing.Size(249, 25);
+            this.textBox42.TabIndex = 43;
+            this.textBox42.Text = "Cola";
             // 
             // panel12
             // 
@@ -983,10 +981,82 @@
             this.textBox46.TabIndex = 43;
             this.textBox46.Text = "Fanta";
             // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel13.Controls.Add(this.textBox47);
+            this.panel13.Controls.Add(this.textBox48);
+            this.panel13.Controls.Add(this.textBox49);
+            this.panel13.Controls.Add(this.textBox50);
+            this.panel13.Location = new System.Drawing.Point(9, 203);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(305, 211);
+            this.panel13.TabIndex = 73;
+            // 
+            // textBox47
+            // 
+            this.textBox47.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox47.Enabled = false;
+            this.textBox47.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox47.Location = new System.Drawing.Point(4, 34);
+            this.textBox47.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox47.Multiline = true;
+            this.textBox47.Name = "textBox47";
+            this.textBox47.ReadOnly = true;
+            this.textBox47.Size = new System.Drawing.Size(123, 27);
+            this.textBox47.TabIndex = 68;
+            this.textBox47.Text = "Frisdrank";
+            // 
+            // textBox48
+            // 
+            this.textBox48.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox48.Enabled = false;
+            this.textBox48.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.textBox48.Location = new System.Drawing.Point(9, 156);
+            this.textBox48.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox48.Name = "textBox48";
+            this.textBox48.ReadOnly = true;
+            this.textBox48.Size = new System.Drawing.Size(249, 41);
+            this.textBox48.TabIndex = 45;
+            this.textBox48.Text = "€ 2,50,-";
+            // 
+            // textBox49
+            // 
+            this.textBox49.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox49.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox49.Enabled = false;
+            this.textBox49.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.textBox49.Location = new System.Drawing.Point(4, 76);
+            this.textBox49.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox49.Multiline = true;
+            this.textBox49.Name = "textBox49";
+            this.textBox49.ReadOnly = true;
+            this.textBox49.Size = new System.Drawing.Size(263, 74);
+            this.textBox49.TabIndex = 44;
+            this.textBox49.Text = "Bruisend";
+            // 
+            // textBox50
+            // 
+            this.textBox50.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox50.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox50.Enabled = false;
+            this.textBox50.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox50.Location = new System.Drawing.Point(4, 3);
+            this.textBox50.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox50.Name = "textBox50";
+            this.textBox50.ReadOnly = true;
+            this.textBox50.Size = new System.Drawing.Size(249, 25);
+            this.textBox50.TabIndex = 43;
+            this.textBox50.Text = "Fanta";
+            // 
             // Dranken
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -999,11 +1069,10 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.terug_admin);
             this.Name = "Dranken";
-            this.Size = new System.Drawing.Size(1177, 640);
+            this.Size = new System.Drawing.Size(1202, 706);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1028,6 +1097,8 @@
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1036,7 +1107,6 @@
 
         private System.Windows.Forms.Button terug_admin;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox dish_title;
@@ -1096,5 +1166,10 @@
         private System.Windows.Forms.TextBox textBox44;
         private System.Windows.Forms.TextBox textBox45;
         private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox textBox50;
     }
 }

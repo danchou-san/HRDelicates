@@ -78,3 +78,4 @@ E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\ob
 E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
 E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
 E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Dranken.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Dranken2.resources
