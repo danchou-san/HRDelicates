@@ -101,6 +101,12 @@
       <DependentUpon>Startscreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Tables.cs" />
+    <Compile Include="Dranken.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dranken.Designer.cs">
+      <DependentUpon>Dranken.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Adminscreen.resx">
       <DependentUpon>Adminscreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Startscreen.resx">
       <DependentUpon>Startscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dranken.resx">
+      <DependentUpon>Dranken.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Adminscreen.datasource" />
