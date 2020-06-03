@@ -374,7 +374,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(249, 41);
             this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "€ 12,50,-";
+            this.textBox2.Text = "€ 12,50";
             // 
             // textBox3
             // 
@@ -442,7 +442,7 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(249, 41);
             this.textBox5.TabIndex = 45;
-            this.textBox5.Text = "€ 6,50,-";
+            this.textBox5.Text = "€ 6,50";
             // 
             // textBox6
             // 
@@ -509,7 +509,7 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(249, 41);
             this.textBox8.TabIndex = 45;
-            this.textBox8.Text = "€ 4,50,-";
+            this.textBox8.Text = "€ 4,50";
             // 
             // textBox9
             // 
@@ -572,13 +572,13 @@
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Enabled = false;
             this.textBox11.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.textBox11.Location = new System.Drawing.Point(17, 300);
+            this.textBox11.Location = new System.Drawing.Point(17, 310);
             this.textBox11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(249, 41);
             this.textBox11.TabIndex = 45;
-            this.textBox11.Text = "€ 6,50,-";
+            this.textBox11.Text = "€ 6,50";
             // 
             // textBox12
             // 
@@ -639,13 +639,13 @@
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Enabled = false;
             this.textBox14.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.textBox14.Location = new System.Drawing.Point(17, 300);
+            this.textBox14.Location = new System.Drawing.Point(17, 310);
             this.textBox14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(249, 41);
             this.textBox14.TabIndex = 45;
-            this.textBox14.Text = "€ 12,50,-";
+            this.textBox14.Text = "€ 12,50";
             // 
             // textBox15
             // 
@@ -713,7 +713,7 @@
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(249, 41);
             this.textBox17.TabIndex = 45;
-            this.textBox17.Text = "€ 5,50,-";
+            this.textBox17.Text = "€ 5,50";
             // 
             // textBox18
             // 
@@ -781,7 +781,7 @@
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(249, 41);
             this.textBox20.TabIndex = 45;
-            this.textBox20.Text = "€ 13,50,-";
+            this.textBox20.Text = "€ 13,50";
             // 
             // textBox21
             // 
@@ -916,7 +916,7 @@
             this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(249, 41);
             this.textBox26.TabIndex = 45;
-            this.textBox26.Text = "€ 4,50,-";
+            this.textBox26.Text = "€ 4,50";
             // 
             // textBox27
             // 
@@ -984,7 +984,7 @@
             this.textBox29.ReadOnly = true;
             this.textBox29.Size = new System.Drawing.Size(249, 41);
             this.textBox29.TabIndex = 45;
-            this.textBox29.Text = "€ 11,75,-";
+            this.textBox29.Text = "€ 11,75";
             // 
             // textBox30
             // 
@@ -1255,7 +1255,7 @@
             this.textBox41.ReadOnly = true;
             this.textBox41.Size = new System.Drawing.Size(249, 41);
             this.textBox41.TabIndex = 45;
-            this.textBox41.Text = "€ 15,50,-";
+            this.textBox41.Text = "€ 15,50";
             // 
             // textBox42
             // 
@@ -1415,7 +1415,7 @@
             this.textBox45.ReadOnly = true;
             this.textBox45.Size = new System.Drawing.Size(249, 41);
             this.textBox45.TabIndex = 45;
-            this.textBox45.Text = "€ 4.50,-";
+            this.textBox45.Text = "€ 4,50";
             // 
             // textBox46
             // 
@@ -1471,7 +1471,7 @@
             this.textBox48.ReadOnly = true;
             this.textBox48.Size = new System.Drawing.Size(249, 41);
             this.textBox48.TabIndex = 45;
-            this.textBox48.Text = "€ 5,75,-";
+            this.textBox48.Text = "€ 5,75";
             // 
             // textBox49
             // 
@@ -1542,7 +1542,7 @@
             this.textBox52.ReadOnly = true;
             this.textBox52.Size = new System.Drawing.Size(249, 41);
             this.textBox52.TabIndex = 45;
-            this.textBox52.Text = "€ 5.75,-";
+            this.textBox52.Text = "€ 5,75";
             // 
             // textBox53
             // 
@@ -1613,7 +1613,7 @@
             this.textBox56.ReadOnly = true;
             this.textBox56.Size = new System.Drawing.Size(249, 41);
             this.textBox56.TabIndex = 45;
-            this.textBox56.Text = "€ 5,75,-";
+            this.textBox56.Text = "€ 5,75";
             // 
             // textBox57
             // 
@@ -1684,7 +1684,7 @@
             this.textBox60.ReadOnly = true;
             this.textBox60.Size = new System.Drawing.Size(249, 41);
             this.textBox60.TabIndex = 45;
-            this.textBox60.Text = "€ 5,75,-";
+            this.textBox60.Text = "€ 5,75";
             // 
             // textBox61
             // 
@@ -1755,7 +1755,7 @@
             this.textBox64.ReadOnly = true;
             this.textBox64.Size = new System.Drawing.Size(249, 41);
             this.textBox64.TabIndex = 45;
-            this.textBox64.Text = "€ 5,75,-";
+            this.textBox64.Text = "€ 5,75";
             // 
             // textBox65
             // 
@@ -1827,7 +1827,7 @@
             this.textBox68.ReadOnly = true;
             this.textBox68.Size = new System.Drawing.Size(249, 41);
             this.textBox68.TabIndex = 45;
-            this.textBox68.Text = "€ 5,75,-";
+            this.textBox68.Text = "€ 5,75";
             // 
             // textBox69
             // 
@@ -1899,7 +1899,7 @@
             this.textBox72.ReadOnly = true;
             this.textBox72.Size = new System.Drawing.Size(249, 41);
             this.textBox72.TabIndex = 45;
-            this.textBox72.Text = "€ 5,75,-";
+            this.textBox72.Text = "€ 5,75";
             // 
             // textBox73
             // 
@@ -1954,7 +1954,7 @@
             this.textBox75.ReadOnly = true;
             this.textBox75.Size = new System.Drawing.Size(249, 41);
             this.textBox75.TabIndex = 45;
-            this.textBox75.Text = "€ 5,75,-";
+            this.textBox75.Text = "€ 5,75";
             // 
             // textBox76
             // 
@@ -2025,7 +2025,7 @@
             this.textBox79.ReadOnly = true;
             this.textBox79.Size = new System.Drawing.Size(249, 41);
             this.textBox79.TabIndex = 45;
-            this.textBox79.Text = "€ 5,75,-";
+            this.textBox79.Text = "€ 5,75";
             // 
             // textBox80
             // 
@@ -2096,7 +2096,7 @@
             this.textBox83.ReadOnly = true;
             this.textBox83.Size = new System.Drawing.Size(249, 41);
             this.textBox83.TabIndex = 45;
-            this.textBox83.Text = "€ 2,50,-";
+            this.textBox83.Text = "€ 2,50";
             // 
             // textBox84
             // 
@@ -2167,7 +2167,7 @@
             this.textBox87.ReadOnly = true;
             this.textBox87.Size = new System.Drawing.Size(249, 41);
             this.textBox87.TabIndex = 45;
-            this.textBox87.Text = "€ 2,50,-";
+            this.textBox87.Text = "€ 2,50";
             // 
             // textBox88
             // 
@@ -2238,7 +2238,7 @@
             this.textBox91.ReadOnly = true;
             this.textBox91.Size = new System.Drawing.Size(249, 41);
             this.textBox91.TabIndex = 45;
-            this.textBox91.Text = "€ 2,50,-";
+            this.textBox91.Text = "€ 2,50";
             // 
             // textBox92
             // 
@@ -2309,7 +2309,7 @@
             this.textBox95.ReadOnly = true;
             this.textBox95.Size = new System.Drawing.Size(249, 41);
             this.textBox95.TabIndex = 45;
-            this.textBox95.Text = "€ 2,50,-";
+            this.textBox95.Text = "€ 2,50";
             // 
             // textBox96
             // 
@@ -2380,7 +2380,7 @@
             this.textBox99.ReadOnly = true;
             this.textBox99.Size = new System.Drawing.Size(249, 41);
             this.textBox99.TabIndex = 45;
-            this.textBox99.Text = "€ 2,50,-";
+            this.textBox99.Text = "€ 2,50";
             // 
             // textBox100
             // 
@@ -2451,7 +2451,7 @@
             this.textBox103.ReadOnly = true;
             this.textBox103.Size = new System.Drawing.Size(249, 41);
             this.textBox103.TabIndex = 45;
-            this.textBox103.Text = "€ 2,10,-";
+            this.textBox103.Text = "€ 2,10";
             // 
             // textBox104
             // 
