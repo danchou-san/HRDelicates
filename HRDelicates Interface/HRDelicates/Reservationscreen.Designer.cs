@@ -346,7 +346,7 @@
             this.table_panel.Controls.Add(this.button1);
             this.table_panel.Controls.Add(this.label11);
             this.table_panel.Controls.Add(this.chosen_table);
-            this.table_panel.Location = new System.Drawing.Point(827, 419);
+            this.table_panel.Location = new System.Drawing.Point(0, 0);
             this.table_panel.Name = "table_panel";
             this.table_panel.Size = new System.Drawing.Size(890, 467);
             this.table_panel.TabIndex = 21;
@@ -370,7 +370,7 @@
             this.verification_panel.Controls.Add(this.name_label);
             this.verification_panel.Controls.Add(this.confirmation_title);
             this.verification_panel.Controls.Add(this.date_label);
-            this.verification_panel.Location = new System.Drawing.Point(851, 427);
+            this.verification_panel.Location = new System.Drawing.Point(0, 0);
             this.verification_panel.Name = "verification_panel";
             this.verification_panel.Size = new System.Drawing.Size(890, 467);
             this.verification_panel.TabIndex = 26;
@@ -381,7 +381,7 @@
             // 
             this.finish_panel.Controls.Add(this.finish_text);
             this.finish_panel.Controls.Add(this.back_begin);
-            this.finish_panel.Location = new System.Drawing.Point(804, 395);
+            this.finish_panel.Location = new System.Drawing.Point(0, 0);
             this.finish_panel.Name = "finish_panel";
             this.finish_panel.Size = new System.Drawing.Size(890, 467);
             this.finish_panel.TabIndex = 39;

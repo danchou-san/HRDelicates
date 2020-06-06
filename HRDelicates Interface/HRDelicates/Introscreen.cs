@@ -78,6 +78,7 @@ namespace HRDelicates
 
             username_box.Text = "";
             password_box.Text = "";
+            table_edit.Items.Clear();
             error_login.Visible = false;
         }
 
@@ -228,6 +229,10 @@ namespace HRDelicates
                 {
                     if (n.Persoon != "")
                     {
+                        table_edit.Items.Clear();
+                        table_edit.Text = "";
+                        table_edit.Items.Add(n.Nummer);
+
                         DataRow dr = dt.NewRow();
                         dr["Nummer"] = n.Nummer;
                         dr["Capaciteit"] = n.Capaciteit;
@@ -250,14 +255,17 @@ namespace HRDelicates
             edit_panel2.Visible = true;
             edit_panel2.BringToFront();
 
-            string json = File.ReadAllText(path);
-            dynamic jsonObj = JsonConvert.DeserializeObject(json);
+            if(table_edit.Text != "")
+            {
+                string json = File.ReadAllText(path);
+                dynamic jsonObj = JsonConvert.DeserializeObject(json);
 
-            edit_name.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"];
-            edit_phone.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"];
-            edit_mail.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"];
+                edit_name.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"];
+                edit_phone.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"];
+                edit_mail.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"];
 
-            table_number.Text = table_edit.Text;
+                table_number.Text = table_edit.Text;
+            }
         }
 
         private void confirm_edit_Click(object sender, EventArgs e)

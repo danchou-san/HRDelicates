@@ -175,21 +175,7 @@ namespace HRDelicates
                 table13.Visible = false;
                 table14.Visible = false;
 
-                if (personen_box.Value == 6)
-                {
-                    table13.Visible = true;
-                    table14.Visible = true;
-                }
-                else if (personen_box.Value >= 4)
-                {
-                    table9.Visible = true;
-                    table10.Visible = true;
-                    table11.Visible = true;
-                    table12.Visible = true;
-                    table13.Visible = true;
-                    table14.Visible = true;
-                }
-                else if (personen_box.Value >= 2)
+                 if (personen_box.Value <= 2)
                 {
                     table1.Visible = true;
                     table2.Visible = true;
@@ -199,21 +185,27 @@ namespace HRDelicates
                     table6.Visible = true;
                     table7.Visible = true;
                     table8.Visible = true;
+                }
+                else if (personen_box.Value <= 3)
+                {
                     table9.Visible = true;
                     table10.Visible = true;
                     table11.Visible = true;
                     table12.Visible = true;
                 }
-                else if(personen_box.Value == 1)
+                else if (personen_box.Value <= 4)
                 {
-                    table1.Visible = true;
-                    table2.Visible = true;
-                    table3.Visible = true;
-                    table4.Visible = true;
-                    table5.Visible = true;
-                    table6.Visible = true;
-                    table7.Visible = true;
-                    table8.Visible = true;
+                    table9.Visible = true;
+                    table10.Visible = true;
+                    table11.Visible = true;
+                    table12.Visible = true;
+                    table13.Visible = true;
+                    table14.Visible = true;
+                }
+                else if (personen_box.Value <= 6)
+                {
+                    table13.Visible = true;
+                    table14.Visible = true;
                 }
                 else
                 {
