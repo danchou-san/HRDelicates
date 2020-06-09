@@ -38,6 +38,8 @@
             this.dishesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.dishdescriptions1 = new HRDelicates.Dishdescriptions();
+            this.drinkdescriptions1 = new HRDelicates.Drinkdescriptions();
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dishesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -92,7 +94,7 @@
             this.dranken_button.TabIndex = 57;
             this.dranken_button.Text = "Dranken";
             this.dranken_button.UseVisualStyleBackColor = false;
-            this.dranken_button.Click += new System.EventHandler(this.button1_Click);
+            this.dranken_button.Click += new System.EventHandler(this.dranken_button_Click);
             // 
             // panel16
             // 
@@ -116,10 +118,27 @@
             // 
             this.bindingSource2.DataSource = typeof(HRDelicates.Dishes);
             // 
+            // dishdescriptions1
+            // 
+            this.dishdescriptions1.Location = new System.Drawing.Point(0, 40);
+            this.dishdescriptions1.Naam = null;
+            this.dishdescriptions1.Name = "dishdescriptions1";
+            this.dishdescriptions1.Size = new System.Drawing.Size(890, 427);
+            this.dishdescriptions1.TabIndex = 47;
+            // 
+            // drinkdescriptions1
+            // 
+            this.drinkdescriptions1.Location = new System.Drawing.Point(0, 40);
+            this.drinkdescriptions1.Name = "drinkdescriptions1";
+            this.drinkdescriptions1.Size = new System.Drawing.Size(890, 427);
+            this.drinkdescriptions1.TabIndex = 48;
+            // 
             // Menuscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.drinkdescriptions1);
+            this.Controls.Add(this.dishdescriptions1);
             this.Controls.Add(this.panel16);
             this.Name = "Menuscreen";
             this.Size = new System.Drawing.Size(890, 467);
@@ -141,5 +160,7 @@
         private System.Windows.Forms.Button gerechten_button;
         private System.Windows.Forms.Button dranken_button;
         private System.Windows.Forms.Panel panel16;
+        private Dishdescriptions dishdescriptions1;
+        private Drinkdescriptions drinkdescriptions1;
     }
 }

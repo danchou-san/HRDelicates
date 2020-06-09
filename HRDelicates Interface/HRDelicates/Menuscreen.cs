@@ -45,6 +45,7 @@ namespace HRDelicates
             //        //flowLayoutPanel1.Controls.Clear();
             //        flowLayoutPanel1.Controls.Add(listItems[i]);
             //    }
+            dishdescriptions1.BringToFront();
         }
 
         private void propertyGrid1_Click(object sender, EventArgs e)
@@ -138,7 +139,22 @@ namespace HRDelicates
 
         private void gerechten_button_Click(object sender, EventArgs e)
         {
-            //flowLayoutPanel1_Paint.Visible() = false;
+            dishdescriptions1.BringToFront();
+            gerechten_button.BackColor = Color.FromArgb(207, 2, 69);
+            gerechten_button.ForeColor = Color.White;
+
+            dranken_button.BackColor = SystemColors.Control;
+            dranken_button.ForeColor = SystemColors.ButtonShadow;
+        }
+
+        private void dranken_button_Click(object sender, EventArgs e)
+        {
+            drinkdescriptions1.BringToFront();
+            dranken_button.BackColor = Color.FromArgb(207, 2, 69);
+            dranken_button.ForeColor = Color.White;
+
+            gerechten_button.BackColor = SystemColors.Control;
+            gerechten_button.ForeColor = SystemColors.ButtonShadow;
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
