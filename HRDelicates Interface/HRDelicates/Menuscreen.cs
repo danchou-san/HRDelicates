@@ -122,12 +122,8 @@ namespace HRDelicates
 
         private void button1_Click(object sender, EventArgs e)
         {
-            terug_admin.BackColor = SystemColors.Control;
-            terug_admin.ForeColor = SystemColors.ButtonShadow;
-            button1.BackColor = Color.FromArgb(207, 2, 69);
-            button1.ForeColor = Color.White;
-            flowLayoutPanel1.Visible = false;
-            DrankenPanel.Visible = true;           
+            Dranken dranken = new Dranken();
+            dranken.Show();
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
@@ -138,16 +134,6 @@ namespace HRDelicates
         private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void terug_admin_Click(object sender, EventArgs e)
-        {
-            terug_admin.BackColor = Color.FromArgb(207, 2, 69);
-            terug_admin.ForeColor = Color.White;
-            button1.BackColor = SystemColors.Control;
-            button1.ForeColor = SystemColors.ButtonShadow;
-            flowLayoutPanel1.Visible = true;
-            DrankenPanel.Visible = false;
         }
     }
 }
