@@ -75,6 +75,7 @@ namespace HRDelicates
             terug_login.Visible = true;
             terug_admin.Visible = false;
             login_header.Visible = true;
+            edit_panel2.Visible = false;
 
             username_box.Text = "";
             password_box.Text = "";
@@ -128,6 +129,7 @@ namespace HRDelicates
                 dt.Columns.Add("Capaciteit");
                 dt.Columns.Add("Status");
                 dt.Columns.Add("Persoon");
+                dt.Columns.Add("Last_name");
                 dt.Columns.Add("Email");
                 dt.Columns.Add("D_reservering");
                 dt.Columns.Add("Time");
@@ -144,6 +146,7 @@ namespace HRDelicates
                         dr["Capaciteit"] = n.Capaciteit;
                         dr["Status"] = n.Status;
                         dr["Persoon"] = n.Persoon;
+                        dr["Last_name"] = n.Last_name;
                         dr["Email"] = n.Email;
                         dr["D_reservering"] = n.D_reservering;
                         dr["Time"] = n.Time;
@@ -311,6 +314,7 @@ namespace HRDelicates
                 jsonObj[Int32.Parse(table_edit.Text) - 1]["Time"] = "";
                 jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"] = "";
                 jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"] = "";
+                jsonObj[Int32.Parse(table_edit.Text) - 1]["Status"] = "Unavailable";
                 string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
                 File.WriteAllText(path, output);
                 dataGridView1.Update();
@@ -324,6 +328,7 @@ namespace HRDelicates
                 dt.Columns.Add("Capaciteit");
                 dt.Columns.Add("Status");
                 dt.Columns.Add("Persoon");
+                dt.Columns.Add("Last_name");
                 dt.Columns.Add("Email");
                 dt.Columns.Add("D_reservering");
                 dt.Columns.Add("Time");
@@ -341,6 +346,7 @@ namespace HRDelicates
                         dr["Capaciteit"] = n.Capaciteit;
                         dr["Status"] = n.Status;
                         dr["Persoon"] = n.Persoon;
+                        dr["Last_name"] = n.Last_name;
                         dr["Email"] = n.Email;
                         dr["D_reservering"] = n.D_reservering;
                         dr["Time"] = n.Time;
@@ -355,15 +361,17 @@ namespace HRDelicates
 
         private void edit_reservation_Click(object sender, EventArgs e)
         {
-            edit_panel2.Visible = true;
-            edit_panel2.BringToFront();
 
             if(table_edit.Text != "")
             {
+                edit_panel2.Visible = true;
+                edit_panel2.BringToFront();
+
                 string json = File.ReadAllText(path);
                 dynamic jsonObj = JsonConvert.DeserializeObject(json);
 
                 edit_name.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"];
+                edit_lastname.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Last_name"];
                 edit_phone.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"];
                 edit_mail.Text = jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"];
 
@@ -376,7 +384,8 @@ namespace HRDelicates
             string json = File.ReadAllText(path);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
 
-            jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"] = edit_name.Text + " " + edit_lastname.Text;
+            jsonObj[Int32.Parse(table_edit.Text) - 1]["Persoon"] = edit_name.Text;
+            jsonObj[Int32.Parse(table_edit.Text) - 1]["Last_name"] = edit_lastname.Text;
             jsonObj[Int32.Parse(table_edit.Text) - 1]["Telefoon"] = edit_phone.Text;
             jsonObj[Int32.Parse(table_edit.Text) - 1]["Email"] = edit_mail.Text;
 
@@ -393,6 +402,7 @@ namespace HRDelicates
             dt.Columns.Add("Capaciteit");
             dt.Columns.Add("Status");
             dt.Columns.Add("Persoon");
+            dt.Columns.Add("Last_name");
             dt.Columns.Add("Email");
             dt.Columns.Add("D_reservering");
             dt.Columns.Add("Time");
@@ -406,6 +416,7 @@ namespace HRDelicates
                     dr["Capaciteit"] = n.Capaciteit;
                     dr["Status"] = n.Status;
                     dr["Persoon"] = n.Persoon;
+                    dr["Last_name"] = n.Last_name;
                     dr["Email"] = n.Email;
                     dr["D_reservering"] = n.D_reservering;
                     dr["Time"] = n.Time;

@@ -413,6 +413,7 @@
             this.back_begin.TabIndex = 40;
             this.back_begin.Text = "Terug naar reserveren";
             this.back_begin.UseVisualStyleBackColor = false;
+            this.back_begin.Click += new System.EventHandler(this.back_begin_Click);
             // 
             // confirm_button
             // 
@@ -452,7 +453,7 @@
             this.email_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.email_value.Enabled = false;
             this.email_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_value.Location = new System.Drawing.Point(247, 158);
+            this.email_value.Location = new System.Drawing.Point(247, 157);
             this.email_value.Name = "email_value";
             this.email_value.ReadOnly = true;
             this.email_value.Size = new System.Drawing.Size(446, 20);
@@ -464,7 +465,7 @@
             this.time_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.time_value.Enabled = false;
             this.time_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time_value.Location = new System.Drawing.Point(231, 211);
+            this.time_value.Location = new System.Drawing.Point(231, 210);
             this.time_value.Name = "time_value";
             this.time_value.ReadOnly = true;
             this.time_value.Size = new System.Drawing.Size(450, 20);
@@ -515,7 +516,7 @@
             this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.date_value.Enabled = false;
             this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_value.Location = new System.Drawing.Point(350, 186);
+            this.date_value.Location = new System.Drawing.Point(350, 185);
             this.date_value.Name = "date_value";
             this.date_value.ReadOnly = true;
             this.date_value.Size = new System.Drawing.Size(450, 20);
@@ -1162,11 +1163,14 @@
             // datum_box
             // 
             this.datum_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datum_box.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.errorProvider1.SetIconAlignment(this.datum_box, System.Windows.Forms.ErrorIconAlignment.TopRight);
             this.datum_box.Location = new System.Drawing.Point(634, 203);
-            this.datum_box.MinDate = new System.DateTime(2020, 4, 20, 0, 0, 0, 0);
+            this.datum_box.MinDate = new System.DateTime(2020, 6, 9, 0, 0, 0, 0);
             this.datum_box.Name = "datum_box";
             this.datum_box.Size = new System.Drawing.Size(170, 27);
             this.datum_box.TabIndex = 7;
+            this.datum_box.Value = new System.DateTime(2020, 6, 9, 22, 33, 13, 0);
             // 
             // telefoon_Box
             // 

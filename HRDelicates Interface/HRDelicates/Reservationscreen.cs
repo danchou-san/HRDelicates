@@ -26,7 +26,8 @@ namespace HRDelicates
 
         private void Reservationscreen_Load(object sender, EventArgs e)
         {
-            
+            datum_box.Value = DateTime.Today;
+            datum_box.MinDate = DateTime.Today;
         }
 
         private void table1_Click(object sender, EventArgs e)
@@ -275,11 +276,13 @@ namespace HRDelicates
 
             string json = File.ReadAllText(path);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
-            jsonObj[Int32.Parse(table_value.Text) - 1]["Persoon"] = name_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Persoon"] = naam_box.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Last_name"] = achternaam_box.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["D_reservering"] = date_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Time"] = time_value.Text;
             jsonObj[Int32.Parse(table_value.Text) - 1]["Telefoon"] = phone_value.Text;
-            jsonObj[Int32.Parse(table_value.Text) - 1]["Email"] = email_value.Text; 
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Email"] = email_value.Text;
+            jsonObj[Int32.Parse(table_value.Text) - 1]["Status"] = "Unavailable";
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
             File.WriteAllText(path, output);
 
@@ -289,7 +292,15 @@ namespace HRDelicates
 
         private void back_begin_Click(object sender, EventArgs e)
         {
-
+            table_panel.Visible = false;
+            verification_panel.Visible = false;
+            finish_panel.Visible = false;
+            naam_box.Text = "";
+            achternaam_box.Text = "";
+            date_value.Text = "";
+            time_value.Text = "";
+            phone_value.Text = "";
+            email_value.Text = "";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
