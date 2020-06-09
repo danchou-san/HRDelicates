@@ -100,3 +100,4 @@ C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Drinkdescriptions.resources
+E:\Users\KEVIN\Desktop\PROJECTA\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Drinkdescriptions.resources

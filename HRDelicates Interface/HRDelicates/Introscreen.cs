@@ -155,12 +155,115 @@ namespace HRDelicates
 
                 //dataGridView1.DataSource = tafels;
             }
-            else
             {
-                error_login.Visible = true;
+                if (username_box.Text == "Ariano" && password_box.Text == "Ariano123")
+                {
+                    dataGridView1.Visible = true;
+                    dataGridView1.BringToFront();
+                    terug_admin.Visible = true;
+                    edit_panel.Visible = true;
+                    edit_panel.BringToFront();
+                    terug_login.Visible = false;
+                    login_header.Visible = false;
+
+                    username_box.Text = "";
+                    password_box.Text = "";
+
+                    var serializedStr = File.ReadAllText(path);
+                    var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
+
+                    DataTable dt = new DataTable();
+                    dt.Columns.Add("Nummer");
+                    dt.Columns.Add("Capaciteit");
+                    dt.Columns.Add("Status");
+                    dt.Columns.Add("Persoon");
+                    dt.Columns.Add("Email");
+                    dt.Columns.Add("D_reservering");
+                    dt.Columns.Add("Time");
+
+                    foreach (var n in tables)
+                    {
+
+                        if (n.Persoon != "")
+                        {
+                            table_edit.Items.Add(n.Nummer);
+
+                            DataRow dr = dt.NewRow();
+                            dr["Nummer"] = n.Nummer;
+                            dr["Capaciteit"] = n.Capaciteit;
+                            dr["Status"] = n.Status;
+                            dr["Persoon"] = n.Persoon;
+                            dr["Email"] = n.Email;
+                            dr["D_reservering"] = n.D_reservering;
+                            dr["Time"] = n.Time;
+
+                            dt.Rows.Add(dr);
+                        }
+                    }
+                    dataGridView1.DataSource = dt;
+
+                    //dataGridView1.DataSource = tafels;
+                }
+                else
+                {
+                    error_login.Visible = true;
+                }
+                {
+                    if (username_box.Text == "Kevin" && password_box.Text == "Kevin")
+                    {
+                        dataGridView1.Visible = true;
+                        dataGridView1.BringToFront();
+                        terug_admin.Visible = true;
+                        edit_panel.Visible = true;
+                        edit_panel.BringToFront();
+                        terug_login.Visible = false;
+                        login_header.Visible = false;
+
+                        username_box.Text = "";
+                        password_box.Text = "";
+
+                        var serializedStr = File.ReadAllText(path);
+                        var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
+
+                        DataTable dt = new DataTable();
+                        dt.Columns.Add("Nummer");
+                        dt.Columns.Add("Capaciteit");
+                        dt.Columns.Add("Status");
+                        dt.Columns.Add("Persoon");
+                        dt.Columns.Add("Email");
+                        dt.Columns.Add("D_reservering");
+                        dt.Columns.Add("Time");
+
+                        foreach (var n in tables)
+                        {
+
+                            if (n.Persoon != "")
+                            {
+                                table_edit.Items.Add(n.Nummer);
+
+                                DataRow dr = dt.NewRow();
+                                dr["Nummer"] = n.Nummer;
+                                dr["Capaciteit"] = n.Capaciteit;
+                                dr["Status"] = n.Status;
+                                dr["Persoon"] = n.Persoon;
+                                dr["Email"] = n.Email;
+                                dr["D_reservering"] = n.D_reservering;
+                                dr["Time"] = n.Time;
+
+                                dt.Rows.Add(dr);
+                            }
+                        }
+                        dataGridView1.DataSource = dt;
+
+                        //dataGridView1.DataSource = tafels;
+                    }
+                    else
+                    {
+                        error_login.Visible = true;
+                    }
+                }
             }
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -322,7 +425,6 @@ namespace HRDelicates
         {
 
         }
-
-
+        
     }
 }
