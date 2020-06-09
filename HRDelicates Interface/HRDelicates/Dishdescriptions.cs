@@ -53,5 +53,10 @@ namespace HRDelicates
         {
 
         }
+
+        private void food_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
