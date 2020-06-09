@@ -35,6 +35,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Introscreen));
             this.intropanel = new System.Windows.Forms.Panel();
             this.edit_panel2 = new System.Windows.Forms.Panel();
+            this.edit_back = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,8 +64,6 @@
             this.terug_admin = new System.Windows.Forms.Button();
             this.terug_login = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefoon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.login_button = new System.Windows.Forms.Button();
             this.login_header = new System.Windows.Forms.Label();
             this.password_text = new System.Windows.Forms.Label();
@@ -80,13 +79,6 @@
             this.worker_button = new System.Windows.Forms.Button();
             this.klant_button = new System.Windows.Forms.Button();
             this.error_login = new System.Windows.Forms.Label();
-            this.edit_back = new System.Windows.Forms.Button();
-            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.persoonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dreserveringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tablesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -96,6 +88,14 @@
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.persoonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Last_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dreserveringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefoon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.intropanel.SuspendLayout();
             this.edit_panel2.SuspendLayout();
             this.edit_panel.SuspendLayout();
@@ -170,6 +170,22 @@
             this.edit_panel2.Size = new System.Drawing.Size(840, 582);
             this.edit_panel2.TabIndex = 59;
             this.edit_panel2.Visible = false;
+            // 
+            // edit_back
+            // 
+            this.edit_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
+            this.edit_back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.edit_back.FlatAppearance.BorderSize = 0;
+            this.edit_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.edit_back.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.edit_back.ForeColor = System.Drawing.Color.White;
+            this.edit_back.Location = new System.Drawing.Point(239, 401);
+            this.edit_back.Name = "edit_back";
+            this.edit_back.Size = new System.Drawing.Size(172, 61);
+            this.edit_back.TabIndex = 60;
+            this.edit_back.Text = "Terug";
+            this.edit_back.UseVisualStyleBackColor = false;
+            this.edit_back.Click += new System.EventHandler(this.edit_back_Click);
             // 
             // label7
             // 
@@ -487,8 +503,8 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nummerDataGridViewTextBoxColumn,
             this.capaciteitDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn,
             this.persoonDataGridViewTextBoxColumn,
+            this.Last_name,
             this.dreserveringDataGridViewTextBoxColumn,
             this.Email,
             this.Telefoon,
@@ -523,22 +539,6 @@
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.Width = 61;
-            // 
-            // Telefoon
-            // 
-            this.Telefoon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Telefoon.DataPropertyName = "Telefoon";
-            this.Telefoon.HeaderText = "Telefoon";
-            this.Telefoon.Name = "Telefoon";
-            this.Telefoon.Width = 78;
             // 
             // login_button
             // 
@@ -730,68 +730,6 @@
             this.error_login.Visible = false;
             this.error_login.Click += new System.EventHandler(this.label1_Click);
             // 
-            // edit_back
-            // 
-            this.edit_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(2)))), ((int)(((byte)(69)))));
-            this.edit_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.edit_back.FlatAppearance.BorderSize = 0;
-            this.edit_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit_back.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.edit_back.ForeColor = System.Drawing.Color.White;
-            this.edit_back.Location = new System.Drawing.Point(239, 401);
-            this.edit_back.Name = "edit_back";
-            this.edit_back.Size = new System.Drawing.Size(172, 61);
-            this.edit_back.TabIndex = 60;
-            this.edit_back.Text = "Terug";
-            this.edit_back.UseVisualStyleBackColor = false;
-            this.edit_back.Click += new System.EventHandler(this.edit_back_Click);
-            // 
-            // nummerDataGridViewTextBoxColumn
-            // 
-            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
-            // 
-            // capaciteitDataGridViewTextBoxColumn
-            // 
-            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
-            this.capaciteitDataGridViewTextBoxColumn.Width = 92;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // persoonDataGridViewTextBoxColumn
-            // 
-            this.persoonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.persoonDataGridViewTextBoxColumn.DataPropertyName = "Persoon";
-            this.persoonDataGridViewTextBoxColumn.HeaderText = "Persoon";
-            this.persoonDataGridViewTextBoxColumn.Name = "persoonDataGridViewTextBoxColumn";
-            this.persoonDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // dreserveringDataGridViewTextBoxColumn
-            // 
-            this.dreserveringDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dreserveringDataGridViewTextBoxColumn.DataPropertyName = "D_reservering";
-            this.dreserveringDataGridViewTextBoxColumn.HeaderText = "Datum reservering";
-            this.dreserveringDataGridViewTextBoxColumn.Name = "dreserveringDataGridViewTextBoxColumn";
-            this.dreserveringDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
             // tablesBindingSource4
             // 
             this.tablesBindingSource4.DataSource = typeof(HRDelicates.Tables);
@@ -827,6 +765,66 @@
             // tablesBindingSource3
             // 
             this.tablesBindingSource3.DataSource = typeof(HRDelicates.Tables);
+            // 
+            // nummerDataGridViewTextBoxColumn
+            // 
+            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
+            // 
+            // capaciteitDataGridViewTextBoxColumn
+            // 
+            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
+            this.capaciteitDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // persoonDataGridViewTextBoxColumn
+            // 
+            this.persoonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.persoonDataGridViewTextBoxColumn.DataPropertyName = "Persoon";
+            this.persoonDataGridViewTextBoxColumn.HeaderText = "Persoon";
+            this.persoonDataGridViewTextBoxColumn.Name = "persoonDataGridViewTextBoxColumn";
+            this.persoonDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // Last_name
+            // 
+            this.Last_name.DataPropertyName = "Last_name";
+            this.Last_name.HeaderText = "Achternaam";
+            this.Last_name.Name = "Last_name";
+            // 
+            // dreserveringDataGridViewTextBoxColumn
+            // 
+            this.dreserveringDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dreserveringDataGridViewTextBoxColumn.DataPropertyName = "D_reservering";
+            this.dreserveringDataGridViewTextBoxColumn.HeaderText = "Datum reservering";
+            this.dreserveringDataGridViewTextBoxColumn.Name = "dreserveringDataGridViewTextBoxColumn";
+            this.dreserveringDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // Email
+            // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Width = 61;
+            // 
+            // Telefoon
+            // 
+            this.Telefoon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Telefoon.DataPropertyName = "Telefoon";
+            this.Telefoon.HeaderText = "Telefoon";
+            this.Telefoon.Name = "Telefoon";
+            this.Telefoon.Width = 78;
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
             // 
             // Introscreen
             // 
@@ -889,14 +887,6 @@
         private System.Windows.Forms.BindingSource tablesBindingSource2;
         private System.Windows.Forms.BindingSource tablesBindingSource4;
         private System.Windows.Forms.BindingSource tablesBindingSource3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nummerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn capaciteitDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn persoonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dreserveringDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefoon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel edit_panel;
         private System.Windows.Forms.Label edit_label;
         private System.Windows.Forms.ComboBox table_edit;
@@ -925,5 +915,13 @@
         private System.Windows.Forms.TextBox edit_mail;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button edit_back;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nummerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn capaciteitDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn persoonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Last_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dreserveringDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefoon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
     }
 }
