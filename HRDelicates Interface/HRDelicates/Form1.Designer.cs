@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.admin_button = new System.Windows.Forms.Button();
             this.choose_close = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.choose_contact = new System.Windows.Forms.Panel();
@@ -53,15 +52,15 @@
             this.home_text = new System.Windows.Forms.Label();
             this.contact_text = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.admin_text = new System.Windows.Forms.Label();
             this.reserve_text = new System.Windows.Forms.Label();
             this.menu_text = new System.Windows.Forms.Label();
+            this.introscreen1 = new HRDelicates.Introscreen();
+            this.reservationscreen1 = new HRDelicates.Reservationscreen();
+            this.menuscreen1 = new HRDelicates.Menuscreen();
             this.startscreen2 = new HRDelicates.Startscreen();
             this.contactscreen1 = new HRDelicates.Contactscreen();
             this.startscreen1 = new HRDelicates.Startscreen();
-            this.menuscreen1 = new HRDelicates.Menuscreen();
-            this.reservationscreen1 = new HRDelicates.Reservationscreen();
-            this.adminscreen1 = new HRDelicates.Adminscreen();
-            this.admin_text = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.choose_close.SuspendLayout();
             this.choose_contact.SuspendLayout();
@@ -76,7 +75,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.panel1.Controls.Add(this.admin_button);
             this.panel1.Controls.Add(this.choose_close);
             this.panel1.Controls.Add(this.choose_contact);
             this.panel1.Controls.Add(this.choose_menu);
@@ -93,20 +91,6 @@
             this.panel1.Size = new System.Drawing.Size(170, 600);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // admin_button
-            // 
-            this.admin_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.admin_button.FlatAppearance.BorderSize = 0;
-            this.admin_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.admin_button.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.admin_button.ForeColor = System.Drawing.Color.White;
-            this.admin_button.Location = new System.Drawing.Point(0, 0);
-            this.admin_button.Name = "admin_button";
-            this.admin_button.Size = new System.Drawing.Size(13, 15);
-            this.admin_button.TabIndex = 12;
-            this.admin_button.UseVisualStyleBackColor = true;
-            this.admin_button.Click += new System.EventHandler(this.admin_Click);
             // 
             // choose_close
             // 
@@ -233,7 +217,7 @@
             this.exit_button2.Name = "exit_button2";
             this.exit_button2.Size = new System.Drawing.Size(170, 61);
             this.exit_button2.TabIndex = 11;
-            this.exit_button2.Text = "Afsluiten";
+            this.exit_button2.Text = "Terug";
             this.exit_button2.UseVisualStyleBackColor = true;
             this.exit_button2.Click += new System.EventHandler(this.exit_button2_Click);
             // 
@@ -384,6 +368,18 @@
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // admin_text
+            // 
+            this.admin_text.AutoSize = true;
+            this.admin_text.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.admin_text.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.admin_text.Location = new System.Drawing.Point(121, 84);
+            this.admin_text.Name = "admin_text";
+            this.admin_text.Size = new System.Drawing.Size(62, 21);
+            this.admin_text.TabIndex = 10;
+            this.admin_text.Text = "Admin";
+            this.admin_text.Visible = false;
+            // 
             // reserve_text
             // 
             this.reserve_text.AutoSize = true;
@@ -408,6 +404,32 @@
             this.menu_text.Text = "Menukaart";
             this.menu_text.Visible = false;
             // 
+            // introscreen1
+            // 
+            this.introscreen1.Location = new System.Drawing.Point(0, 0);
+            this.introscreen1.Margin = new System.Windows.Forms.Padding(2);
+            this.introscreen1.Name = "introscreen1";
+            this.introscreen1.Size = new System.Drawing.Size(1060, 600);
+            this.introscreen1.TabIndex = 13;
+            this.introscreen1.Tables = null;
+            this.introscreen1.Load += new System.EventHandler(this.introscreen1_Load);
+            // 
+            // reservationscreen1
+            // 
+            this.reservationscreen1.Location = new System.Drawing.Point(170, 133);
+            this.reservationscreen1.Name = "reservationscreen1";
+            this.reservationscreen1.Size = new System.Drawing.Size(890, 467);
+            this.reservationscreen1.TabIndex = 11;
+            this.reservationscreen1.Tables = null;
+            // 
+            // menuscreen1
+            // 
+            this.menuscreen1.Dishes = null;
+            this.menuscreen1.Location = new System.Drawing.Point(170, 133);
+            this.menuscreen1.Name = "menuscreen1";
+            this.menuscreen1.Size = new System.Drawing.Size(890, 467);
+            this.menuscreen1.TabIndex = 10;
+            // 
             // startscreen2
             // 
             this.startscreen2.Location = new System.Drawing.Point(1047, 572);
@@ -429,47 +451,12 @@
             this.startscreen1.Size = new System.Drawing.Size(890, 467);
             this.startscreen1.TabIndex = 5;
             // 
-            // menuscreen1
-            // 
-            this.menuscreen1.Dishes = null;
-            this.menuscreen1.Location = new System.Drawing.Point(170, 133);
-            this.menuscreen1.Name = "menuscreen1";
-            this.menuscreen1.Size = new System.Drawing.Size(890, 467);
-            this.menuscreen1.TabIndex = 10;
-            // 
-            // reservationscreen1
-            // 
-            this.reservationscreen1.Location = new System.Drawing.Point(170, 133);
-            this.reservationscreen1.Name = "reservationscreen1";
-            this.reservationscreen1.Size = new System.Drawing.Size(890, 467);
-            this.reservationscreen1.TabIndex = 11;
-            this.reservationscreen1.Tables = null;
-            // 
-            // adminscreen1
-            // 
-            this.adminscreen1.Location = new System.Drawing.Point(170, 133);
-            this.adminscreen1.Name = "adminscreen1";
-            this.adminscreen1.Size = new System.Drawing.Size(890, 467);
-            this.adminscreen1.TabIndex = 12;
-            // 
-            // admin_text
-            // 
-            this.admin_text.AutoSize = true;
-            this.admin_text.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.admin_text.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.admin_text.Location = new System.Drawing.Point(121, 84);
-            this.admin_text.Name = "admin_text";
-            this.admin_text.Size = new System.Drawing.Size(62, 21);
-            this.admin_text.TabIndex = 10;
-            this.admin_text.Text = "Admin";
-            this.admin_text.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1060, 600);
-            this.Controls.Add(this.adminscreen1);
+            this.Controls.Add(this.introscreen1);
             this.Controls.Add(this.reservationscreen1);
             this.Controls.Add(this.menuscreen1);
             this.Controls.Add(this.startscreen2);
@@ -529,9 +516,8 @@
         private System.Windows.Forms.Label menu_text;
         private Reservationscreen reservationscreen1;
         private System.Windows.Forms.Label reserve_text;
-        private System.Windows.Forms.Button admin_button;
-        private Adminscreen adminscreen1;
         private System.Windows.Forms.Label admin_text;
+        private Introscreen introscreen1;
     }
 }
 

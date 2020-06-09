@@ -61,6 +61,12 @@
     <Compile Include="Contactscreen.Designer.cs">
       <DependentUpon>Contactscreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dishdescriptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dishdescriptions.Designer.cs">
+      <DependentUpon>Dishdescriptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,11 +101,20 @@
       <DependentUpon>Startscreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Tables.cs" />
+    <Compile Include="Dranken.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dranken.Designer.cs">
+      <DependentUpon>Dranken.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Adminscreen.resx">
       <DependentUpon>Adminscreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contactscreen.resx">
       <DependentUpon>Contactscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dishdescriptions.resx">
+      <DependentUpon>Dishdescriptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -125,7 +140,11 @@
     <EmbeddedResource Include="Startscreen.resx">
       <DependentUpon>Startscreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dranken.resx">
+      <DependentUpon>Dranken.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Adminscreen.datasource" />
     <None Include="Properties\DataSources\Dishes.datasource" />
     <None Include="Properties\DataSources\Tables.datasource" />
     <None Include="Properties\Settings.settings">
