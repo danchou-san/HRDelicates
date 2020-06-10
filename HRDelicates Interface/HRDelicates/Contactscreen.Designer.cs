@@ -101,7 +101,6 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label4.Location = new System.Drawing.Point(323, 252);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 20);
@@ -118,13 +117,12 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 17);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Ma t\\m Zo: 17.00 - 23.00";
+            this.label5.Text = "Maandag: 17.00 - 21.00\nDinsdag: 17.00 - 21.00\nWoensdag: 17.00 - 21.00\nDonderdag: 17.00 - 21.00\nVrijdag: 17.00 - 21.00\nZaterdag: 17.00 - 21.00\nZondag: 17.00 - 21.00";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label6.Location = new System.Drawing.Point(608, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 20);

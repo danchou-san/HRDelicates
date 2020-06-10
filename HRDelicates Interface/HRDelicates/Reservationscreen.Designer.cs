@@ -147,30 +147,7 @@
             this.achternaam_box.Size = new System.Drawing.Size(370, 27);
             this.achternaam_box.TabIndex = 1;
             this.achternaam_box.Validating += new System.ComponentModel.CancelEventHandler(this.achternaam_box_Validating);
-            // 
-            // adres_box
-            // 
-            this.adres_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adres_box.Location = new System.Drawing.Point(99, 149);
-            this.adres_box.Name = "adres_box";
-            this.adres_box.Size = new System.Drawing.Size(284, 27);
-            this.adres_box.TabIndex = 3;
-            // 
-            // postcode_box
-            // 
-            this.postcode_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.postcode_box.Location = new System.Drawing.Point(404, 149);
-            this.postcode_box.Name = "postcode_box";
-            this.postcode_box.Size = new System.Drawing.Size(88, 27);
-            this.postcode_box.TabIndex = 4;
-            // 
-            // plaats_box
-            // 
-            this.plaats_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plaats_box.Location = new System.Drawing.Point(514, 149);
-            this.plaats_box.Name = "plaats_box";
-            this.plaats_box.Size = new System.Drawing.Size(284, 27);
-            this.plaats_box.TabIndex = 5;
+            
             // 
             // verder_button
             // 
@@ -218,36 +195,6 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Achternaam *";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label4.Location = new System.Drawing.Point(95, 127);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 19);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Adres";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label5.Location = new System.Drawing.Point(401, 128);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 19);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Postcode";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label6.Location = new System.Drawing.Point(512, 128);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 19);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Plaats";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -266,7 +213,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(133, 19);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Datum reservering";
+            this.label8.Text = "Datum reservering *";
             // 
             // personen_box
             // 
@@ -299,7 +246,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 19);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Personen";
+            this.label9.Text = "Personen *";
             // 
             // table_panel
             // 

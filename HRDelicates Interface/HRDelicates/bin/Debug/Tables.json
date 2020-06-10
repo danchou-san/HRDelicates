@@ -14,14 +14,14 @@
   {
     "Nummer": 2,
     "Capaciteit": 2,
-    "Status": "Available",
-    "Persoon": "",
-    "Last_name": "",
-    "Email": "",
-    "Telefoon": "",
+    "Status": "Unavailable",
+    "Persoon": "Koen",
+    "Last_name": "Schreuder",
+    "Email": "Schreuderkoen@gmail.com",
+    "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "",
-    "Time": ""
+    "D_reservering": "10-06-2020",
+    "Time": "20:00"
   },
   {
     "Nummer": 3,

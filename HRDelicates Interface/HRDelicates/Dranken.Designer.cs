@@ -171,7 +171,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(187, 33);
             this.textBox1.TabIndex = 45;
-            this.textBox1.Text = "€ 4.50,-";
+            this.textBox1.Text = "€ 4.50";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dish_title
@@ -224,7 +224,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(187, 33);
             this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "€ 5.75,-";
+            this.textBox2.Text = "€ 5.75";
             // 
             // textBox3
             // 
@@ -290,7 +290,7 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(187, 33);
             this.textBox5.TabIndex = 45;
-            this.textBox5.Text = "€ 5,75,-";
+            this.textBox5.Text = "€ 5,75";
             // 
             // textBox6
             // 
@@ -356,7 +356,7 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(187, 33);
             this.textBox8.TabIndex = 45;
-            this.textBox8.Text = "€ 5,75,-";
+            this.textBox8.Text = "€ 5,75";
             // 
             // textBox9
             // 
@@ -423,7 +423,7 @@
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(187, 33);
             this.textBox11.TabIndex = 45;
-            this.textBox11.Text = "€ 5,75,-";
+            this.textBox11.Text = "€ 5,75";
             // 
             // textBox12
             // 
@@ -489,7 +489,7 @@
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(187, 33);
             this.textBox14.TabIndex = 45;
-            this.textBox14.Text = "€ 5,75,-";
+            this.textBox14.Text = "€ 5,75";
             // 
             // textBox15
             // 
@@ -555,7 +555,7 @@
             this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(187, 33);
             this.textBox23.TabIndex = 45;
-            this.textBox23.Text = "€ 5,75,-";
+            this.textBox23.Text = "€ 5,75";
             // 
             // textBox24
             // 
@@ -621,7 +621,7 @@
             this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(187, 33);
             this.textBox27.TabIndex = 45;
-            this.textBox27.Text = "€ 5,75,-";
+            this.textBox27.Text = "€ 5,75";
             // 
             // textBox28
             // 
@@ -687,7 +687,7 @@
             this.textBox31.ReadOnly = true;
             this.textBox31.Size = new System.Drawing.Size(187, 33);
             this.textBox31.TabIndex = 45;
-            this.textBox31.Text = "€ 5,75,-";
+            this.textBox31.Text = "€ 5,75";
             // 
             // textBox32
             // 
@@ -753,7 +753,7 @@
             this.textBox36.ReadOnly = true;
             this.textBox36.Size = new System.Drawing.Size(187, 33);
             this.textBox36.TabIndex = 45;
-            this.textBox36.Text = "€ 5,75,-";
+            this.textBox36.Text = "€ 5,75";
             // 
             // textBox37
             // 
@@ -819,7 +819,7 @@
             this.textBox40.ReadOnly = true;
             this.textBox40.Size = new System.Drawing.Size(187, 33);
             this.textBox40.TabIndex = 45;
-            this.textBox40.Text = "€ 2,50,-";
+            this.textBox40.Text = "€ 2,50";
             // 
             // textBox41
             // 
@@ -885,7 +885,7 @@
             this.textBox44.ReadOnly = true;
             this.textBox44.Size = new System.Drawing.Size(187, 33);
             this.textBox44.TabIndex = 45;
-            this.textBox44.Text = "€ 2,50,-";
+            this.textBox44.Text = "€ 2,50";
             // 
             // textBox45
             // 
