@@ -115,18 +115,24 @@
             this.email_box = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tablesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.personen_box)).BeginInit();
             this.table_panel.SuspendLayout();
             this.verification_panel.SuspendLayout();
             this.finish_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // naam_box
@@ -150,27 +156,24 @@
             // 
             // adres_box
             // 
-            this.adres_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adres_box.Location = new System.Drawing.Point(99, 149);
+            this.adres_box.Location = new System.Drawing.Point(0, 0);
             this.adres_box.Name = "adres_box";
-            this.adres_box.Size = new System.Drawing.Size(284, 27);
-            this.adres_box.TabIndex = 3;
+            this.adres_box.Size = new System.Drawing.Size(100, 20);
+            this.adres_box.TabIndex = 27;
             // 
             // postcode_box
             // 
-            this.postcode_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.postcode_box.Location = new System.Drawing.Point(404, 149);
+            this.postcode_box.Location = new System.Drawing.Point(0, 0);
             this.postcode_box.Name = "postcode_box";
-            this.postcode_box.Size = new System.Drawing.Size(88, 27);
-            this.postcode_box.TabIndex = 4;
+            this.postcode_box.Size = new System.Drawing.Size(100, 20);
+            this.postcode_box.TabIndex = 26;
             // 
             // plaats_box
             // 
-            this.plaats_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plaats_box.Location = new System.Drawing.Point(514, 149);
+            this.plaats_box.Location = new System.Drawing.Point(0, 0);
             this.plaats_box.Name = "plaats_box";
-            this.plaats_box.Size = new System.Drawing.Size(284, 27);
-            this.plaats_box.TabIndex = 5;
+            this.plaats_box.Size = new System.Drawing.Size(100, 20);
+            this.plaats_box.TabIndex = 25;
             // 
             // verder_button
             // 
@@ -180,7 +183,7 @@
             this.verder_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.verder_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.verder_button.ForeColor = System.Drawing.Color.White;
-            this.verder_button.Location = new System.Drawing.Point(346, 312);
+            this.verder_button.Location = new System.Drawing.Point(346, 344);
             this.verder_button.Name = "verder_button";
             this.verder_button.Size = new System.Drawing.Size(170, 61);
             this.verder_button.TabIndex = 8;
@@ -220,39 +223,30 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label4.Location = new System.Drawing.Point(95, 127);
+            this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 19);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Adres";
+            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.TabIndex = 24;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label5.Location = new System.Drawing.Point(401, 128);
+            this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 19);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Postcode";
+            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.TabIndex = 23;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label6.Location = new System.Drawing.Point(512, 128);
+            this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 19);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Plaats";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 22;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label7.Location = new System.Drawing.Point(95, 182);
+            this.label7.Location = new System.Drawing.Point(95, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(133, 19);
             this.label7.TabIndex = 15;
@@ -262,16 +256,16 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label8.Location = new System.Drawing.Point(632, 179);
+            this.label8.Location = new System.Drawing.Point(632, 143);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 19);
+            this.label8.Size = new System.Drawing.Size(143, 19);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Datum reservering";
+            this.label8.Text = "Datum reservering *";
             // 
             // personen_box
             // 
             this.personen_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.personen_box.Location = new System.Drawing.Point(533, 203);
+            this.personen_box.Location = new System.Drawing.Point(533, 167);
             this.personen_box.Maximum = new decimal(new int[] {
             6,
             0,
@@ -295,11 +289,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label9.Location = new System.Drawing.Point(530, 182);
+            this.label9.Location = new System.Drawing.Point(530, 146);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 19);
+            this.label9.Size = new System.Drawing.Size(81, 19);
             this.label9.TabIndex = 19;
-            this.label9.Text = "Personen";
+            this.label9.Text = "Personen *";
             // 
             // table_panel
             // 
@@ -370,6 +364,7 @@
             this.verification_panel.Controls.Add(this.name_label);
             this.verification_panel.Controls.Add(this.confirmation_title);
             this.verification_panel.Controls.Add(this.date_label);
+            this.verification_panel.Controls.Add(this.pictureBox3);
             this.verification_panel.Location = new System.Drawing.Point(0, 0);
             this.verification_panel.Name = "verification_panel";
             this.verification_panel.Size = new System.Drawing.Size(890, 467);
@@ -379,6 +374,7 @@
             // 
             // finish_panel
             // 
+            this.finish_panel.Controls.Add(this.pictureBox4);
             this.finish_panel.Controls.Add(this.finish_text);
             this.finish_panel.Controls.Add(this.back_begin);
             this.finish_panel.Location = new System.Drawing.Point(0, 0);
@@ -392,7 +388,7 @@
             // 
             this.finish_text.AutoSize = true;
             this.finish_text.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.finish_text.Location = new System.Drawing.Point(324, 142);
+            this.finish_text.Location = new System.Drawing.Point(324, 74);
             this.finish_text.Name = "finish_text";
             this.finish_text.Size = new System.Drawing.Size(244, 25);
             this.finish_text.TabIndex = 40;
@@ -407,7 +403,7 @@
             this.back_begin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_begin.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.back_begin.ForeColor = System.Drawing.Color.White;
-            this.back_begin.Location = new System.Drawing.Point(344, 223);
+            this.back_begin.Location = new System.Drawing.Point(344, 155);
             this.back_begin.Name = "back_begin";
             this.back_begin.Size = new System.Drawing.Size(198, 61);
             this.back_begin.TabIndex = 40;
@@ -423,7 +419,7 @@
             this.confirm_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confirm_button.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.confirm_button.ForeColor = System.Drawing.Color.White;
-            this.confirm_button.Location = new System.Drawing.Point(450, 273);
+            this.confirm_button.Location = new System.Drawing.Point(452, 344);
             this.confirm_button.Name = "confirm_button";
             this.confirm_button.Size = new System.Drawing.Size(170, 61);
             this.confirm_button.TabIndex = 29;
@@ -439,7 +435,7 @@
             this.confirmation_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.confirmation_back.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.confirmation_back.ForeColor = System.Drawing.Color.White;
-            this.confirmation_back.Location = new System.Drawing.Point(265, 273);
+            this.confirmation_back.Location = new System.Drawing.Point(271, 344);
             this.confirmation_back.Name = "confirmation_back";
             this.confirmation_back.Size = new System.Drawing.Size(170, 61);
             this.confirmation_back.TabIndex = 38;
@@ -453,7 +449,7 @@
             this.email_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.email_value.Enabled = false;
             this.email_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_value.Location = new System.Drawing.Point(247, 157);
+            this.email_value.Location = new System.Drawing.Point(247, 147);
             this.email_value.Name = "email_value";
             this.email_value.ReadOnly = true;
             this.email_value.Size = new System.Drawing.Size(446, 20);
@@ -465,7 +461,7 @@
             this.time_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.time_value.Enabled = false;
             this.time_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time_value.Location = new System.Drawing.Point(231, 210);
+            this.time_value.Location = new System.Drawing.Point(231, 200);
             this.time_value.Name = "time_value";
             this.time_value.ReadOnly = true;
             this.time_value.Size = new System.Drawing.Size(450, 20);
@@ -478,7 +474,7 @@
             this.table_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.table_value.Enabled = false;
             this.table_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.table_value.Location = new System.Drawing.Point(244, 236);
+            this.table_value.Location = new System.Drawing.Point(244, 226);
             this.table_value.Name = "table_value";
             this.table_value.ReadOnly = true;
             this.table_value.Size = new System.Drawing.Size(450, 20);
@@ -490,7 +486,7 @@
             this.name_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.name_value.Enabled = false;
             this.name_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_value.Location = new System.Drawing.Point(330, 103);
+            this.name_value.Location = new System.Drawing.Point(330, 93);
             this.name_value.Name = "name_value";
             this.name_value.ReadOnly = true;
             this.name_value.Size = new System.Drawing.Size(450, 20);
@@ -503,7 +499,7 @@
             this.phone_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.phone_value.Enabled = false;
             this.phone_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone_value.Location = new System.Drawing.Point(338, 130);
+            this.phone_value.Location = new System.Drawing.Point(338, 120);
             this.phone_value.Name = "phone_value";
             this.phone_value.ReadOnly = true;
             this.phone_value.Size = new System.Drawing.Size(450, 20);
@@ -516,7 +512,7 @@
             this.date_value.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.date_value.Enabled = false;
             this.date_value.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_value.Location = new System.Drawing.Point(350, 185);
+            this.date_value.Location = new System.Drawing.Point(350, 175);
             this.date_value.Name = "date_value";
             this.date_value.ReadOnly = true;
             this.date_value.Size = new System.Drawing.Size(450, 20);
@@ -528,7 +524,7 @@
             this.tijd_label.AutoSize = true;
             this.tijd_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.tijd_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tijd_label.Location = new System.Drawing.Point(193, 210);
+            this.tijd_label.Location = new System.Drawing.Point(193, 200);
             this.tijd_label.Name = "tijd_label";
             this.tijd_label.Size = new System.Drawing.Size(39, 21);
             this.tijd_label.TabIndex = 37;
@@ -539,7 +535,7 @@
             this.label_email.AutoSize = true;
             this.label_email.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label_email.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label_email.Location = new System.Drawing.Point(192, 157);
+            this.label_email.Location = new System.Drawing.Point(192, 147);
             this.label_email.Name = "label_email";
             this.label_email.Size = new System.Drawing.Size(55, 21);
             this.label_email.TabIndex = 42;
@@ -550,7 +546,7 @@
             this.table_label.AutoSize = true;
             this.table_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.table_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.table_label.Location = new System.Drawing.Point(193, 235);
+            this.table_label.Location = new System.Drawing.Point(193, 225);
             this.table_label.Name = "table_label";
             this.table_label.Size = new System.Drawing.Size(51, 21);
             this.table_label.TabIndex = 33;
@@ -561,7 +557,7 @@
             this.phone_label.AutoSize = true;
             this.phone_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.phone_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.phone_label.Location = new System.Drawing.Point(193, 129);
+            this.phone_label.Location = new System.Drawing.Point(193, 119);
             this.phone_label.Name = "phone_label";
             this.phone_label.Size = new System.Drawing.Size(145, 21);
             this.phone_label.TabIndex = 31;
@@ -573,7 +569,7 @@
             this.name_label.AutoSize = true;
             this.name_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.name_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.name_label.Location = new System.Drawing.Point(193, 102);
+            this.name_label.Location = new System.Drawing.Point(193, 92);
             this.name_label.Name = "name_label";
             this.name_label.Size = new System.Drawing.Size(137, 21);
             this.name_label.TabIndex = 29;
@@ -595,7 +591,7 @@
             this.date_label.AutoSize = true;
             this.date_label.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.date_label.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.date_label.Location = new System.Drawing.Point(192, 184);
+            this.date_label.Location = new System.Drawing.Point(192, 174);
             this.date_label.Name = "date_label";
             this.date_label.Size = new System.Drawing.Size(158, 21);
             this.date_label.TabIndex = 40;
@@ -1165,7 +1161,7 @@
             this.datum_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datum_box.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.errorProvider1.SetIconAlignment(this.datum_box, System.Windows.Forms.ErrorIconAlignment.TopRight);
-            this.datum_box.Location = new System.Drawing.Point(634, 203);
+            this.datum_box.Location = new System.Drawing.Point(634, 167);
             this.datum_box.MinDate = new System.DateTime(2020, 6, 9, 0, 0, 0, 0);
             this.datum_box.Name = "datum_box";
             this.datum_box.Size = new System.Drawing.Size(170, 27);
@@ -1175,7 +1171,7 @@
             // telefoon_Box
             // 
             this.telefoon_Box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefoon_Box.Location = new System.Drawing.Point(98, 203);
+            this.telefoon_Box.Location = new System.Drawing.Point(98, 167);
             this.telefoon_Box.Name = "telefoon_Box";
             this.telefoon_Box.Size = new System.Drawing.Size(184, 27);
             this.telefoon_Box.TabIndex = 22;
@@ -1189,7 +1185,7 @@
             // 
             this.Verplicht_text.AutoSize = true;
             this.Verplicht_text.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Verplicht_text.Location = new System.Drawing.Point(97, 263);
+            this.Verplicht_text.Location = new System.Drawing.Point(97, 228);
             this.Verplicht_text.Name = "Verplicht_text";
             this.Verplicht_text.Size = new System.Drawing.Size(114, 15);
             this.Verplicht_text.TabIndex = 23;
@@ -1198,7 +1194,7 @@
             // email_box
             // 
             this.email_box.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_box.Location = new System.Drawing.Point(302, 202);
+            this.email_box.Location = new System.Drawing.Point(302, 166);
             this.email_box.Name = "email_box";
             this.email_box.Size = new System.Drawing.Size(204, 27);
             this.email_box.TabIndex = 24;
@@ -1208,11 +1204,21 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.label12.Location = new System.Drawing.Point(299, 181);
+            this.label12.Location = new System.Drawing.Point(299, 145);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 19);
             this.label12.TabIndex = 25;
             this.label12.Text = "Email *";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 281);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(890, 479);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
             // 
             // tablesBindingSource2
             // 
@@ -1225,6 +1231,26 @@
             // tablesBindingSource
             // 
             this.tablesBindingSource.DataSource = typeof(HRDelicates.Tables);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 281);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(890, 479);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 44;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 281);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(890, 479);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
             // 
             // Reservationscreen
             // 
@@ -1241,7 +1267,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.verder_button);
             this.Controls.Add(this.datum_box);
             this.Controls.Add(this.plaats_box);
             this.Controls.Add(this.postcode_box);
@@ -1252,6 +1277,8 @@
             this.Controls.Add(this.Verplicht_text);
             this.Controls.Add(this.email_box);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.verder_button);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "Reservationscreen";
             this.Size = new System.Drawing.Size(890, 467);
             this.Load += new System.EventHandler(this.Reservationscreen_Load);
@@ -1264,9 +1291,12 @@
             this.finish_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1361,5 +1391,8 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

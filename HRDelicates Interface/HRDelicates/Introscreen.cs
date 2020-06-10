@@ -131,6 +131,7 @@ namespace HRDelicates
                 dt.Columns.Add("Persoon");
                 dt.Columns.Add("Last_name");
                 dt.Columns.Add("Email");
+                dt.Columns.Add("Telefoon");
                 dt.Columns.Add("D_reservering");
                 dt.Columns.Add("Time");
 
@@ -148,6 +149,7 @@ namespace HRDelicates
                         dr["Persoon"] = n.Persoon;
                         dr["Last_name"] = n.Last_name;
                         dr["Email"] = n.Email;
+                        dr["Telefoon"] = n.Telefoon;
                         dr["D_reservering"] = n.D_reservering;
                         dr["Time"] = n.Time;
 
@@ -181,6 +183,7 @@ namespace HRDelicates
                     dt.Columns.Add("Status");
                     dt.Columns.Add("Persoon");
                     dt.Columns.Add("Email");
+                    dt.Columns.Add("Telefoon");
                     dt.Columns.Add("D_reservering");
                     dt.Columns.Add("Time");
 
@@ -197,6 +200,7 @@ namespace HRDelicates
                             dr["Status"] = n.Status;
                             dr["Persoon"] = n.Persoon;
                             dr["Email"] = n.Email;
+                            dr["Telefoon"] = n.Telefoon;
                             dr["D_reservering"] = n.D_reservering;
                             dr["Time"] = n.Time;
 
@@ -234,6 +238,7 @@ namespace HRDelicates
                         dt.Columns.Add("Status");
                         dt.Columns.Add("Persoon");
                         dt.Columns.Add("Email");
+                        dt.Columns.Add("Telefoon");
                         dt.Columns.Add("D_reservering");
                         dt.Columns.Add("Time");
 
@@ -250,6 +255,7 @@ namespace HRDelicates
                                 dr["Status"] = n.Status;
                                 dr["Persoon"] = n.Persoon;
                                 dr["Email"] = n.Email;
+                                dr["Telefoon"] = n.Email;
                                 dr["D_reservering"] = n.D_reservering;
                                 dr["Time"] = n.Time;
 
@@ -330,6 +336,7 @@ namespace HRDelicates
                 dt.Columns.Add("Persoon");
                 dt.Columns.Add("Last_name");
                 dt.Columns.Add("Email");
+                dt.Columns.Add("Telefoon");
                 dt.Columns.Add("D_reservering");
                 dt.Columns.Add("Time");
 
@@ -347,7 +354,8 @@ namespace HRDelicates
                         dr["Status"] = n.Status;
                         dr["Persoon"] = n.Persoon;
                         dr["Last_name"] = n.Last_name;
-                        dr["Email"] = n.Email;
+                        dr["Email"] = n.Telefoon;
+                        dr["Telefoon"] = n.Email;
                         dr["D_reservering"] = n.D_reservering;
                         dr["Time"] = n.Time;
 
@@ -404,6 +412,7 @@ namespace HRDelicates
             dt.Columns.Add("Persoon");
             dt.Columns.Add("Last_name");
             dt.Columns.Add("Email");
+            dt.Columns.Add("Telefoon");
             dt.Columns.Add("D_reservering");
             dt.Columns.Add("Time");
 
@@ -418,6 +427,7 @@ namespace HRDelicates
                     dr["Persoon"] = n.Persoon;
                     dr["Last_name"] = n.Last_name;
                     dr["Email"] = n.Email;
+                    dr["Telefoon"] = n.Telefoon;
                     dr["D_reservering"] = n.D_reservering;
                     dr["Time"] = n.Time;
 
@@ -436,6 +446,10 @@ namespace HRDelicates
         {
 
         }
-        
+
+        private void edit_panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -187,7 +187,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(187, 33);
             this.textBox1.TabIndex = 45;
-            this.textBox1.Text = "€ 10,-";
+            this.textBox1.Text = "€ 10,00";
             // 
             // dish_descriptions
             // 
@@ -685,7 +685,7 @@
             this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(187, 33);
             this.textBox23.TabIndex = 45;
-            this.textBox23.Text = "€ 12,-";
+            this.textBox23.Text = "€ 12,00";
             // 
             // textBox24
             // 
@@ -873,7 +873,7 @@
             this.textBox32.ReadOnly = true;
             this.textBox32.Size = new System.Drawing.Size(187, 33);
             this.textBox32.TabIndex = 45;
-            this.textBox32.Text = "€ 16,-";
+            this.textBox32.Text = "€ 16,00";
             // 
             // textBox33
             // 
@@ -935,7 +935,7 @@
             this.textBox35.ReadOnly = true;
             this.textBox35.Size = new System.Drawing.Size(187, 33);
             this.textBox35.TabIndex = 45;
-            this.textBox35.Text = "€ 9,-";
+            this.textBox35.Text = "€ 9,00";
             // 
             // textBox36
             // 
@@ -997,7 +997,7 @@
             this.textBox38.ReadOnly = true;
             this.textBox38.Size = new System.Drawing.Size(187, 33);
             this.textBox38.TabIndex = 45;
-            this.textBox38.Text = "€ 5,-";
+            this.textBox38.Text = "€ 5,00";
             // 
             // textBox39
             // 
