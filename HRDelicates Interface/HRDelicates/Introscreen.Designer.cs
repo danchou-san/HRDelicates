@@ -64,15 +64,9 @@
             this.terug_admin = new System.Windows.Forms.Button();
             this.terug_login = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.persoonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Last_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dreserveringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefoon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tablesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.login_button = new System.Windows.Forms.Button();
             this.login_header = new System.Windows.Forms.Label();
             this.password_text = new System.Windows.Forms.Label();
@@ -88,6 +82,12 @@
             this.worker_button = new System.Windows.Forms.Button();
             this.klant_button = new System.Windows.Forms.Button();
             this.error_login = new System.Windows.Forms.Label();
+            this.nummerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.capaciteitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.persoonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dreserveringDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tablesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.tablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.adminscreenBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -100,11 +100,11 @@
             this.edit_panel2.SuspendLayout();
             this.edit_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource)).BeginInit();
@@ -170,6 +170,7 @@
             this.edit_panel2.Size = new System.Drawing.Size(840, 582);
             this.edit_panel2.TabIndex = 59;
             this.edit_panel2.Visible = false;
+            this.edit_panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.edit_panel2_Paint);
             // 
             // edit_back
             // 
@@ -542,42 +543,11 @@
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // nummerDataGridViewTextBoxColumn
-            // 
-            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
-            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
-            // 
-            // capaciteitDataGridViewTextBoxColumn
-            // 
-            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
-            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
-            this.capaciteitDataGridViewTextBoxColumn.Width = 92;
-            // 
-            // persoonDataGridViewTextBoxColumn
-            // 
-            this.persoonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.persoonDataGridViewTextBoxColumn.DataPropertyName = "Persoon";
-            this.persoonDataGridViewTextBoxColumn.HeaderText = "Persoon";
-            this.persoonDataGridViewTextBoxColumn.Name = "persoonDataGridViewTextBoxColumn";
-            this.persoonDataGridViewTextBoxColumn.Width = 75;
-            // 
             // Last_name
             // 
             this.Last_name.DataPropertyName = "Last_name";
             this.Last_name.HeaderText = "Achternaam";
             this.Last_name.Name = "Last_name";
-            // 
-            // dreserveringDataGridViewTextBoxColumn
-            // 
-            this.dreserveringDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.dreserveringDataGridViewTextBoxColumn.DataPropertyName = "D_reservering";
-            this.dreserveringDataGridViewTextBoxColumn.HeaderText = "Datum reservering";
-            this.dreserveringDataGridViewTextBoxColumn.Name = "dreserveringDataGridViewTextBoxColumn";
-            this.dreserveringDataGridViewTextBoxColumn.Width = 120;
             // 
             // Email
             // 
@@ -594,17 +564,6 @@
             this.Telefoon.HeaderText = "Telefoon";
             this.Telefoon.Name = "Telefoon";
             this.Telefoon.Width = 78;
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
-            // tablesBindingSource4
-            // 
-            this.tablesBindingSource4.DataSource = typeof(HRDelicates.Tables);
             // 
             // login_button
             // 
@@ -796,6 +755,48 @@
             this.error_login.Visible = false;
             this.error_login.Click += new System.EventHandler(this.label1_Click);
             // 
+            // nummerDataGridViewTextBoxColumn
+            // 
+            this.nummerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nummerDataGridViewTextBoxColumn.DataPropertyName = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.HeaderText = "Nummer";
+            this.nummerDataGridViewTextBoxColumn.Name = "nummerDataGridViewTextBoxColumn";
+            // 
+            // capaciteitDataGridViewTextBoxColumn
+            // 
+            this.capaciteitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.capaciteitDataGridViewTextBoxColumn.DataPropertyName = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.HeaderText = "Capaciteit";
+            this.capaciteitDataGridViewTextBoxColumn.Name = "capaciteitDataGridViewTextBoxColumn";
+            this.capaciteitDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // persoonDataGridViewTextBoxColumn
+            // 
+            this.persoonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.persoonDataGridViewTextBoxColumn.DataPropertyName = "Persoon";
+            this.persoonDataGridViewTextBoxColumn.HeaderText = "Persoon";
+            this.persoonDataGridViewTextBoxColumn.Name = "persoonDataGridViewTextBoxColumn";
+            this.persoonDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // dreserveringDataGridViewTextBoxColumn
+            // 
+            this.dreserveringDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dreserveringDataGridViewTextBoxColumn.DataPropertyName = "D_reservering";
+            this.dreserveringDataGridViewTextBoxColumn.HeaderText = "Datum reservering";
+            this.dreserveringDataGridViewTextBoxColumn.Name = "dreserveringDataGridViewTextBoxColumn";
+            this.dreserveringDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            // 
+            // tablesBindingSource4
+            // 
+            this.tablesBindingSource4.DataSource = typeof(HRDelicates.Tables);
+            // 
             // tablesBindingSource5
             // 
             this.tablesBindingSource5.DataSource = typeof(HRDelicates.Tables);
@@ -843,11 +844,11 @@
             this.edit_panel.ResumeLayout(false);
             this.edit_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminscreenBindingSource)).EndInit();
