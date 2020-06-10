@@ -45,6 +45,11 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -100,11 +105,6 @@
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             food_panel = new System.Windows.Forms.FlowLayoutPanel();
             food_panel.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -113,6 +113,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel6.SuspendLayout();
@@ -135,8 +137,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // food_panel
@@ -249,7 +249,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(187, 33);
             this.textBox2.TabIndex = 45;
-            this.textBox2.Text = "€ 12,50,-";
+            this.textBox2.Text = "€ 12,50";
             // 
             // textBox3
             // 
@@ -311,7 +311,7 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(187, 33);
             this.textBox5.TabIndex = 45;
-            this.textBox5.Text = "€ 6,50,-";
+            this.textBox5.Text = "€ 6,50";
             // 
             // textBox6
             // 
@@ -350,6 +350,68 @@
             this.pictureBox3.TabIndex = 42;
             this.pictureBox3.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.textBox8);
+            this.panel4.Controls.Add(this.textBox9);
+            this.panel4.Controls.Add(this.textBox10);
+            this.panel4.Controls.Add(this.pictureBox4);
+            this.panel4.Location = new System.Drawing.Point(658, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(212, 307);
+            this.panel4.TabIndex = 3;
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Enabled = false;
+            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.textBox8.Location = new System.Drawing.Point(13, 260);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(187, 33);
+            this.textBox8.TabIndex = 45;
+            this.textBox8.Text = "€ 4,50";
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Enabled = false;
+            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.textBox9.Location = new System.Drawing.Point(13, 195);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(187, 59);
+            this.textBox9.TabIndex = 44;
+            this.textBox9.Text = "Vanille ijs met chocoladesaus en slagroom.\r\n";
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox10.Enabled = false;
+            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(13, 169);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
+            this.textBox10.Size = new System.Drawing.Size(187, 20);
+            this.textBox10.TabIndex = 43;
+            this.textBox10.Text = "Dame blanche";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(212, 165);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 42;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -373,7 +435,7 @@
             this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(187, 33);
             this.textBox11.TabIndex = 45;
-            this.textBox11.Text = "€ 6,50,-";
+            this.textBox11.Text = "€ 6,50";
             // 
             // textBox12
             // 
@@ -435,7 +497,7 @@
             this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(187, 33);
             this.textBox14.TabIndex = 45;
-            this.textBox14.Text = "€ 12,50,-";
+            this.textBox14.Text = "€ 12,50";
             // 
             // textBox15
             // 
@@ -498,7 +560,7 @@
             this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(187, 33);
             this.textBox17.TabIndex = 45;
-            this.textBox17.Text = "€ 5,50,-";
+            this.textBox17.Text = "€ 5,50";
             // 
             // textBox18
             // 
@@ -561,7 +623,7 @@
             this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(187, 33);
             this.textBox20.TabIndex = 45;
-            this.textBox20.Text = "€ 13,50,-";
+            this.textBox20.Text = "€ 13,50";
             // 
             // textBox21
             // 
@@ -686,7 +748,7 @@
             this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(187, 33);
             this.textBox26.TabIndex = 45;
-            this.textBox26.Text = "€ 4,50,-";
+            this.textBox26.Text = "€ 4,50";
             // 
             // textBox27
             // 
@@ -749,7 +811,7 @@
             this.textBox29.ReadOnly = true;
             this.textBox29.Size = new System.Drawing.Size(187, 33);
             this.textBox29.TabIndex = 45;
-            this.textBox29.Text = "€ 11,75,-";
+            this.textBox29.Text = "€ 11,75";
             // 
             // textBox30
             // 
@@ -997,7 +1059,7 @@
             this.textBox41.ReadOnly = true;
             this.textBox41.Size = new System.Drawing.Size(187, 33);
             this.textBox41.TabIndex = 45;
-            this.textBox41.Text = "€ 15,50,-";
+            this.textBox41.Text = "€ 15,50";
             // 
             // textBox42
             // 
@@ -1037,68 +1099,6 @@
             this.pictureBox15.TabIndex = 42;
             this.pictureBox15.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(212, 165);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 42;
-            this.pictureBox4.TabStop = false;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(13, 169);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(187, 20);
-            this.textBox10.TabIndex = 43;
-            this.textBox10.Text = "Dame blanche";
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.textBox9.Location = new System.Drawing.Point(13, 195);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(187, 59);
-            this.textBox9.TabIndex = 44;
-            this.textBox9.Text = "Vanille ijs met chocoladesaus en slagroom.\r\n";
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.textBox8.Location = new System.Drawing.Point(13, 260);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(187, 33);
-            this.textBox8.TabIndex = 45;
-            this.textBox8.Text = "€ 4,50,-";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Controls.Add(this.textBox8);
-            this.panel4.Controls.Add(this.textBox9);
-            this.panel4.Controls.Add(this.textBox10);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(658, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(212, 307);
-            this.panel4.TabIndex = 3;
-            // 
             // Dishdescriptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1117,6 +1117,9 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1150,9 +1153,6 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
