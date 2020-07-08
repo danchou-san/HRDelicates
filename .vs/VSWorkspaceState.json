@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HRDelicates Interface",
+    "\\HRDelicates Interface\\HRDelicates",
+    "\\HRDelicates Interface\\packages"
   ],
+  "SelectedNode": "\\HRDelicates Interface\\HRDelicates\\HRDelicates.csproj",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-SendMail",
+      "appliesTo": "HRDelicates Interface/HRDelicates/SendMail.cs",
+      "type": "launch"
+    }
+  ]
+}

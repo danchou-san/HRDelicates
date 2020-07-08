@@ -20,8 +20,8 @@
     "Email": "Schreuderkoen@gmail.com",
     "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "10-06-2020",
-    "Time": "20:00"
+    "D_reservering": "08-07-2020",
+    "Time": "17:00"
   },
   {
     "Nummer": 3,
@@ -39,13 +39,13 @@
     "Nummer": 4,
     "Capaciteit": 2,
     "Status": "Unavailable",
-    "Persoon": "Klaas",
-    "Email": "@.com",
-    "Telefoon": "0612345678",
+    "Persoon": "Koen",
+    "Email": "Schreuderkoen@live.nl",
+    "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "10-06-2020",
+    "D_reservering": "08-07-2020",
     "Time": "19:00",
-    "Last_name": "Nicolaas"
+    "Last_name": "Schreuder"
   },
   {
     "Nummer": 5,

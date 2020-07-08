@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
+using System.Net;
+using System.Net.Mail;
 
 namespace HRDelicates
 {
@@ -261,6 +263,7 @@ namespace HRDelicates
 
         private void confirm_button_Click(object sender, EventArgs e)
         {
+
             //var serializedStr = File.ReadAllText(path);
             //var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
 
