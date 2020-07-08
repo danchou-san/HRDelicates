@@ -430,7 +430,7 @@ namespace HRDelicates
                 email_box.Focus();
                 errorProvider1.SetError(email_box, "Vul uw email in.");
             }
-            else if(!email_box.Text.Contains("@") || (!email_box.Text.EndsWith(".com")))
+            else if(!email_box.Text.Contains("@"))
             {
                 e.Cancel = true;
                 email_box.Focus();
