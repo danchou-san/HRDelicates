@@ -3,8 +3,11 @@
     "",
     "\\HRDelicates Interface",
     "\\HRDelicates Interface\\HRDelicates",
+    "\\HRDelicates Interface\\HRDelicates\\bin",
+    "\\HRDelicates Interface\\HRDelicates\\bin\\Debug",
+    "\\HRDelicates Interface\\HRDelicates\\bin\\Release",
     "\\HRDelicates Interface\\packages"
   ],
-  "SelectedNode": "\\HRDelicates Interface\\HRDelicates\\HRDelicates.csproj",
+  "SelectedNode": "\\HRDelicates Interface\\HRDelicates\\Reservationscreen.cs",
   "PreviewInSolutionExplorer": false
 }

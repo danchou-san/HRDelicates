@@ -17,10 +17,10 @@
     "Status": "Unavailable",
     "Persoon": "Koen",
     "Last_name": "Schreuder",
-    "Email": "Schreuderkoen@gmail.com",
+    "Email": "ceeonnn@gmail.com",
     "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "08-07-2020",
+    "D_reservering": "09-07-2020",
     "Time": "17:00"
   },
   {
@@ -40,11 +40,11 @@
     "Capaciteit": 2,
     "Status": "Unavailable",
     "Persoon": "Koen",
-    "Email": "Schreuderkoen@live.nl",
+    "Email": "Schreuderkoen@gmail.com",
     "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "08-07-2020",
-    "Time": "19:00",
+    "D_reservering": "09-07-2020",
+    "Time": "21:00",
     "Last_name": "Schreuder"
   },
   {
@@ -62,14 +62,14 @@
   {
     "Nummer": 6,
     "Capaciteit": 2,
-    "Status": "Available",
-    "Persoon": "",
-    "Last_name": "",
-    "Email": "",
-    "Telefoon": "",
+    "Status": "Unavailable",
+    "Persoon": "Koen",
+    "Last_name": "Schreuder",
+    "Email": "Schreuderkoen@gmail.com",
+    "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "",
-    "Time": ""
+    "D_reservering": "09-07-2020",
+    "Time": "20:00"
   },
   {
     "Nummer": 7,
@@ -146,25 +146,25 @@
   {
     "Nummer": 13,
     "Capaciteit": 6,
-    "Status": "Available",
-    "Persoon": "",
-    "Last_name": "",
-    "Email": "",
-    "Telefoon": "",
+    "Status": "Unavailable",
+    "Persoon": "Koen",
+    "Last_name": "Schreuder",
+    "Email": "Schreuderkoen@gmail.com",
+    "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "",
-    "Time": ""
+    "D_reservering": "09-07-2020",
+    "Time": "19:00"
   },
   {
     "Nummer": 14,
     "Capaciteit": 6,
-    "Status": "Available",
-    "Persoon": "",
-    "Last_name": "",
-    "Email": "",
-    "Telefoon": "",
+    "Status": "Unavailable",
+    "Persoon": "Koen",
+    "Last_name": "Schreuder",
+    "Email": "Schreuderkoen@gmail.com",
+    "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "",
-    "Time": ""
+    "D_reservering": "21-07-2020",
+    "Time": "22:00"
   }
 ]

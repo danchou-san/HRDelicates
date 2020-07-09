@@ -262,7 +262,38 @@ namespace HRDelicates
         }
 
         private void confirm_button_Click(object sender, EventArgs e)
+
+
         {
+            // Mail sturen nadat de klant op bevestig reservatie klikt.
+            var fromAddress = new MailAddress("hrdelicates@gmail.com", "HRDelicates"); // Mail adres en naam van de gene die stuurt.
+            var toAddress = new MailAddress(email_value.Text, name_value.Text); // Mail van de ontvanger en naam.
+            string fromPassword = "Henk12345"; // ww email restaurant.
+            string subject = "Reservering HRDelicates"; // onderwerp mail.
+            // Hieronder de opbouw van de tekst in de mail.
+            string introductionMail = "Beste " + name_value.Text + ",\nBedankt voor uw reservatie bij HRDelicates.\nHieronder vind u de informatie betreffende uw reservatie.";
+            string reservationInfo = "\n\nAdres Restaurant: Wijnhaven 107\nTijd reservatie: " + time_value.Text + "\nDatum: " + date_value.Text +"\nTafel: " + table_value.Text +"\nAantal personen: " + personen_box.Value;
+            string endMail = "\n\nMocht u nog vragen of opmerkingen hebben kunt u contact opnemen met ons op het volgende nummer: 0104287287 of mailen naar bovenstaand mail adres.\nBedankt voor uw reservatie en wij hopen u snel te zien.\n\nMet vriendelijke groet,\nHRDelicates";
+            string body = introductionMail + reservationInfo + endMail;
+                            
+                         
+            var smtp = new SmtpClient
+            {
+                Host = "smtp.gmail.com",  // standaard gmail server voor het sturen van gmail mails.
+                Port = 587, // standaard port van de server voor het sturen van gmail mails.
+                EnableSsl = true, // beveiliging voor het schakelen tussen de app en de gmail server.
+                DeliveryMethod = SmtpDeliveryMethod.Network, // Via wat de mail wordt afgeleverd en hoe.
+                UseDefaultCredentials = false, // Dit is false omdat we niet de standaar gebruiken maar de info die ons wordt aangegeven en vervolgens wordt die hieronder gebruikt.
+                Credentials = new NetworkCredential(fromAddress.Address, fromPassword) // new instance.
+            };
+            using (var message = new MailMessage(fromAddress, toAddress)
+            {
+                Subject = subject,
+                Body = body
+            })
+            {
+                smtp.Send(message); // stuurt de mail.
+            }
 
             //var serializedStr = File.ReadAllText(path);
             //var tables = JsonConvert.DeserializeObject<Tables[]>(serializedStr);
