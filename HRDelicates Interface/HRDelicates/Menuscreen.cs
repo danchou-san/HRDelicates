@@ -123,8 +123,7 @@ namespace HRDelicates
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dranken dranken = new Dranken();
-            dranken.Show();
+
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)

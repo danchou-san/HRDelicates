@@ -39,13 +39,13 @@
     "Nummer": 4,
     "Capaciteit": 2,
     "Status": "Unavailable",
-    "Persoon": "Koen",
-    "Email": "Schreuderkoen@gmail.com",
-    "Telefoon": "0641880707",
+    "Persoon": "Ariano",
+    "Email": "0979653@hr.nl",
+    "Telefoon": "0628057051",
     "A_P_P": "",
-    "D_reservering": "09-07-2020",
+    "D_reservering": "10-07-2020",
     "Time": "19:00",
-    "Last_name": "Schreuder"
+    "Last_name": "Wongsosetro"
   },
   {
     "Nummer": 5,
@@ -111,13 +111,13 @@
     "Nummer": 10,
     "Capaciteit": 4,
     "Status": "Unavailable",
-    "Persoon": "Jaap",
-    "Last_name": "Aap",
-    "Email": "ceeonnn@gmail.com",
+    "Persoon": "Koen",
+    "Last_name": "Schreuder",
+    "Email": "Schreuderkoen@gmail.com",
     "Telefoon": "0641880708",
     "A_P_P": "",
-    "D_reservering": "26-08-2020",
-    "Time": "20:00"
+    "D_reservering": "10-07-2020",
+    "Time": "21:00"
   },
   {
     "Nummer": 11,

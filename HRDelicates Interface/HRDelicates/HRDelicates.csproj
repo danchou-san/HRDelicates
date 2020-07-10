@@ -67,17 +67,17 @@
     <Compile Include="Dishdescriptions.Designer.cs">
       <DependentUpon>Dishdescriptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Drink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drink.Designer.cs">
+      <DependentUpon>Drink.cs</DependentUpon>
+    </Compile>
     <Compile Include="Drinkdescriptions.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Drinkdescriptions.Designer.cs">
       <DependentUpon>Drinkdescriptions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Dishes.cs" />
     <Compile Include="Introscreen.cs">
@@ -85,6 +85,12 @@
     </Compile>
     <Compile Include="Introscreen.Designer.cs">
       <DependentUpon>Introscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainscreen.Designer.cs">
+      <DependentUpon>Mainscreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Menuscreen.cs">
       <SubType>UserControl</SubType>
@@ -107,12 +113,6 @@
       <DependentUpon>Startscreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Tables.cs" />
-    <Compile Include="Dranken.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Dranken.Designer.cs">
-      <DependentUpon>Dranken.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Adminscreen.resx">
       <DependentUpon>Adminscreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,14 +122,17 @@
     <EmbeddedResource Include="Dishdescriptions.resx">
       <DependentUpon>Dishdescriptions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Drink.resx">
+      <DependentUpon>Drink.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Drinkdescriptions.resx">
       <DependentUpon>Drinkdescriptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Introscreen.resx">
       <DependentUpon>Introscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainscreen.resx">
+      <DependentUpon>Mainscreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menuscreen.resx">
       <DependentUpon>Menuscreen.cs</DependentUpon>
@@ -148,9 +151,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Startscreen.resx">
       <DependentUpon>Startscreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dranken.resx">
-      <DependentUpon>Dranken.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Adminscreen.datasource" />

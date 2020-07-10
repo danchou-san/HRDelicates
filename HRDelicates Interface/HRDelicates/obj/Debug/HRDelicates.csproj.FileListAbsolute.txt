@@ -93,7 +93,6 @@ C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Properties.Resources.resources
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Reservationscreen.resources
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Startscreen.resources
-C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Dranken.resources
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.GenerateResource.cache
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CoreCompileInputs.cache
 C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CopyComplete
@@ -211,3 +210,4 @@ C:\Users\Koen\Source\Repos\HRDelicates6\HRDelicates Interface\HRDelicates\obj\De
 C:\Users\Koen\Source\Repos\HRDelicates6\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.csproj.CopyComplete
 C:\Users\Koen\Source\Repos\HRDelicates6\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.exe
 C:\Users\Koen\Source\Repos\HRDelicates6\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.pdb
+C:\Users\School\Desktop\HRDelicates\HRDelicates Interface\HRDelicates\obj\Debug\HRDelicates.Drink.resources
